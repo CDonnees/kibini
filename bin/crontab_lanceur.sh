@@ -34,6 +34,9 @@ perl $dir/statdb_load_koha_prod.pl
 # On met à jour les stats web
 bash $dir/web.sh
 
+# On met à jour la table statdb.data_biblio
+perl $dir/data_biblio.pl
+
 # On incorpore dans statdb et ES les prêts de la veille
 perl $dir/statdb_issues.pl
 perl $dir/es_prets.pl
