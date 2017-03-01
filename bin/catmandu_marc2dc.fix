@@ -35,7 +35,7 @@ else
 end
 
 marc_map(091a,'vd_action')
-lookup("vd_action","catmandu_lk.txt", sep_char:'|',default:'NONE')
+lookup("vd_action","/home/kibini/kibini_prod/bin/catmandu_lk.txt", sep_char:'|',default:'NONE')
 marc_map(091b,'vd_date')
 
 copy_field(_id,identifier)

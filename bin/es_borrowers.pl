@@ -106,7 +106,7 @@ SQL
 
         my ( $irisNom, $quartier ) = undef ;
         if (defined $iris) {
-            ($irisNom, $quartier) = GetGeoRBX($iris) ;
+            ($irisNom, $quartier) = GetRbxDistrict($iris) ;
         }
     
         my ( $age_lib1, $age_lib2, $age_lib3 ) ;

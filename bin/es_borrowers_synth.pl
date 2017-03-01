@@ -17,7 +17,7 @@ my $log_message ;
 my $process = "es_borrowers_synth.pl" ;
 # On log le début de l'opération
 $log_message = "$process : début" ;
-log_file($log_message) ;
+AddCrontabLog($log_message) ;
 
 # On récupère l'adresse d'Elasticsearch
 my $es_node = GetEsNode() ;
@@ -36,9 +36,9 @@ my $i = borrowers_synth($date) ;
 
 # On log la fin de l'opération
 $log_message = "$process : $i lignes indexées" ;
-log_file($log_message) ;
+AddCrontabLog($log_message) ;
 $log_message = "$process : fin\n" ;
-log_file($log_message) ;
+AddCrontabLog($log_message) ;
 
 
 sub borrowers_synth {
@@ -49,7 +49,7 @@ sub borrowers_synth {
 
     my $e = Search::Elasticsearch->new( %params ) ;
     
-    my $dbh = GetEsNode() ;
+    my $dbh = GetDbh() ;
     my $req = <<SQL;
 SELECT
     CASE WHEN b.zipcode = '59100' THEN 'Roubaisiens' ELSE 'Non Roubaisiens' END,

@@ -28,7 +28,7 @@ sub _ConvertMarcToJSON {
     my $importer = Catmandu->importer( 'MARC', type => 'XML', fh => $in );
     my $outdata ;
     my $out = io \$outdata ;
-    my $exporter = Catmandu->exporter( 'JSON', fh => $out, fix => 'catmandu_marc2dc.fix', array => 0);
+    my $exporter = Catmandu->exporter( 'JSON', fh => $out, fix => '/home/kibini/kibini_prod/bin/catmandu_marc2dc.fix', array => 0);
     $importer->each(sub {
         my $item = shift;
         $exporter->add($item);
