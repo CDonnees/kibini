@@ -23,7 +23,8 @@ sub GetConfig {
             log_crontab => $file_conf->{'log_crontab'},
             ftp_logs_portail => $file_conf->{'ftp_logs_portail'},
             suggestions => $file_conf->{'suggestions'},
-            koha => $file_conf->{'koha'}
+            koha => $file_conf->{'koha'},
+			crypt => $file_conf->{'crypt'}
         ) ;
         $conf = $config{$k} ;
     } else {

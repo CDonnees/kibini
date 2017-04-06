@@ -13,7 +13,7 @@ around BUILDARGS => sub {
     my $orig = shift;
     my $class = shift;
 
-    my $conf = GetConfig('cryptage') ;
+    my $conf = GetConfig('crypt') ;
     my $salt = $conf->{'salt'} ;
 
     return $class->$orig(salt => $salt);
