@@ -123,7 +123,7 @@ get '/grand-plage/web/connexions' => sub {
                 label2 => 'Sites web',
                 label3 => "Sessions de consultation de la bn-r et du portail",
 				dashboard => {
-					src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Web-:-sessions?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:\'2008-01-01T12:22:52.804Z\',mode:quick,to:\'2016-05-19T11:22:52.804Z\'))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:\'Web-:-sessions-par-ann%C3%A9e\',panelIndex:1,row:1,size_x:12,size_y:5,type:visualization),(col:1,id:\'Web-:-sessions-par-mois\',panelIndex:2,row:6,size_x:12,size_y:5,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'*\')),title:\'Web%20:%20sessions\',uiState:(P-1:(vis:(legendOpen:!f)),P-2:(vis:(legendOpen:!f))))',
+					src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Web-:-sessions?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:\'2008-01-01T00:00:00.000Z\',mode:absolute,to:\'2016-12-30T23:00:00.000Z\'))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:\'Web-:-sessions-par-ann%C3%A9e\',panelIndex:1,row:1,size_x:12,size_y:5,type:visualization),(col:1,id:\'Web-:-sessions-par-mois\',panelIndex:2,row:6,size_x:12,size_y:5,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'*\')),title:\'Web%20:%20sessions\',uiState:(P-1:(vis:(legendOpen:!f)),P-2:(vis:(legendOpen:!f))))',
             height => '1300px'
         }
     };
@@ -184,8 +184,8 @@ get '/mediatheque/collections/prets' => sub {
 		label2 => 'Collections',
 		label3 => 'Prêts',
 		dashboard => {
-            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Pr%C3%AAts-M%C3%A9diath%C3%A8que?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-1y,mode:quick,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:Nombre-de-pr%C3%AAts,panelIndex:15,row:1,size_x:6,size_y:2,type:visualization),(col:1,id:Nombre-de-pr%C3%AAts-par-collection,panelIndex:24,row:3,size_x:12,size_y:9,type:visualization),(col:7,id:\'Nombre-d!\'emprunteurs-totaux\',panelIndex:25,row:1,size_x:6,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'pret_site:%20%22M%C3%A9diath%C3%A8que%22\')),title:\'Pr%C3%AAts%20M%C3%A9diath%C3%A8que\',uiState:())',
-            height => '1200px'
+            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Pr%C3%AAts-M%C3%A9diath%C3%A8que?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-1y,mode:quick,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:Nombre-de-pr%C3%AAts-par-collection,panelIndex:24,row:3,size_x:12,size_y:9,type:visualization),(col:7,id:\'Nombre-d!\'emprunteurs-totaux\',panelIndex:25,row:1,size_x:6,size_y:2,type:visualization),(col:1,id:Pr%C3%AAts,panelIndex:26,row:1,size_x:6,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'pret_site:%20%22M%C3%A9diath%C3%A8que%22%20AND%20personne\')),title:\'Pr%C3%AAts%20M%C3%A9diath%C3%A8que\',uiState:())',
+            height => '1400px'
         }
 	};
 };

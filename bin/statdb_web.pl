@@ -7,6 +7,7 @@ use WWW::Mechanize;
 use HTTP::Cookies ;
 use FindBin qw( $Bin ) ;
 use YAML qw(LoadFile) ;
+use Text::CSV ;
 use Data::Dumper ;
 
 use lib "$Bin/../lib" ;
@@ -29,6 +30,8 @@ my $piwik_token_auth = $conf->{token_auth} ;
 my $date_veille = GetDateTime('yesterday') ;
 my $portail_veille_sessions = portail_veille_sessions($piwik_url_api, $piwik_token_auth, $date_veille) ;
 insertWebSessions($date_veille, "site", $portail_veille_sessions);
+
+#bnr_csv() ;
 
 # On log la fin de l'opération
 $log_message = "$process : ending\n" ;
@@ -64,6 +67,28 @@ sub insertWebSessions {
     my $req = "INSERT INTO statdb.stat_web (date, site, nb_sessions) VALUES (?, ?, ?)" ;
     my $sth = $dbh->prepare($req) ;    
     $sth->execute($date, $site, $nbSessions ) ;
+    $sth->finish() ;
+    $dbh->disconnect() ;
+}
+
+sub bnr_csv {
+    my $dbh = GetDbh() ;
+    open my $fic, "<:encoding(utf8)", "/home/kibini/kibini_prod/bin/bnr.csv";
+
+    my $csv = Text::CSV->new ({
+        binary    => 1, # permet caractères spéciaux (?)
+        auto_diag => 1, # permet diagnostic immédiat des erreurs
+    });
+    
+    my $req = "INSERT INTO statdb.stat_web (date, site, nb_sessions, nb_pages_vues) VALUES (?, ?, ?, ?)" ;
+    my $sth = $dbh->prepare($req) ;    
+    
+    while (my $row = $csv->getline ($fic)) {
+        my ($date, $site, $nb_sessions, $nb_pages_vues) = @$row ;
+        $sth->execute($date, $site, $nb_sessions, $nb_pages_vues) ;
+        print "$date, $site, $nb_sessions, $nb_pages_vues\n" ;
+    }
+    
     $sth->finish() ;
     $dbh->disconnect() ;
 }

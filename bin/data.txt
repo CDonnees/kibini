@@ -1,0 +1,148 @@
+tout public,partitions,2002,2277
+jeunesse,périodiques,2002,4837
+tout public,CD-ROM,2002,6683
+adultes,périodiques,2002,21534
+tout public,vidéos,2002,32673
+tout public,méthodes de langue,2002,57
+tout public,disques,2002,136894
+jeunesse,livres,2002,147158
+adultes,livres,2002,205602
+tout public,partitions,2003,2803
+jeunesse,périodiques,2003,4204
+tout public,CD-ROM,2003,6873
+adultes,périodiques,2003,23238
+tout public,vidéos,2003,36296
+tout public,méthodes de langue,2003,53
+tout public,disques,2003,125427
+jeunesse,livres,2003,149043
+adultes,livres,2003,210640
+tout public,partitions,2004,1854
+jeunesse,périodiques,2004,3089
+tout public,CD-ROM,2004,4628
+adultes,périodiques,2004,16064
+tout public,vidéos,2004,25001
+tout public,méthodes de langue,2004,37
+jeunesse,livres,2004,81283
+tout public,disques,2004,90824
+adultes,livres,2004,158424
+tout public,partitions,2005,2191
+jeunesse,périodiques,2005,3842
+tout public,CD-ROM,2005,5143
+adultes,périodiques,2005,23128
+tout public,vidéos,2005,51235
+tout public,méthodes de langue,2005,74
+tout public,disques,2005,117341
+jeunesse,livres,2005,142813
+adultes,livres,2005,191515
+tout public,partitions,2006,1867
+tout public,livres sonores,2006,2721
+tout public,CD-ROM,2006,3775
+jeunesse,périodiques,2006,4951
+adultes,périodiques,2006,24805
+tout public,vidéos,2006,46812
+tout public,méthodes de langue,2006,56
+tout public,disques,2006,105785
+jeunesse,livres,2006,137109
+adultes,livres,2006,175184
+tout public,méthodes de langue,2007,1290
+tout public,partitions,2007,1803
+tout public,CD-ROM,2007,2295
+tout public,livres sonores,2007,2819
+jeunesse,périodiques,2007,5374
+adultes,périodiques,2007,24684
+tout public,vidéos,2007,41286
+tout public,disques,2007,94583
+jeunesse,livres,2007,139171
+adultes,livres,2007,157679
+tout public,méthodes de langue,2008,1192
+tout public,partitions,2008,2333
+tout public,livres sonores,2008,2679
+jeunesse,périodiques,2008,6584
+adultes,périodiques,2008,24776
+tout public,vidéos,2008,35290
+tout public,disques,2008,86976
+jeunesse,livres,2008,136754
+adultes,livres,2008,154630
+tout public,CD-ROM,2008,966
+tout public,méthodes de langue,2009,1419
+tout public,CD-ROM,2009,1595
+tout public,partitions,2009,1972
+tout public,livres sonores,2009,2685
+jeunesse,périodiques,2009,7577
+adultes,périodiques,2009,27488
+tout public,vidéos,2009,29231
+tout public,disques,2009,76079
+jeunesse,livres,2009,138644
+adultes,livres,2009,147486
+tout public,autres documents,2010,1266
+tout public,livres sonores,2010,3120
+jeunesse,périodiques,2010,9013
+adultes,périodiques,2010,22013
+tout public,vidéos,2010,26329
+tout public,disques,2010,64253
+jeunesse,livres,2010,95215
+adultes,livres,2010,136082
+tout public,livres sonores,2011,2806
+tout public,autres documents,2011,5347
+jeunesse,périodiques,2011,10266
+adultes,périodiques,2011,25328
+tout public,vidéos,2011,36214
+tout public,disques,2011,64699
+jeunesse,livres,2011,86775
+adultes,livres,2011,141210
+tout public,livres sonores,2012,3404
+tout public,autres documents,2012,5608
+jeunesse,périodiques,2012,12093
+adultes,périodiques,2012,29216
+tout public,vidéos,2012,39912
+tout public,disques,2012,60614
+adultes,livres,2012,139775
+jeunesse,livres,2012,157848
+jeunesse,autres documents,2013,1521
+adultes,autres documents,2013,1651
+jeunesse,disques,2013,2281
+adultes,livres sonores,2013,3620
+jeunesse,vidéos,2013,9322
+jeunesse,périodiques,2013,11779
+adultes,périodiques,2013,26148
+adultes,vidéos,2013,34856
+adultes,disques,2013,51955
+adultes,livres,2013,129845
+jeunesse,livres,2013,140280
+jeunesse,livres sonores,2013,760
+jeunesse,disques,2014,1867
+jeunesse,livres sonores,2014,1960
+adultes,livres sonores,2014,3362
+jeunesse,vidéos,2014,7143
+jeunesse,périodiques,2014,11244
+adultes,périodiques,2014,23827
+adultes,vidéos,2014,37575
+adultes,disques,2014,37881
+adultes,livres,2014,113137
+jeunesse,livres,2014,154843
+jeunesse,autres documents,2014,210
+adultes,autres documents,2014,941
+jeunesse,livres sonores,2015,1310
+adultes,autres documents,2015,2377
+adultes,livres sonores,2015,2680
+jeunesse,vidéos,2015,5478
+jeunesse,périodiques,2015,7825
+jeunesse,autres documents,2015,13
+adultes,périodiques,2015,18441
+adultes,vidéos,2015,33757
+adultes,disques,2015,36529
+adultes,livres,2015,95677
+jeunesse,livres,2015,151082
+jeunesse,disques,2015,572
+adultes,livres,2016,109789
+adultes,vidéos,2016,35451
+adultes,disques,2016,35034
+adultes,périodiques,2016,18635
+adultes,livres sonores,2016,2304
+adultes,autres documents,2016,1990
+jeunesse,livres,2016,172908
+jeunesse,vidéos,2016,8288
+jeunesse,périodiques,2016,6761
+jeunesse,disques,2016,1838
+jeunesse,livres sonores,2016,882
+jeunesse,autres documents,2016,24
