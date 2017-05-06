@@ -25,7 +25,7 @@ marc_map('100/9-12','date')
 marc_map(606a,subject.$append)
 
 marc_map(099t, type)
-lookup("type","catmandu_lk.txt", sep_char:'|',default:'NONE')
+lookup("type","/home/kibini/kibini_prod/bin/catmandu_lk.txt", sep_char:'|',default:'NONE')
 
 
 if marc_match("033a","catalogue.bnf.fr")
