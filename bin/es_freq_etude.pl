@@ -2,6 +2,7 @@
 
 use strict ;
 use warnings ;
+use utf8 ; # attention, ne pas oublier pour adherents::details::GetCardType
 use Search::Elasticsearch ; 
 use FindBin qw( $Bin ) ;
 

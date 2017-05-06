@@ -1,0 +1,35 @@
+    <div id="sidebar">
+        [% INCLUDE 'includes/sidebar.tt' %]
+    </div>
+    <div class="col-sm-9">
+    
+        <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <strong>
+                    [% label1 %]<span>   </span><i class="glyphicon glyphicon-chevron-right"></i><span>   </span>[% label2 %]<span>   </span><i class="glyphicon glyphicon-chevron-right"></i><span>   </span>[% label3 %]
+                    </strong>
+                </div>
+        </div>
+        
+    
+    </div>
+    
+    <div class="col-sm-9">
+            <form method="get" action="[% request.uri_base %][% file_out %]">
+                <div class="form-group">
+                    <button class="btn btn-sm btn-primary" name="submit" type="submit"><span class="glyphicon glyphicon-save"></span> Télécharger le fichier de synthèse</button>
+                </div>
+            </form>
+ 
+            <form method="get" action="[% request.uri_base %][% file_data %]">
+                <div class="form-group">
+                    <button class="btn btn-sm btn-primary" name="submit" type="submit"><span class="glyphicon glyphicon-save"></span> Télécharger les données brutes</button>
+                </div>
+            </form>
+          
+    </div>
+
+
+    <script type="text/javascript">
+    </script>
+

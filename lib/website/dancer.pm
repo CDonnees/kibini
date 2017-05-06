@@ -376,12 +376,14 @@ get '/collectivites/collections/emprunteurs/details' => sub {
 
 # Collections
 get '/grand-plage/collections/ensemble' => sub {
-	my $indicateurs = GetDataCollections(0) ;	
-	template 'collections', {
+#	my $indicateurs = GetDataCollections(0) ;	
+	template 'collections2', {
 		label1 => 'La Grand-Plage',
 		label2 => 'Collections',
-		label3 => 'Principaux indicateurs sur 12 mois',
-		indicateurs => $indicateurs
+		label3 => 'Principaux indicateurs au 1er janvier 2017',
+        file_out => '/data/Statistiques_collections_2016_v20170506.xlsx',
+        file_data => '/data/collections_donnees_20160506.zip'
+#		indicateurs => $indicateurs
 	};
 };
 

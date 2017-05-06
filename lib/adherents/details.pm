@@ -6,6 +6,7 @@ use Exporter ;
 
 use strict ;
 use warnings ;
+use utf8 ; # attention, ne pas oublier pour GetCardType
 
 use kibini::db ;
 

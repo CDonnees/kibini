@@ -5,6 +5,7 @@ use warnings ;
 use utf8 ;
 use Search::Elasticsearch ;
 use FindBin qw( $Bin ) ;
+use utf8 ;
 
 use lib "$Bin/../lib" ;
 use kibini::db ;

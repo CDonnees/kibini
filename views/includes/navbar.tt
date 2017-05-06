@@ -14,7 +14,10 @@
                 <li role="separator" class="divider"></li>
                 <li><a href="/qa/inscrits">Inscrits</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="/frequentation/etude">Fréquentation étude</a></li>             
+                <li><a href="/frequentation/etude">Fréquentation étude</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="/form/action_culturelle">Action culturelle</a></li>
+				<li><a href="/form/action_coop">Action de coopération</a></li>					
               </ul>
             </li>
             <li><a href="https://github.com/medrbx/kibini/wiki">?</a></li>
