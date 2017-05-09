@@ -91,11 +91,11 @@ adherents:
         inscription_type_carte:
           index: not_analyzed
           type: string
+        nb_venues_pret:
+          type: integer
         sexe:
           index: not_analyzed
           type: string
-        nb_venues_pret:
-          type: integer
 adherents2015:
   mappings:
     inscrits:
@@ -317,78 +317,6 @@ adherents_tout:
           index: not_analyzed
           type: string
         sexe:
-          index: not_analyzed
-          type: string
-catalogue:
-  mappings:
-    catalogue:
-      properties:
-        contributor:
-          index: not_analyzed
-          type: string
-        creator:
-          index: not_analyzed
-          type: string
-        date:
-          type: integer
-        identifier:
-          index: not_analyzed
-          type: string
-        language:
-          index: not_analyzed
-          type: string
-        publisher:
-          index: not_analyzed
-          type: string
-        subject:
-          index: not_analyzed
-          type: string
-        title:
-          index: not_analyzed
-          type: string
-        type:
-          index: not_analyzed
-          type: string
-        vd_action:
-          index: not_analyzed
-          type: string
-        vd_bnf:
-          index: not_analyzed
-          type: string
-        vd_date:
-          index: not_analyzed
-          type: string
-    koha:
-      properties:
-        contributor:
-          index: not_analyzed
-          type: string
-        creator:
-          index: not_analyzed
-          type: string
-        date:
-          type: integer
-        identifier:
-          index: not_analyzed
-          type: string
-        my_id:
-          type: string
-        publisher:
-          index: not_analyzed
-          type: string
-        title:
-          index: not_analyzed
-          type: string
-        type:
-          index: not_analyzed
-          type: string
-        vd_action:
-          index: not_analyzed
-          type: string
-        vd_bnf:
-          index: not_analyzed
-          type: string
-        vd_date:
           index: not_analyzed
           type: string
 documents_synth:
@@ -640,6 +568,9 @@ items:
         perdu:
           index: not_analyzed
           type: string
+        pret12:
+          index: not_analyzed
+          type: string
         prix:
           type: float
         prix_rempla:
@@ -677,7 +608,335 @@ items:
         titre:
           index: not_analyzed
           type: string
-        pret12:
+prets:
+  mappings:
+    issues:
+      properties:
+        doc_biblionumber:
+          type: integer
+        doc_collection_ccode:
+          index: not_analyzed
+          type: string
+        doc_collection_lib1:
+          index: not_analyzed
+          type: string
+        doc_collection_lib2:
+          index: not_analyzed
+          type: string
+        doc_collection_lib3:
+          index: not_analyzed
+          type: string
+        doc_collection_lib4:
+          index: not_analyzed
+          type: string
+        doc_cote:
+          index: not_analyzed
+          type: string
+        doc_date_acquisition:
+          format: yyyy-MM-dd
+          type: date
+        doc_date_publication:
+          type: integer
+        doc_itemnumber:
+          type: integer
+        doc_localisation:
+          index: not_analyzed
+          type: string
+        doc_site_rattachement:
+          index: not_analyzed
+          type: string
+        doc_support:
+          index: not_analyzed
+          type: string
+        emprunteur_age:
+          index: not_analyzed
+          type: string
+        emprunteur_age_lib1:
+          index: not_analyzed
+          type: string
+        emprunteur_age_lib2:
+          index: not_analyzed
+          type: string
+        emprunteur_age_lib3:
+          index: not_analyzed
+          type: string
+        emprunteur_carte:
+          index: not_analyzed
+          type: string
+        emprunteur_id:
+          index: not_analyzed
+          type: string
+        emprunteur_nb_annee_inscription:
+          type: integer
+        emprunteur_personnalite:
+          index: not_analyzed
+          type: string
+        emprunteur_rbx_iris:
+          index: not_analyzed
+          type: string
+        emprunteur_rbx_nom_iris:
+          index: not_analyzed
+          type: string
+        emprunteur_rbx_quartier:
+          index: not_analyzed
+          type: string
+        emprunteur_sexe:
+          index: not_analyzed
+          type: string
+        emprunteur_site_inscription:
+          index: not_analyzed
+          type: string
+        emprunteur_type_carte:
+          index: not_analyzed
+          type: string
+        emprunteur_ville:
+          index: not_analyzed
+          type: string
+        pret_arret_bus:
+          index: not_analyzed
+          type: string
+        pret_date_pret:
+          format: yyyy-MM-dd HH:mm:ss
+          type: date
+        pret_date_pret_annee:
+          type: integer
+        pret_date_pret_heure:
+          type: integer
+        pret_date_pret_jour:
+          type: integer
+        pret_date_pret_jour_semaine:
+          index: not_analyzed
+          type: string
+        pret_date_pret_mois:
+          type: integer
+        pret_date_pret_semaine:
+          type: integer
+        pret_date_retour:
+          format: yyyy-MM-dd HH:mm:ss
+          type: date
+        pret_date_retour_annee:
+          type: integer
+        pret_date_retour_heure:
+          type: integer
+        pret_date_retour_jour:
+          type: integer
+        pret_date_retour_jour_semaine:
+          index: not_analyzed
+          type: string
+        pret_date_retour_mois:
+          type: integer
+        pret_date_retour_semaine:
+          type: integer
+        pret_duree:
+          type: integer
+        pret_nb_renouvellements:
+          type: integer
+        pret_retard:
+          type: integer
+        pret_site:
+          index: not_analyzed
+          type: string
+        sll_acces:
+          index: not_analyzed
+          type: string
+        sll_collection:
+          index: not_analyzed
+          type: string
+        sll_prets:
+          index: not_analyzed
+          type: string
+        sll_prets_coll:
+          index: not_analyzed
+          type: string
+        sll_public:
+          index: not_analyzed
+          type: string
+prets2:
+  mappings:
+    issues2:
+      properties:
+        bibliodata:
+          properties:
+            contributor:
+              index: not_analyzed
+              type: string
+            creator:
+              index: not_analyzed
+              type: string
+            date:
+              type: string
+            identifier:
+              index: not_analyzed
+              type: string
+            language:
+              index: not_analyzed
+              type: string
+            publisher:
+              index: not_analyzed
+              type: string
+            subject:
+              index: not_analyzed
+              type: string
+            subject_chrono:
+              index: not_analyzed
+              type: string
+            subject_geo:
+              index: not_analyzed
+              type: string
+            subject_main:
+              index: not_analyzed
+              type: string
+            title:
+              index: not_analyzed
+              type: string
+            type:
+              index: not_analyzed
+              type: string
+            vd_action:
+              index: not_analyzed
+              type: string
+            vd_bnf:
+              index: not_analyzed
+              type: string
+            vd_date:
+              type: string
+        doc_biblionumber:
+          type: integer
+        doc_collection_ccode:
+          index: not_analyzed
+          type: string
+        doc_collection_lib1:
+          index: not_analyzed
+          type: string
+        doc_collection_lib2:
+          index: not_analyzed
+          type: string
+        doc_collection_lib3:
+          index: not_analyzed
+          type: string
+        doc_collection_lib4:
+          index: not_analyzed
+          type: string
+        doc_cote:
+          index: not_analyzed
+          type: string
+        doc_date_acquisition:
+          format: yyyy-MM-dd
+          type: date
+        doc_date_publication:
+          type: integer
+        doc_itemnumber:
+          type: integer
+        doc_localisation:
+          index: not_analyzed
+          type: string
+        doc_site_rattachement:
+          index: not_analyzed
+          type: string
+        doc_support:
+          index: not_analyzed
+          type: string
+        emprunteur_age:
+          index: not_analyzed
+          type: string
+        emprunteur_age_lib1:
+          index: not_analyzed
+          type: string
+        emprunteur_age_lib2:
+          index: not_analyzed
+          type: string
+        emprunteur_age_lib3:
+          index: not_analyzed
+          type: string
+        emprunteur_carte:
+          index: not_analyzed
+          type: string
+        emprunteur_id:
+          index: not_analyzed
+          type: string
+        emprunteur_nb_annee_inscription:
+          type: integer
+        emprunteur_personnalite:
+          index: not_analyzed
+          type: string
+        emprunteur_rbx_iris:
+          index: not_analyzed
+          type: string
+        emprunteur_rbx_nom_iris:
+          index: not_analyzed
+          type: string
+        emprunteur_rbx_quartier:
+          index: not_analyzed
+          type: string
+        emprunteur_sexe:
+          index: not_analyzed
+          type: string
+        emprunteur_site_inscription:
+          index: not_analyzed
+          type: string
+        emprunteur_type_carte:
+          index: not_analyzed
+          type: string
+        emprunteur_ville:
+          index: not_analyzed
+          type: string
+        pret_arret_bus:
+          index: not_analyzed
+          type: string
+        pret_date_pret:
+          format: yyyy-MM-dd HH:mm:ss
+          type: date
+        pret_date_pret_annee:
+          type: integer
+        pret_date_pret_heure:
+          type: integer
+        pret_date_pret_jour:
+          type: integer
+        pret_date_pret_jour_semaine:
+          index: not_analyzed
+          type: string
+        pret_date_pret_mois:
+          type: integer
+        pret_date_pret_semaine:
+          type: integer
+        pret_date_retour:
+          format: yyyy-MM-dd HH:mm:ss
+          type: date
+        pret_date_retour_annee:
+          type: integer
+        pret_date_retour_heure:
+          type: integer
+        pret_date_retour_jour:
+          type: integer
+        pret_date_retour_jour_semaine:
+          index: not_analyzed
+          type: string
+        pret_date_retour_mois:
+          type: integer
+        pret_date_retour_semaine:
+          type: integer
+        pret_duree:
+          type: integer
+        pret_nb_renouvellements:
+          type: integer
+        pret_retard:
+          type: integer
+        pret_site:
+          index: not_analyzed
+          type: string
+        sll_acces:
+          index: not_analyzed
+          type: string
+        sll_collection:
+          index: not_analyzed
+          type: string
+        sll_prets:
+          index: not_analyzed
+          type: string
+        sll_prets_coll:
+          index: not_analyzed
+          type: string
+        sll_public:
           index: not_analyzed
           type: string
 reservations:
@@ -997,27 +1256,3 @@ webkiosk:
         session_poste:
           index: not_analyzed
           type: string
-action_culturelle:
-  mappings:
-    actions:
-      properties:
-        date:
-          format: yyyy-MM-dd
-          type: date
-        action:
-          index: not_analyzed
-          type: string
-        lieu:
-          index: not_analyzed
-          type: string
-        type_action:
-          index: not_analyzed
-          type: string
-        public:
-          index: not_analyzed
-          type: string
-        partenariat:
-          index: not_analyzed
-          type: string
-        nb_participants:
-          type: integer

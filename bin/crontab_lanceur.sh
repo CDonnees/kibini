@@ -67,8 +67,8 @@ fi
 if [ $dayofweek -eq 7 ]
 then
     # On recrée les index items et catalogue dans ES
-    perl $dir/es_items.pl
-    bash $dir/catmandu_es.sh
+#    perl $dir/es_items.pl
+#    bash $dir/catmandu_es.sh
 
 fi
 

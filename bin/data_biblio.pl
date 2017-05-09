@@ -28,6 +28,9 @@ foreach my $table (@tables) {
     $j = $j + $count ;
 }
 
+$log_message = "$process : $j rows deleted" ;
+AddCrontabLog($log_message) ;
+
 foreach my $table (@tables) {
     my $count = AddDataBiblio($dbh, $table, $maxtimestamp) ;
     $i = $i + $count ;
@@ -37,8 +40,6 @@ foreach my $table (@tables) {
 $dbh->disconnect();
 
 # On log la fin de l'opération
-$log_message = "$process : $j rows deleted" ;
-AddCrontabLog($log_message) ;
 $log_message = "$process : $i rows added" ;
 AddCrontabLog($log_message) ;
 $log_message = "$process : ending\n" ;

@@ -2,12 +2,13 @@ package collections::biblio ;
 
 use Exporter ;
 @ISA = qw(Exporter) ;
-@EXPORT = qw( GetMaxDateDataBiblio DelFromDataBiblio AddDataBiblio ) ;
+@EXPORT = qw( GetMaxDateDataBiblio DelFromDataBiblio AddDataBiblio GetDataFromJson DelFromDataBiblioFromBiblionumber AddDataBiblioFromBiblionumber) ;
 
 use strict ;
 use warnings ;
 use Catmandu ;
 use Catmandu::Util qw(:io);
+use JSON ;
 
 use kibini::db ;
 
@@ -90,6 +91,49 @@ sub AddDataBiblio {
     }
     $sth->finish();
     return $i ;
+}
+
+sub DelFromDataBiblioFromBiblionumber {
+    my ($dbh, $table, $biblionumber) = @_ ;
+    my $req = "SELECT biblionumber FROM koha_prod.$table WHERE biblionumber = ?" ;
+    my $sth = $dbh->prepare($req) ;
+    $sth->execute($biblionumber) ;
+    my $i = 0 ;
+    while ( my $biblionumber = $sth->fetchrow_array() ) {
+        my $req = "DELETE FROM statdb.data_biblio WHERE biblionumber = ?" ;
+        my $sth = $dbh->prepare($req) ;
+        $sth->execute($biblionumber) ;
+        $i++ ;
+    }
+    $sth->finish();
+    return $i ;
+}
+
+sub AddDataBiblioFromBiblionumber {
+    my ($dbh, $table, $biblionumber) = @_ ;
+    my $req = "SELECT biblionumber FROM koha_prod.$table WHERE biblionumber = ?" ;
+    my $sth = $dbh->prepare($req) ;
+    $sth->execute($biblionumber) ;
+    my $i = 0 ;
+    while ( my $biblionumber = $sth->fetchrow_array() ) {
+        my ($itemtype, $marcxml) = _GetKohaBiblioitems($dbh, $table, $biblionumber) ;
+        my $json = _ConvertMarcToJSON($marcxml) ;
+        _InsertIntoDataBiblio($dbh, $table, $biblionumber, $itemtype, $json) ;
+        $i++ ;
+    }
+    $sth->finish();
+    return $i ;
+}
+
+sub GetDataFromJson {
+    my ($dbh, $biblionumber) = @_ ;
+    my $req = "SELECT bibliodata FROM statdb.data_biblio WHERE biblionumber = ?" ;
+    my $sth = $dbh->prepare($req) ;
+    $sth->execute($biblionumber) ;
+    my $bibliodata = $sth->fetchrow_array() ;
+    $bibliodata = from_json($bibliodata) ;
+    $sth->finish();
+    return $bibliodata ;
 }
 
 1 ;
