@@ -64,13 +64,13 @@ then
 fi
 
 # CHAQUE DIMANCHE
-if [ $dayofweek -eq 7 ]
-then
+#if [ $dayofweek -eq 7 ]
+#then
     # On recrée les index items et catalogue dans ES
 #    perl $dir/es_items.pl
 #    bash $dir/catmandu_es.sh
 
-fi
+#fi
 
 # CHAQUE JOUR
 # On supprime les logs crontab de plus de 30 jours
