@@ -32,7 +32,7 @@
 						<option value="Rédaction article/collaboration ouvrage">Rédaction article/collaboration ouvrage</option>
 						<option value="Rencontre">Rencontre</option>
 						<option value="Visite bibliothèque/présentation des services">Visite bibliothèque/présentation des services</option>
-						<option value="Stand de présentation de services à l'extérieur">Stand de présentation de services à l'extérieur</option>
+						<option value="Stand présentation services/métier">Stand présentation services/métier</option>
 						<option value="Autres">Autres</option>
 					</select>
 				</div>				
@@ -48,16 +48,7 @@
 					<label class="control-label" for="referent_action">
 						Menée par
 					</label>
-					<select class="form-control" name="referent_action" id="referent_action">
-						<option selected="selected"></option>
-						<option value="Pôle Jeune public">Pôle Jeune public</option>
-						<option value="Pôle LAC">Pôle LAC</option>
-						<option value="Pôle CRIN">Pôle CRIN</option>
-						<option value="POOLP">POOLP</option>
-						<option value="Pôle Patrimoine">Pôle Patrimoine</option>
-						<option value="Pôle administratif">Pôle administratif</option>
-						<option value="Autre">Autres</option>
-					</select>
+					<input class="form-control" id="referent_action" name="referent_action" type="text"/>
 				</div>					
 				
 				<div class="form-group ">
@@ -68,6 +59,7 @@
 						<option selected="selected"></option>
 						<option value="Associations">Associations</option>
 						<option value="Bibliothèques">Bibliothèques</option>
+						<option value="Etablissements scolaires">Etablissements scolaires</option>
 						<option value="Hôpitaux">Hôpitaux</option>
 						<option value="Prisons, PJJ">Prisons, PJJ</option>
 						<option value="Maisons de retraite, EHPAD">Maisons de retraite, EHPAD</option>
