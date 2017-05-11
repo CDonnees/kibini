@@ -9,19 +9,19 @@
 								<th>Type de structure</th>
 								<th>Nom de la structure</th>
 								<th>Nombre de participants</th>
-								<th>Nom du référent</th>
+								<th>Nom du rÃ©fÃ©rent</th>
 				</thead>
 				<tbody>
 							[% FOREACH action IN actions %]
 							<tr>
-								<td>[% date %]</td>
-								<td>[% lieu %]</td>
-								<td>[% type %]</td>
-								<td>[% nom %]</td>
-								<td>[% type_structure %]</td>
-								<td>[% nom_structure %]</td>
-								<td>[% participants %]</td>
-								<td>[% referent_action %]</td>
+								<td>[% action.date %]</td>
+								<td>[% action.lieu %]</td>
+								<td>[% action.type %]</td>
+								<td>[% action.nom %]</td>
+								<td>[% action.type_structure %]</td>
+								<td>[% action.nom_structure %]</td>
+								<td>[% action.participants %]</td>
+								<td>[% action.referent_action %]</td>
 							</tr>    
 							[% END %]
 				</tbody>
@@ -43,7 +43,7 @@
 					infoPostFix:    "",
 					loadingRecords: "Chargement en cours...",
 					zeroRecords:    "Aucun &eacute;l&eacute;ment &agrave; afficher",
-					emptyTable:     "Aucune donnée disponible dans le tableau",
+					emptyTable:     "Aucune donnÃ©e disponible dans le tableau",
 					paginate: {
 						first:      "Premier",
 						previous:   "Pr&eacute;c&eacute;dent",
@@ -52,7 +52,7 @@
 					},
 					aria: {
 						sortAscending:  ": activer pour trier la colonne par ordre croissant",
-						sortDescending: ": activer pour trier la colonne par ordre décroissant"
+						sortDescending: ": activer pour trier la colonne par ordre dÃ©croissant"
 					}
 				}
 			});

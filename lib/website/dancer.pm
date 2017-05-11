@@ -12,6 +12,7 @@ use collections::details ;
 use collections::suggestions ;
 use salleEtude::form ;
 use action_culturelle ;
+use action_coop::form ;
 
 our $VERSION = '0.1';
 
@@ -40,7 +41,7 @@ get '/' => sub {
                 label2 => 'Les tableaux de bord de La Grand-Plage',
 				label3 => 'Quels sont les services proposés ?',
                 dashboard => {
-					src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Les-services-propos%C3%A9s-%C3%A0-la-Grand-Plage?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-15m,mode:absolute,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:\'La-Grand-Plage,-qu!\'est-ce-que-c!\'est-questionmark-\',panelIndex:1,row:1,size_x:4,size_y:3,type:visualization),(col:1,id:\'Services-de-la-M%C3%A9diath%C3%A8que-(2017)\',panelIndex:3,row:4,size_x:12,size_y:4,type:visualization),(col:5,id:\'L!\'outil-Kibini,-qu!\'est-ce-que-c!\'est-questionmark-\',panelIndex:4,row:1,size_x:8,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'*\')),title:\'Les%20services%20propos%C3%A9s%20%C3%A0%20la%20Grand-Plage\',uiState:())',
+					src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Les-services-propos%C3%A9s-%C3%A0-la-Grand-Plage?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-15m,mode:quick,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:\'Services-de-la-M%C3%A9diath%C3%A8que-(2017)\',panelIndex:3,row:5,size_x:12,size_y:5,type:visualization),(col:1,id:\'L!\'outil-Kibini,-qu!\'est-ce-que-c!\'est-questionmark-\',panelIndex:4,row:1,size_x:12,size_y:4,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'*\')),title:\'Les%20services%20propos%C3%A9s%20%C3%A0%20la%20Grand-Plage\',uiState:())',
             height => '1200px'
         }
     };
@@ -553,6 +554,34 @@ post 'form/action_culturelle/post' => sub {
     };
 };
 
+# Actions de coopération
+get 'form/action_coop' => sub {
+		my $list_actions = GetListActionsCooperation() ;
+		template 'action_coop', {
+                label1 => "Action de coopération",
+				actions => $list_actions
+        };
+};
+
+post 'form/action_coop/post' => sub {
+        my $date = params->{'date'} ;
+		my $lieu = params->{'lieu'} ;
+		my $type = params->{'type_action'} ;
+		my $nom = params->{'nom_action'} ;
+		my $type_structure = params->{'type_structure'} ;
+		my $nom_structure = params->{'nom_structure'} ;
+		my $participants = params->{'participants'} ;
+		my $referent_action = params->{'referent_action'} ;
+
+		
+		AddActionCooperation( $date, $lieu, $type, $nom, $type_structure, $nom_structure, $participants, $referent_action ) ;
+		
+		my $list_actions = GetListActionsCooperation() ;
+        template 'action_coop', {
+                label1 => "Action de coopération",
+				actions => $list_actions
+        };
+};
 
 true;
 

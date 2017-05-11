@@ -10,8 +10,8 @@
 		
 <div class="container">
     <ul class="nav nav-tabs">
-        <li class="nav active"><a href="#A" data-toggle="tab">Décrire une action</a></li>
-        <li class="nav"><a href="#B" data-toggle="tab">Voir les actions enregistrées</a></li>
+        <li class="nav active"><a href="#A" data-toggle="tab">DÃ©crire une action</a></li>
+        <li class="nav"><a href="#B" data-toggle="tab">Voir les actions enregistrÃ©es</a></li>
     </ul>
 
     <!-- Tab panes -->
