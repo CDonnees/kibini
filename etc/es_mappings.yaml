@@ -319,6 +319,24 @@ adherents_tout:
         sexe:
           index: not_analyzed
           type: string
+catalogue:
+  mappings:
+    cata:
+      properties:
+        biblionumber:
+          type: integer
+        ark:
+          index: not_analyzed
+          type: string
+        isbn:
+          index: not_analyzed
+          type: string
+        patrimoine:
+          index: not_analyzed
+          type: string
+        support:
+          index: not_analyzed
+          type: string
 documents_synth:
   mappings:
     documents:
