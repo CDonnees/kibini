@@ -29,7 +29,7 @@ if exists(vd.action)
 else
 	add_field(qa.vd.action, "vendangeur action non spécifiée")
 end
-lookup(vd.action, "/home/kibini/kibini_prod/etc/catmandu_lk_vd.txt", sep_char:"|", default:"N/A")
+lookup(vd.action, "/home/kibini/kibini_prod/etc/catmandu_lk_vd.txt", sep_char:"|", default:"Autre")
 
 marc_map(091b, vd.date) # remettre la date au format YYYY-MM-DD
 if exists(vd.date)
@@ -45,7 +45,7 @@ if exists(bib.type)
 else
 	add_field(qa.bib.type, "support non spécifié")
 end
-lookup(bib.type, "/home/kibini/kibini_prod/etc/catmandu_lk_support.txt", sep_char:"|", default:"N/A")
+lookup(bib.type, "/home/kibini/kibini_prod/etc/catmandu_lk_support.txt", sep_char:"|", default:"Autre")
 
 # 100
 marc_map('100/9-12',bib.date)
@@ -63,7 +63,7 @@ else
 	add_field(qa.bib.language, "langue non spécifiée")
 end
 split_field(bib.language,'###')
-lookup(bib.language.*, "/home/kibini/kibini_prod/etc/catmandu_lk_langues.txt", sep_char:'|',default:'N/A')
+lookup(bib.language.*, "/home/kibini/kibini_prod/etc/catmandu_lk_langues.txt", sep_char:'|',default:'Autre')
 
 # 200 : titre
 marc_map(200ae,bib.title.$append, join:", ")
@@ -78,7 +78,7 @@ if exists(bib.audience)
 else
 	add_field(qa.bib.audience, "public non spécifié")
 end
-lookup(bib.audience, "/home/kibini/kibini_prod/etc/catmandu_lk_publics.txt", sep_char:'|',default:'N/A')
+lookup(bib.audience, "/home/kibini/kibini_prod/etc/catmandu_lk_publics.txt", sep_char:'|',default:'Autre')
 
 # 34? : ean
 
@@ -92,15 +92,30 @@ marc_map(609axyz,bib.subject.$append, join:" -- ")
 marc_map(609a,bib.subject_main.$append, join:" -- ")
 
 # 700 : auteur / contributeur
-marc_map(700ab,bib.creator.$append, join:", ")
-marc_map(701ab,bib.creator.$append, join:", ")
-marc_map(710a,bib.creator.$append, join:", ")
-marc_map(711a,bib.creator.$append, join:", ")
+marc_map(700abf,bib.creator.$append, join:", ")
+marc_map(701abf,bib.creator.$append, join:", ")
+marc_map(710af,bib.creator.$append, join:", ")
+marc_map(711af,bib.creator.$append, join:", ")
 
-marc_map(702ab,bib.contributor.$append, join:", ")
-marc_map(712a,bib.contributor.$append, join:", ")
+# Comment faire pour récupérer aussi id_auth et les envoyer dans autre champ ?
+#marc_map(700abf39,bib.creator.$append, join:"###")
+#marc_map(701abf39,bib.creator.$append, join:"###")
+#marc_map(710af39,bib.creator.$append, join:"###")
+#marc_map(711af39,bib.creator.$append, join:"###")
+#split_field(bib.creator.*,'###')
+
+marc_map(702abf,bib.contributor.$append, join:", ")
+marc_map(712af,bib.contributor.$append, join:", ")
 
 # 801 : agence de catalogage
+marc_map(801b,bib.agence_cat.$append, join:", ")
+if exists(bib.audience)
+    add_field(qa.bib.agence_cat, "agence de catalogage spécifiée")
+else
+	add_field(qa.bib.agence_cat, "agence de catalogage non spécifiée")
+end
+copy_field(bib.agence_cat,bib.agence_cat_nor)
+lookup(bib.agence_cat_nor.*, "/home/kibini/kibini_prod/etc/catmandu_lk_agence_cata.txt", sep_char:'|',default:'Autre')
 
 # Présence d'un id type isbn, issn, ean
 if exists(bib.identifier)
@@ -110,26 +125,6 @@ else
 	add_field(vd.identifier,'isbn issn ean présent')
 end
 
-
-
-
-
-
-
-
-# replace_all(date,"\D+","")
-
-
-
-
-
-
-
-
-
-
 copy_field(_id,biblionumber)
 
 retain(biblionumber, bib, qa, br)
-
-

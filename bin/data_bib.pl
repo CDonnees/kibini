@@ -7,7 +7,7 @@ use FindBin qw( $Bin ) ;
 use lib "$Bin/../lib" ;
 use kibini::db ;
 use kibini::log ;
-use collections::biblio ;
+use collections::biblio2 ;
 
 my $log_message ;
 my $process = "data_biblio.pl" ;
@@ -32,8 +32,8 @@ $log_message = "$process : $j rows deleted" ;
 AddCrontabLog($log_message) ;
 
 foreach my $table (@tables) {
-    my $count = AddDataBiblio2($dbh, $table, $maxtimestamp) ;
-    $i = $i + $count ;
+    #my $count = AddDataBiblio($dbh, $table, $maxtimestamp) ;
+    #$i = $i + $count ;
 }
 
 

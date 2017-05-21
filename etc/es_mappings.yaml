@@ -321,22 +321,100 @@ adherents_tout:
           type: string
 catalogue:
   mappings:
-    cata:
+    biblio:
       properties:
+        bib:
+          properties:
+            agence_cat:
+              index: not_analyzed
+              type: string
+            agence_cat_nor:
+              index: not_analyzed
+              type: string
+            ark_bnf:
+              index: not_analyzed
+              type: string
+            audience:
+              index: not_analyzed
+              type: string
+            contributor:
+              index: not_analyzed
+              type: string
+            creator:
+              index: not_analyzed
+              type: string
+            date:
+              type: string
+            identifier:
+              properties:
+                ean:
+                  index: not_analyzed
+                  type: string
+                isbn:
+                  index: not_analyzed
+                  type: string
+                issn:
+                  index: not_analyzed
+                  type: string
+            language:
+              index: not_analyzed
+              type: string
+            publisher:
+              index: not_analyzed
+              type: string
+            subject:
+              index: not_analyzed
+              type: string
+            subject_main:
+              index: not_analyzed
+              type: string
+            title:
+              index: not_analyzed
+              type: string
+            type:
+              index: not_analyzed
+              type: string
         biblionumber:
           type: integer
-        ark:
-          index: not_analyzed
-          type: string
-        isbn:
-          index: not_analyzed
-          type: string
-        patrimoine:
-          index: not_analyzed
-          type: string
-        support:
-          index: not_analyzed
-          type: string
+        items:
+          properties:
+            count:
+              type: integer
+        manage:
+          properties:
+            datecreated:
+              format: yyyy-MM-dd
+              type: date
+        qa:
+          properties:
+            bib:
+              properties:
+                agence_cat:
+                  index: not_analyzed
+                  type: string
+                ark_rbx:
+                  index: not_analyzed
+                  type: string
+                audience:
+                  index: not_analyzed
+                  type: string
+                date:
+                  index: not_analyzed
+                  type: string
+                language:
+                  index: not_analyzed
+                  type: string
+                type:
+                  index: not_analyzed
+                  type: string
+            vd:
+              properties:
+                action:
+                  index: not_analyzed
+                  type: string
+                vendange:
+                  index: not_analyzed
+                  type: string
 documents_synth:
   mappings:
     documents:
