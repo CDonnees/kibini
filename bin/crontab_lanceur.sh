@@ -1,5 +1,6 @@
 #! /bin/bash
 
+date=`date +%Y-%m-%d`
 dayofweek=`date +%u`
 dayofmonth=`date +%e`
 
@@ -36,6 +37,7 @@ bash $dir/web.sh
 
 # On met à jour la table statdb.data_biblio
 perl $dir/data_biblio.pl
+perl $dir/data_bib.pl # test statdb.data_bib
 
 # On incorpore dans statdb et ES les prêts de la veille
 perl $dir/statdb_issues.pl
@@ -70,6 +72,12 @@ fi
 #    perl $dir/es_items.pl
 #    bash $dir/catmandu_es.sh
 
+#fi
+
+# EXCEPTIONNELLEMENT LE 23/05/2017
+#if [ $date == "2017-05-23" ]
+#then
+#    perl $dir/data_bib2.pl
 #fi
 
 # CHAQUE JOUR

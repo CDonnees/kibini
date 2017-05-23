@@ -2,7 +2,7 @@ package collections::biblio2 ;
 
 use Exporter ;
 @ISA = qw(Exporter) ;
-@EXPORT = qw( GetMaxDateDataBiblio DelFromDataBiblio AddDataBiblio GetDataFromJson DelFromDataBiblioFromBiblionumber AddDataBiblioFromBiblionumber ) ;
+@EXPORT = qw( GetMaxDateDataBiblio DelFromDataBiblio AddDataBiblio GetDataFromJson DelFromDataBiblioFromBiblionumber AddDataBiblioFromBiblionumber GetMinBiblionumberFromStatdbDataBib ) ;
 
 use strict ;
 use warnings ;
@@ -63,7 +63,7 @@ sub GetMaxDateDataBiblio {
 }
 
 sub DelFromDataBiblio {
-    my ($dbh, $table, $maxtimestamp) = @_ ;
+    my ($dbh, $table, $maxtimestamp, $e) = @_ ;
     my $req = "SELECT biblionumber FROM koha_prod.$table WHERE timestamp >= ?" ;
     my $sth = $dbh->prepare($req) ;
     $sth->execute($maxtimestamp) ;
@@ -75,21 +75,34 @@ sub DelFromDataBiblio {
         if ( $resp == 1 ) {
             $i++ ;
         }
+        _DelBiblioFromES($e, $biblionumber) ;
     }
     $sth->finish();
     return $i ;
 }
 
 sub AddDataBiblio {
-    my ($dbh, $table, $maxtimestamp) = @_ ;
+    my ($dbh, $table, $maxtimestamp, $e) = @_ ;
     my $req = "SELECT biblionumber FROM koha_prod.$table WHERE timestamp >= ?" ;
     my $sth = $dbh->prepare($req) ;
     $sth->execute($maxtimestamp) ;
     my $i = 0 ;
     while ( my $biblionumber = $sth->fetchrow_array() ) {
+        deleteDeletedIfInBiblio($dbh, $biblionumber) ;
         my ($marcxml) = _GetKohaBiblioitems($dbh, $table, $biblionumber) ;
         my $json = _ConvertMarcToJSON($marcxml) ;
-        _InsertIntoDataBiblio($dbh, $table, $biblionumber, $json) ;
+        my $deleted = _InsertIntoDataBiblio($dbh, $table, $biblionumber, $json) ;
+        my $datecreated = _GetRecordCreationDate($dbh, $table, $biblionumber) ;
+        my $items_count = _GetRecordItemsCount($dbh, $table, $biblionumber) ;
+        if ( $json ) {
+            my $data = from_json($json) ;
+            $data->{'items'}->{'count'} = $items_count ;
+            $data->{'manage'}->{'datecreated'} = $datecreated ;
+            $json = to_json($data) ;
+        }
+        if ( $deleted == 0 && $json ) {
+            _AddBiblioToES($e, $biblionumber, $json) ;
+        }
         $i++ ;
     }
     $sth->finish();
@@ -119,6 +132,7 @@ sub AddDataBiblioFromBiblionumber {
     $sth->execute($biblionumber) ;
     my $i = 0 ;
     while ( my $biblionumber = $sth->fetchrow_array() ) {
+        deleteDeletedIfInBiblio($dbh, $biblionumber) ;
         my ($marcxml) = _GetKohaBiblioitems($dbh, $table, $biblionumber) ;
         my $json = _ConvertMarcToJSON($marcxml) ;
         my $deleted = _InsertIntoDataBiblio($dbh, $table, $biblionumber, $json) ;
@@ -163,6 +177,16 @@ sub _AddBiblioToES {
     return \%index ;
 }
 
+sub _DelBiblioFromES {
+    my ($e, $biblionumber) = @_ ;
+    my %index = (
+        index   => 'catalogue',
+        type    => 'biblio',
+        id      => $biblionumber
+    ) ;
+    $e->delete(\%index) ;
+}
+
 sub _GetRecordCreationDate {
     my ($dbh, $table, $biblionumber) = @_ ;
     if ( $table eq "biblioitems" ) {
@@ -189,6 +213,34 @@ sub _GetRecordItemsCount {
         $sth->finish() ;
     }
     return $count ;
+}
+
+sub deleteDeletedIfInBiblio {
+    my ($dbh, $biblionumber) = @_ ;
+    my $deleted_row = 0 ;
+    my $req = "SELECT COUNT(*) FROM statdb.data_bib WHERE biblionumber = ?" ;
+    my $sth = $dbh->prepare($req) ;
+    $sth->execute($biblionumber) ;
+    my $count = $sth->fetchrow_array() ;
+    $sth->finish() ;
+    if ( $count > 0 ) {
+        my $req = "DELETE FROM statdb.data_bib WHERE biblionumber = ?" ;
+        my $sth = $dbh->prepare($req) ;
+        $sth->execute($biblionumber) ;
+        $deleted_row = 1 ;
+    }
+    $sth->finish() ;
+    return $deleted_row ;
+}
+
+sub GetMinBiblionumberFromStatdbDataBib {
+    my ($dbh) = @_ ;
+    my $req = "SELECT MIN(biblionumber) FROM statdb.data_bib" ;
+    my $sth = $dbh->prepare($req) ;
+    $sth->execute() ;
+    my $biblionumber = $sth->fetchrow_array() ;
+    $sth->finish() ;
+    return $biblionumber ;
 }
 
 1 ;

@@ -27,7 +27,8 @@ my $dbh = GetDbh() ;
 my $i = 0 ;
 my $j = 0 ;
 
-my $biblionumber = 300000 ;
+my $biblionumber = GetMinBiblionumberFromStatdbDataBib($dbh) ;
+$biblionumber = $biblionumber + 1 ;
 my $minbiblionumber = 1 ;
 
 while ( $biblionumber >= $minbiblionumber ) {

@@ -2,19 +2,24 @@
 
 use strict ;
 use warnings ;
+use Search::Elasticsearch ;
 use FindBin qw( $Bin ) ;
 
 use lib "$Bin/../lib" ;
 use kibini::db ;
+use kibini::elasticsearch ;
 use kibini::log ;
 use collections::biblio2 ;
 
 my $log_message ;
-my $process = "data_biblio.pl" ;
+my $process = "data_bib.pl" ;
 # On log le début de l'opération
 $log_message = "$process : beginning" ;
 AddCrontabLog($log_message) ;
 
+my $es_node = GetEsNode() ;
+my %params = ( nodes => $es_node ) ;
+my $e = Search::Elasticsearch->new( %params ) ;
 
 my $dbh = GetDbh() ;
 my $i = 0 ;
@@ -32,8 +37,8 @@ $log_message = "$process : $j rows deleted" ;
 AddCrontabLog($log_message) ;
 
 foreach my $table (@tables) {
-    #my $count = AddDataBiblio($dbh, $table, $maxtimestamp) ;
-    #$i = $i + $count ;
+    my $count = AddDataBiblio($dbh, $table, $maxtimestamp) ;
+    $i = $i + $count ;
 }
 
 
