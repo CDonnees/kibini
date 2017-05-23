@@ -1,6 +1,0 @@
-marc_map(003_, dc.identifier)
-
-marc_map('100/9-12', dc.date)
-
-
-retain(_id, dc)
