@@ -13,6 +13,7 @@ use collections::suggestions ;
 use salleEtude::form ;
 use action_culturelle ;
 use action_coop::form ;
+use liste ;
 
 our $VERSION = '0.1';
 
@@ -41,7 +42,7 @@ get '/' => sub {
                 label2 => 'Les tableaux de bord de La Grand-Plage',
 				label3 => 'Quels sont les services proposés ?',
                 dashboard => {
-					src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Les-services-propos%C3%A9s-%C3%A0-la-Grand-Plage?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-15m,mode:quick,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:\'Services-de-la-M%C3%A9diath%C3%A8que-(2017)\',panelIndex:3,row:5,size_x:12,size_y:5,type:visualization),(col:1,id:\'L!\'outil-Kibini,-qu!\'est-ce-que-c!\'est-questionmark-\',panelIndex:4,row:1,size_x:12,size_y:4,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'*\')),title:\'Les%20services%20propos%C3%A9s%20%C3%A0%20la%20Grand-Plage\',uiState:())',
+					src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Les-services-propos%C3%A9s-%C3%A0-la-Grand-Plage?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-15m,mode:relative,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:\'Services-de-la-M%C3%A9diath%C3%A8que-(2017)\',panelIndex:3,row:5,size_x:12,size_y:5,type:visualization),(col:1,id:\'L!\'outil-Kibini,-qu!\'est-ce-que-c!\'est-questionmark-\',panelIndex:4,row:1,size_x:12,size_y:4,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'*\')),title:\'Les%20services%20propos%C3%A9s%20%C3%A0%20la%20Grand-Plage\',uiState:())',
             height => '1200px'
         }
     };
@@ -55,7 +56,7 @@ get 'grand-plage/activites' => sub {
 		label2 => 'Quelle activité ces 30 derniers jours ?',
 		label3 => 'Quelques chiffres',
 		dashboard => {
-            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Page-d\'accueil-:-les-30-derniers-jours-%C3%A0-La-Grand-Plage?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-30d,mode:quick,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:\'Page-d!\'accueil-:-nouveaux-inscrits\',panelIndex:8,row:3,size_x:3,size_y:2,type:visualization),(col:4,id:\'Page-d!\'accueil-:-nombre-de-connexions-de-Webkiosk-par-jour\',panelIndex:9,row:5,size_x:6,size_y:2,type:visualization),(col:1,id:Entr%C3%A9es,panelIndex:22,row:1,size_x:3,size_y:2,type:visualization),(col:4,id:Pr%C3%AAts-par-jour,panelIndex:25,row:7,size_x:6,size_y:2,type:visualization),(col:4,id:Entr%C3%A9es-par-jour,panelIndex:26,row:1,size_x:6,size_y:2,type:visualization),(col:4,id:\'Page-d!\'accueil-:-nombre-d!\'inscriptions-par-jour\',panelIndex:27,row:3,size_x:6,size_y:2,type:visualization),(col:4,id:R%C3%A9servations-par-jour,panelIndex:32,row:9,size_x:6,size_y:2,type:visualization),(col:1,id:\'Salle-d!\'%C3%A9tude\',panelIndex:34,row:11,size_x:3,size_y:2,type:visualization),(col:4,id:\'Salle-d!\'%C3%A9tude-par-jour\',panelIndex:35,row:11,size_x:6,size_y:2,type:visualization),(col:10,id:\'Utilisateurs-salle-d!\'%C3%A9tude\',panelIndex:36,row:9,size_x:3,size_y:2,type:visualization),(col:1,id:Nombre-de-pr%C3%AAts,panelIndex:37,row:5,size_x:3,size_y:2,type:visualization),(col:1,id:Webkiosk,panelIndex:38,row:7,size_x:3,size_y:2,type:visualization),(col:1,id:Nombre-de-r%C3%A9servations,panelIndex:39,row:9,size_x:3,size_y:2,type:visualization),(col:10,id:Nouveaux-inscrits,panelIndex:40,row:1,size_x:3,size_y:4,type:visualization),(col:10,id:Emprunteurs-distincts,panelIndex:41,row:5,size_x:3,size_y:2,type:visualization),(col:10,id:Utilisateurs-R%C3%A9servations,panelIndex:43,row:7,size_x:3,size_y:2,type:visualization),(col:10,id:Utilisateurs-Webkiosk,panelIndex:44,row:11,size_x:3,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'NOT%20%22Automate%209%22\')),title:\'Page%20d!\'accueil%20:%20les%2030%20derniers%20jours%20%C3%A0%20La%20Grand%20Plage\',uiState:(P-25:(vis:(legendOpen:!f)),P-26:(vis:(legendOpen:!f)),P-32:(vis:(legendOpen:!f)),P-35:(vis:(legendOpen:!f))))',
+            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Page-d\'accueil-:-les-30-derniers-jours-%C3%A0-La-Grand-Plage?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-30d,mode:relative,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:4,id:\'Page-d!\'accueil-:-nombre-de-connexions-de-Webkiosk-par-jour\',panelIndex:9,row:7,size_x:6,size_y:2,type:visualization),(col:1,id:Entr%C3%A9es,panelIndex:22,row:1,size_x:3,size_y:2,type:visualization),(col:4,id:Pr%C3%AAts-par-jour,panelIndex:25,row:5,size_x:6,size_y:2,type:visualization),(col:4,id:Entr%C3%A9es-par-jour,panelIndex:26,row:1,size_x:6,size_y:2,type:visualization),(col:4,id:\'Page-d!\'accueil-:-nombre-d!\'inscriptions-par-jour\',panelIndex:27,row:3,size_x:6,size_y:2,type:visualization),(col:4,id:R%C3%A9servations-par-jour,panelIndex:32,row:9,size_x:6,size_y:2,type:visualization),(col:4,id:\'Salle-d!\'%C3%A9tude-par-jour\',panelIndex:35,row:11,size_x:6,size_y:2,type:visualization),(col:10,id:\'Utilisateurs-salle-d!\'%C3%A9tude\',panelIndex:36,row:11,size_x:3,size_y:2,type:visualization),(col:1,id:Nombre-de-pr%C3%AAts,panelIndex:37,row:5,size_x:3,size_y:2,type:visualization),(col:1,id:Webkiosk,panelIndex:38,row:7,size_x:3,size_y:2,type:visualization),(col:1,id:Nombre-de-r%C3%A9servations,panelIndex:39,row:9,size_x:3,size_y:2,type:visualization),(col:10,id:Nouveaux-inscrits,panelIndex:40,row:1,size_x:3,size_y:2,type:visualization),(col:10,id:Emprunteurs-distincts,panelIndex:41,row:5,size_x:3,size_y:2,type:visualization),(col:10,id:Utilisateurs-R%C3%A9servations,panelIndex:43,row:9,size_x:3,size_y:2,type:visualization),(col:10,id:Utilisateurs-Webkiosk,panelIndex:44,row:7,size_x:3,size_y:2,type:visualization),(col:1,id:Nouvelles-inscriptions-M%C3%A9diath%C3%A8que,panelIndex:45,row:3,size_x:3,size_y:2,type:visualization),(col:10,id:Nouvelles-inscriptions-Z%C3%A8bre,panelIndex:46,row:3,size_x:3,size_y:2,type:visualization),(col:1,id:\'Nombre-de-visites-salle-d!\'%C3%A9tude\',panelIndex:47,row:11,size_x:3,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'NOT%20%22Automate%209%22\')),title:\'Page%20d!\'accueil%20:%20les%2030%20derniers%20jours%20%C3%A0%20La%20Grand%20Plage\',uiState:(P-25:(vis:(legendOpen:!f)),P-26:(vis:(legendOpen:!f)),P-32:(vis:(legendOpen:!f)),P-35:(vis:(legendOpen:!f))))',
             height => '1400px'
         }
 
@@ -150,7 +151,7 @@ get '/mediatheque/activites' => sub {
 		label1 => 'La Médiathèque',
 		label2 => 'Quelle activité à la Médiathèque ?',
 		dashboard => {
-            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/L\'activit%C3%A9-de-la-Grand-Plage?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-1y,mode:relative,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:\'Nombre-d!\'entr%C3%A9es-par-mois\',panelIndex:1,row:1,size_x:12,size_y:3,type:visualization),(col:1,id:Connexions-Webkiosk-nombre-de-connexions-par-mois,panelIndex:4,row:7,size_x:12,size_y:3,type:visualization),(col:1,id:Nombre-de-r%C3%A9servations-retir%C3%A9es-par-mois,panelIndex:14,row:10,size_x:12,size_y:3,type:visualization),(col:1,id:Nombre-de-pr%C3%AAts-par-mois-M%C3%A9diath%C3%A8que,panelIndex:18,row:4,size_x:12,size_y:3,type:visualization),(col:1,id:\'Salle-d!\'%C3%A9tude-par-mois\',panelIndex:19,row:13,size_x:12,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'*\')),title:\'L!\'activit%C3%A9%20de%20la%20Grand%20Plage\',uiState:(P-1:(vis:(legendOpen:!f)),P-18:(vis:(legendOpen:!f)),P-19:(vis:(legendOpen:!f)),P-4:(vis:(legendOpen:!f))))',
+            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/L\'activit%C3%A9-de-la-M%C3%A9diath%C3%A8que-?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-1y,mode:quick,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:\'Nombre-d!\'entr%C3%A9es-par-mois\',panelIndex:1,row:1,size_x:12,size_y:3,type:visualization),(col:1,id:Connexions-Webkiosk-nombre-de-connexions-par-mois,panelIndex:4,row:7,size_x:12,size_y:3,type:visualization),(col:1,id:Nombre-de-r%C3%A9servations-retir%C3%A9es-par-mois,panelIndex:14,row:10,size_x:12,size_y:3,type:visualization),(col:1,id:Nombre-de-pr%C3%AAts-par-mois-M%C3%A9diath%C3%A8que,panelIndex:18,row:4,size_x:12,size_y:3,type:visualization),(col:1,id:\'Salle-d!\'%C3%A9tude-par-mois\',panelIndex:19,row:13,size_x:12,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'*\')),title:\'L!\'activit%C3%A9%20de%20la%20M%C3%A9diath%C3%A8que-\',uiState:(P-1:(vis:(legendOpen:!f)),P-18:(vis:(legendOpen:!f)),P-19:(vis:(legendOpen:!f)),P-4:(vis:(legendOpen:!f))))',
             height => '1700px'
         }
 	};
@@ -220,7 +221,7 @@ get '/mediatheque/webkiosk/profils' => sub {
 		label1 => 'La Médiathèque',
 		label2 => 'Qui utilise le service webkiosk?',
 		dashboard => {
-            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Utilisateurs-de-Webkiosk?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-1y,mode:quick,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:9,id:Utilisateurs-Webkiosk-par-%C3%A2ge,panelIndex:25,row:5,size_x:4,size_y:3,type:visualization),(col:1,id:Utilisateurs-Webkiosk-par-carte,panelIndex:26,row:5,size_x:4,size_y:3,type:visualization),(col:1,id:\'Nombre-d!\'utilisateurs-distincts-par-mois\',panelIndex:28,row:1,size_x:9,size_y:2,type:visualization),(col:10,id:Utilisateurs-de-Webkiosk,panelIndex:29,row:1,size_x:3,size_y:2,type:visualization),(col:1,id:Nombre-de-connexions-Webkiosk-par-mois,panelIndex:30,row:3,size_x:9,size_y:2,type:visualization),(col:10,id:Connexions-Webkiosk-nombre-total-depuis-12-mois,panelIndex:31,row:3,size_x:3,size_y:2,type:visualization),(col:5,id:Utilisateurs-Webkiosk-par-sexe,panelIndex:33,row:5,size_x:4,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'*\')),title:\'Utilisateurs%20de%20Webkiosk\',uiState:(P-25:(vis:(legendOpen:!f)),P-26:(vis:(legendOpen:!f)),P-28:(vis:(legendOpen:!f)),P-30:(vis:(legendOpen:!f))))',
+            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Utilisateurs-de-Webkiosk?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-1y,mode:relative,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:9,id:Utilisateurs-Webkiosk-par-%C3%A2ge,panelIndex:25,row:5,size_x:4,size_y:3,type:visualization),(col:1,id:Utilisateurs-Webkiosk-par-carte,panelIndex:26,row:5,size_x:4,size_y:3,type:visualization),(col:1,id:\'Nombre-d!\'utilisateurs-distincts-par-mois\',panelIndex:28,row:1,size_x:9,size_y:2,type:visualization),(col:10,id:Utilisateurs-de-Webkiosk,panelIndex:29,row:1,size_x:3,size_y:2,type:visualization),(col:1,id:Nombre-de-connexions-Webkiosk-par-mois,panelIndex:30,row:3,size_x:9,size_y:2,type:visualization),(col:10,id:Connexions-Webkiosk-nombre-total-depuis-12-mois,panelIndex:31,row:3,size_x:3,size_y:2,type:visualization),(col:5,id:Connexions-Webkiosk-par-ville,panelIndex:32,row:5,size_x:4,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'*\')),title:\'Utilisateurs%20de%20Webkiosk\',uiState:(P-25:(vis:(legendOpen:!f)),P-26:(vis:(legendOpen:!f)),P-28:(vis:(legendOpen:!f)),P-30:(vis:(legendOpen:!f)),P-32:(vis:(legendOpen:!f))))',
             height => '1000px'
         }
 	};
@@ -293,8 +294,8 @@ get '/zebre/collections/prets' => sub {
 		label2 => 'Collections',
 		label3 => 'Prêts',
 		dashboard => {
-            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Pr%C3%AAts-Z%C3%A8bre?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-1y,mode:relative,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:Nombre-de-pr%C3%AAts-par-collection,panelIndex:24,row:3,size_x:12,size_y:9,type:visualization),(col:1,id:Pr%C3%AAts-Z%C3%A8bre,panelIndex:26,row:1,size_x:6,size_y:2,type:visualization),(col:7,id:\'Nombre-d!\'emprunteurs-totaux-dans-le-Z%C3%A8bre\',panelIndex:27,row:1,size_x:6,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'pret_site:%20%22Z%C3%A8bre%22\')),title:\'Pr%C3%AAts%20Z%C3%A8bre\',uiState:())',
-            height => '1400px'
+            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Pr%C3%AAts-Z%C3%A8bre?embed=true&_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-1y%2Cmode%3Aquick%2Cto%3Anow))',
+            height => '1200px'
         }
 	};
 };
@@ -355,7 +356,7 @@ get '/collectivites/collections/emprunteurs' => sub {
 		label2 => 'Collections',
 		label3 => 'Emprunteurs',
 		dashboard => {
-            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Qui-sont-les-emprunteurs-du-service-collectivit%C3%A9s-questionmark-?embed=true&_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:now-1y,mode:quick,to:now))&_a=(filters:!(),options:(darkTheme:!f),panels:!((col:1,id:\'Nombre-d!\'emprunteurs-par-mois\',panelIndex:1,row:1,size_x:8,size_y:2,type:visualization),(col:1,id:Nombre-de-pr%C3%AAts-par-mois,panelIndex:3,row:3,size_x:8,size_y:2,type:visualization),(col:9,id:Pr%C3%AAts,panelIndex:4,row:3,size_x:4,size_y:2,type:visualization),(col:1,id:Emprunteurs-distincts-par-quartier-de-Roubaix,panelIndex:6,row:5,size_x:6,size_y:3,type:visualization),(col:7,id:Emprunteurs-distincts-par-ville,panelIndex:7,row:5,size_x:6,size_y:3,type:visualization),(col:9,id:Emprunteurs-distincts-par-%C3%A2ge-m%C3%A9diath%C3%A8que,panelIndex:8,row:8,size_x:4,size_y:3,type:visualization),(col:1,id:Emprunteurs-distincts-par-type-de-carte,panelIndex:9,row:8,size_x:4,size_y:3,type:visualization),(col:5,id:Emprunteurs-distincts-par-sexe,panelIndex:10,row:8,size_x:4,size_y:3,type:visualization),(col:9,id:\'Nombre-d!\'emprunteurs-\',panelIndex:11,row:1,size_x:4,size_y:2,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:\'doc_localisation:%20%22Magasin%20collectivit%C3%A9s%22\')),title:\'Qui%20sont%20les%20emprunteurs%20du%20service%20collectivit%C3%A9s%20%3F\',uiState:(P-1:(vis:(legendOpen:!f)),P-10:(vis:(legendOpen:!f)),P-3:(vis:(legendOpen:!f)),P-6:(vis:(legendOpen:!f)),P-7:(vis:(legendOpen:!f)),P-8:(vis:(legendOpen:!f)),P-9:(vis:(legendOpen:!f))))',
+            src => 'http://129.1.0.237:5601/app/kibana#/dashboard/Profil-emprunteurs-Collectivit%C3%A9s?embed=true&_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-1y%2Cmode%3Aquick%2Cto%3Anow))',
             height => '1200px'
         }
 	};
@@ -582,6 +583,22 @@ post 'form/action_coop/post' => sub {
 				actions => $list_actions
         };
 };
+
+
+# Listes de réservations et de perdus
+get 'liste/:type/:etage/:semaine' => sub {
+	my $type = params->{type} ;
+	my $etage = params->{etage} ;
+	my $semaine = params->{semaine} ;
+	
+	my ( $label1, $template, $rows ) = GetListData( $type, $etage, $semaine ) ;
+
+	template $template, {
+                label1 => $label1,
+				rows => $rows
+    };
+};
+
 
 true;
 

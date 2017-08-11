@@ -29,7 +29,7 @@ my $maxtimestamp = GetMaxDateDataBiblio($dbh) ;
 
 my @tables = qw( biblioitems deletedbiblioitems ) ;
 foreach my $table (@tables) {
-    my $count = DelFromDataBiblio($dbh, $table, $maxtimestamp) ;
+    my $count = DelFromDataBiblio($dbh, $table, $maxtimestamp, $e) ;
     $j = $j + $count ;
 }
 
@@ -37,7 +37,7 @@ $log_message = "$process : $j rows deleted" ;
 AddCrontabLog($log_message) ;
 
 foreach my $table (@tables) {
-    my $count = AddDataBiblio($dbh, $table, $maxtimestamp) ;
+    my $count = AddDataBiblio($dbh, $table, $maxtimestamp, $e) ;
     $i = $i + $count ;
 }
 

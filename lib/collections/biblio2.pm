@@ -2,7 +2,7 @@ package collections::biblio2 ;
 
 use Exporter ;
 @ISA = qw(Exporter) ;
-@EXPORT = qw( GetMaxDateDataBiblio DelFromDataBiblio AddDataBiblio GetDataFromJson DelFromDataBiblioFromBiblionumber AddDataBiblioFromBiblionumber GetMinBiblionumberFromStatdbDataBib ) ;
+@EXPORT = qw( GetMaxDateDataBiblio DelFromDataBiblio AddDataBiblio GetDataFromJson DelFromDataBiblioFromBiblionumber AddDataBiblioFromBiblionumber GetMinBiblionumberFromStatdbDataBib _DelBiblioFromES ) ;
 
 use strict ;
 use warnings ;
@@ -184,7 +184,10 @@ sub _DelBiblioFromES {
         type    => 'biblio',
         id      => $biblionumber
     ) ;
-    $e->delete(\%index) ;
+    my $exist = $e->exists(\%index) ;
+    if ( $exist ) {
+        $e->delete(\%index) ;
+    }
 }
 
 sub _GetRecordCreationDate {

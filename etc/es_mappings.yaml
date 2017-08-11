@@ -415,6 +415,164 @@ catalogue:
                 vendange:
                   index: not_analyzed
                   type: string
+catalogue2:
+  mappings:
+    biblio:
+      properties:
+        bib:
+          properties:
+            agence_cat:
+              type: string
+            agence_cat_nor:
+              type: string
+            ark_bnf:
+              type: string
+            audience:
+              type: string
+            contributor:
+              type: string
+            count_items:
+              type: string
+            creator:
+              type: string
+            date:
+              type: string
+            identifier:
+              properties:
+                ean:
+                  type: string
+                isbn:
+                  type: string
+                issn:
+                  type: string
+            items:
+              properties:
+                barcode:
+                  type: string
+                collection:
+                  properties:
+                    ccode:
+                      type: string
+                    lib1:
+                      type: string
+                    lib2:
+                      type: string
+                    lib3:
+                      type: string
+                    lib4:
+                      type: string
+                damaged:
+                  type: string
+                dateaccessioned:
+                  format: strict_date_optional_time||epoch_millis
+                  type: date
+                datelastseen:
+                  format: strict_date_optional_time||epoch_millis
+                  type: date
+                holdingbranch:
+                  type: string
+                homebranch:
+                  type: string
+                issues:
+                  properties:
+                    arret_bus:
+                      type: string
+                    borrower:
+                      properties:
+                        age:
+                          properties:
+                            age:
+                              type: string
+                            trinsee:
+                              type: string
+                            trmeda:
+                              type: string
+                            trmedb:
+                              type: string
+                            trmedc:
+                              type: string
+                        borrowernumber:
+                          type: string
+                        branch:
+                          type: string
+                        carte:
+                          type: string
+                        categorycode:
+                          type: string
+                        geo:
+                          properties:
+                            district:
+                              properties:
+                                irisInsee:
+                                  type: string
+                                irisNom:
+                                  type: string
+                                quartier:
+                                  type: string
+                            ville:
+                              type: string
+                    branch:
+                      type: string
+                    issue_id:
+                      type: string
+                    issuedate:
+                      type: string
+                    returndate:
+                      type: string
+                itemcallnumber:
+                  type: string
+                itemnumber:
+                  type: string
+                itype:
+                  type: string
+                location:
+                  type: string
+                lost:
+                  type: string
+                nb_issues:
+                  type: string
+                notforloan:
+                  type: string
+                price:
+                  type: string
+                withdrawn:
+                  type: string
+            language:
+              type: string
+            publisher:
+              type: string
+            subject:
+              type: string
+            subject_main:
+              type: string
+            title:
+              type: string
+            type:
+              type: string
+        biblionumber:
+          type: string
+        qa:
+          properties:
+            bib:
+              properties:
+                agence_cat:
+                  type: string
+                ark_rbx:
+                  type: string
+                audience:
+                  type: string
+                date:
+                  type: string
+                language:
+                  type: string
+                type:
+                  type: string
+            vd:
+              properties:
+                action:
+                  type: string
+                vendange:
+                  type: string
 documents_synth:
   mappings:
     documents:
@@ -704,6 +862,269 @@ items:
         titre:
           index: not_analyzed
           type: string
+periodiques:
+  mappings:
+    biblio:
+      properties:
+        bib:
+          properties:
+            agence_cat:
+              index: not_analyzed
+              type: string
+            agence_cat_nor:
+              index: not_analyzed
+              type: string
+            ark_bnf:
+              index: not_analyzed
+              type: string
+            audience:
+              index: not_analyzed
+              type: string
+            contributor:
+              index: not_analyzed
+              type: string
+            count_items:
+              index: not_analyzed
+              type: string
+            creator:
+              index: not_analyzed
+              type: string
+            date:
+              index: not_analyzed
+              type: string
+            identifier:
+              properties:
+                isbn:
+                  index: not_analyzed
+                  type: string
+                issn:
+                  index: not_analyzed
+                  type: string
+            items:
+              type: nested
+              properties:
+                barcode:
+                  index: not_analyzed
+                  type: string
+                collection:
+                  properties:
+                    ccode:
+                      index: not_analyzed
+                      type: string
+                    lib1:
+                      index: not_analyzed
+                      type: string
+                    lib2:
+                      index: not_analyzed
+                      type: string
+                    lib3:
+                      index: not_analyzed
+                      type: string
+                    lib4:
+                      index: not_analyzed
+                      type: string
+                damaged:
+                  type: string
+                  index: not_analyzed
+                dateaccessioned:
+                  format: strict_date_optional_time||epoch_millis
+                  type: date
+                datelastborrowed:
+                  format: strict_date_optional_time||epoch_millis
+                  type: date
+                datelastseen:
+                  format: strict_date_optional_time||epoch_millis
+                  type: date
+                holdingbranch:
+                  type: string
+                  index: not_analyzed
+                homebranch:
+                  type: string
+                  index: not_analyzed
+                issues:
+                  properties:
+                    age:
+                      type: string
+                    arret_bus:
+                      type: string
+                      index: not_analyzed
+                    borrower:
+                      properties:
+                        age:
+                          properties:
+                            age:
+                              index: not_analyzed
+                              type: string
+                            trinsee:
+                              index: not_analyzed
+                              type: string
+                            trmeda:
+                              index: not_analyzed
+                              type: string
+                            trmedb:
+                              index: not_analyzed
+                              type: string
+                            trmedc:
+                              index: not_analyzed
+                              type: string
+                        borrowernumber:
+                          type: string
+                          index: not_analyzed
+                        branch:
+                          index: not_analyzed
+                          type: string
+                        carte:
+                          index: not_analyzed
+                          type: string
+                        categorycode:
+                          index: not_analyzed
+                          type: string
+                        geo:
+                          properties:
+                            district:
+                              properties:
+                                irisInsee:
+                                  index: not_analyzed
+                                  type: string
+                                irisNom:
+                                  index: not_analyzed
+                                  type: string
+                                quartier:
+                                  index: not_analyzed
+                                  type: string
+                            ville:
+                              index: not_analyzed
+                              type: string
+                    borrowernumber:
+                      type: string
+                      index: not_analyzed
+                    branch:
+                      index: not_analyzed
+                      type: string
+                    branchcode:
+                      type: string
+                      index: not_analyzed
+                    categorycode:
+                      type: string
+                      index: not_analyzed
+                    date_due:
+                      type: string
+                      index: not_analyzed
+                    fidelite:
+                      type: string
+                      index: not_analyzed
+                    iris:
+                      type: string
+                      index: not_analyzed
+                    issue_id:
+                      index: not_analyzed
+                      type: string
+                    issuedate:
+                      index: not_analyzed
+                      type: string
+                    itemnumber:
+                      type: string
+                      index: not_analyzed
+                    renewals:
+                      type: string
+                      index: not_analyzed
+                    returndate:
+                      index: not_analyzed
+                      type: string
+                    sexe:
+                      type: string
+                      index: not_analyzed
+                    timestamp:
+                      type: string
+                      index: not_analyzed
+                    ville:
+                      type: string
+                      index: not_analyzed
+                itdeleted:
+                  type: boolean
+                itemcallnumber:
+                  index: not_analyzed
+                  type: string
+                itemlost:
+                  type: string
+                  index: not_analyzed
+                itemnumber:
+                  index: not_analyzed
+                  type: string
+                location:
+                  type: string
+                  index: not_analyzed
+                notforloan:
+                  index: not_analyzed
+                  type: string
+                onloan:
+                  format: strict_date_optional_time||epoch_millis
+                  type: date
+                price:
+                  type: string
+                  index: not_analyzed
+                renewals:
+                  type: string
+                  index: not_analyzed
+                timestamp:
+                  type: string
+                  index: not_analyzed
+                withdrawn:
+                  type: string
+                  index: not_analyzed
+            language:
+              index: not_analyzed
+              type: string
+            perio_ccode:
+              index: not_analyzed
+              type: string
+            publisher:
+              index: not_analyzed
+              type: string
+            subject:
+              index: not_analyzed
+              type: string
+            subject_main:
+              index: not_analyzed
+              type: string
+            title:
+              index: not_analyzed
+              type: string
+            type:
+              index: not_analyzed
+              type: string
+        biblionumber:
+          type: string
+        qa:
+          properties:
+            bib:
+              properties:
+                agence_cat:
+                  index: not_analyzed
+                  type: string
+                ark_rbx:
+                  index: not_analyzed
+                  type: string
+                audience:
+                  index: not_analyzed
+                  type: string
+                date:
+                  index: not_analyzed
+                  type: string
+                language:
+                  index: not_analyzed
+                  type: string
+                type:
+                  index: not_analyzed
+                  type: string
+            vd:
+              properties:
+                action:
+                  index: not_analyzed
+                  type: string
+                vendange:
+                  index: not_analyzed
+                  type: string
 prets:
   mappings:
     issues:

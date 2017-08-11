@@ -52,6 +52,7 @@
                         <option value="Concert">Concert</option>
                         <option value="Vente">Vente</option>
                         <option value="Journée festive">Journée festive</option>
+						<option value="Conférence">Conférence</option>
                         <option value="Conférence musicale">Conférence musicale</option>
                         <option value="Concert dessiné">Concert dessiné</option>
                         <option value="Exposition">Exposition</option>
