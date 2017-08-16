@@ -6,8 +6,10 @@ use WWW::Mechanize;
 use FindBin qw( $Bin ) ;
 
 use lib "$Bin/../lib" ;
+use kibini::db ;
 use kibini::elasticsearch ;
 
+my $dbh = GetDbh() ;
 
 my $es_node = GetEsNode() ;
 my $e = Search::Elasticsearch->new( nodes => $es_node ) ;
@@ -16,8 +18,8 @@ my $surprises = GetSurprisesStat() ;
 while( my ($biblionumber, $d) = each(%$surprises) ) {
     my @dates = @$d ;
     if ( $biblionumber=~m/^\d+$/ ) {
-        my $count = GetSurprisesIssues($e, $biblionumber, $dates[0], "6M") ;
-        print "$count->{biblionumber},$count->{before},$count->{after}\n" ;
+        my $count = GetSurprisesIssues($e, $biblionumber, $dates[0], "6M", $dbh) ;
+        print "$count->{biblionumber},$count->{datecreated},$count->{before},$count->{after}\n" ;
     }
 }
 
@@ -55,7 +57,7 @@ sub GetSurprisesStat {
 
 # Fonction qui ramène les nbs de prêts pour un biblionumber n mois avant puis un temps donné après une date spécifiée. On utilise Elasticsearch plutôt que MySQL.
 sub GetSurprisesIssues {
-    my ($e, $biblionumber, $date, $t) = @_ ;
+    my ($e, $biblionumber, $date, $t, $dbh) = @_ ;
     my %issues = ( biblionumber => $biblionumber ) ;
     
     my @times = qw( before after) ;
@@ -96,6 +98,17 @@ sub GetSurprisesIssues {
     
         $issues{$time} = $result->{'count'} ;
     }
+	
+	$issues{datecreated} = GetBiblioCreationDate($dbh, $biblionumber) ;
     
     return \%issues ;
+}
+
+sub GetBiblioCreationDate {
+	my ($dbh, $biblionumber) = @_ ;
+	my $req = "SELECT datecreated FROM koha_prod.biblio WHERE biblionumber = ?" ;
+	my $sth = $dbh->prepare($req);
+    $sth->execute($biblionumber);
+	return $sth->fetchrow_array ;
+    $sth->finish();
 }

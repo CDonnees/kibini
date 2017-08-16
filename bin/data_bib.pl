@@ -25,7 +25,7 @@ my $dbh = GetDbh() ;
 my $i = 0 ;
 my $j = 0 ;
 
-my $maxtimestamp = GetMaxDateDataBiblio($dbh) ;
+my $maxtimestamp = '2013-07-09 01:47:35' ;# GetMaxDateDataBiblio($dbh) ;
 
 my @tables = qw( biblioitems deletedbiblioitems ) ;
 foreach my $table (@tables) {
