@@ -53,10 +53,19 @@ La suite Elasticsearch / Kibana est utilisée pour l'analyse et la visualisation
 Afin de diffuser les tableaux de bord à l'ensemble du personnel de la Médiathèque, une petite application web a été mise en place. Elle permet de lever quelques difficultés :
 - bien que relativement intuitif, Kibana reste une application relativement complexe, qui nécessite un certain temps d'adaptation pour le débutant,
 - si Kibana rend facile la construction de tableaux de bord, il ne permet pas de les organiser (par exemple, en les rassemblant dans une arborescence),
-- certains tableaux / visualisations ne peuvent être obtenus via Kibana, ils peuvent néanmoins être réalisés ou diffusés via l'application web.
+- certains tableaux / visualisations ne peuvent être obtenus via Kibana, ils sont néanmoins réalisés ou diffusés via l'application web,
+- comme indiqué dans le point consacré à la collecte des données, l'application permet enfin de saisir directement certaines données chiffrées qui ne sont pas produites par le système d'information.
 
 #### Exemple 1 : vue d'ensemble du profil des inscrits
 ![Profil des inscrits](https://github.com/medrbx/kibini/blob/master/doc/tbb_inscrits.png)
+
+
+#### Exemple 2 : carte des inscrits par quartier de Roubaix (taux de pénétration, que nous ne parvenons pas à générer actuellement avec Kibana 5.5)
+![Carte des inscrits par quartier de Roubaix](https://github.com/medrbx/kibini/blob/master/doc/tbb%20carte%20tx%20p%C3%A9n%C3%A9tration.png)
+
+#### Exemple 3 : formulaire de saisie de données relatives à l'action culturelle
+![Formulaire de saisie de données relatives à l'action culturelle](https://github.com/medrbx/kibini/blob/master/doc/tbb%20formulaire.png)
+
 
 ## Bilan
 ### Apports
