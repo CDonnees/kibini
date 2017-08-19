@@ -31,11 +31,14 @@ Enfin, après consolidation, les données d'usages sont stockées dans une base 
 
 Par ailleurs, certaines données non-générées par le SI peuvent être directement saisies et intégrer à la base de données via des formulaires spécifiquement créés.
 
+
 **2. Analyser les données et construire des tableaux de bord**
 
 La suite Elasticsearch / Kibana est utilisée pour l'analyse et la visualisation des données.
 
 [Elasticsearch](https://www.elastic.co/fr/products/elasticsearch) est un moteur d'indexation textuel, basé sur Apache Lucene, qui permet également d'effectuer des regroupements et des filtrages (et donc des statistiques simples) sur d'importants jeux de données.
+
+À chaque ajout / mise à jour de données dans la base consolidées, ces dernières sont donc parallèlement indexés dans Elasticsearch, via des scripts écrits en internes.
 
 [Kibana](https://www.elastic.co/fr/products/kibana) est un outil d'exploration et de visualisation de données indexées dans Elasticsearch. Il permet de construire de manière intuitive des tableaux ou des visualisuations graphiques...
 
@@ -45,11 +48,15 @@ La suite Elasticsearch / Kibana est utilisée pour l'analyse et la visualisation
 
 ![Elaboration d'un tableau de bord](https://github.com/medrbx/kibini/blob/master/doc/kibana%20construire%20un%20tableau%20de%20bord.png)
 
+
 **3. Diffuser les tableaux de bord**
+Afin de diffuser les tableaux de bord à l'ensemble du personnel de la Médiathèque, une petite application web a été mise en place. Elle permet de lever quelques difficultés :
+- bien que relativement intuitif, Kibana reste une application relativement complexe, qui nécessite un certain temps d'adaptation pour le débutant,
+- si Kibana rend facile la construction de tableaux de bord, il ne permet pas de les organiser (par exemple, en les rassemblant dans une arborescence),
+- certains tableaux / visualisations ne peuvent être obtenus via Kibana, ils peuvent néanmoins être réalisés ou diffusés via l'application web.
 
-## Architecture
-
-![Schema]()
+#### Exemple 1 : vue d'ensemble du profil des inscrits
+![Profil des inscrits](https://github.com/medrbx/kibini/blob/master/doc/tbb_inscrits.png)
 
 ## Bilan
 ### Apports
