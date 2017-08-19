@@ -19,7 +19,7 @@ Trois principaux éléments de contexte sont à l'origine de la mise en place de
 - l'apparition d'outils de visualtisation de données relativement simples à déployer, notamment sans connaissances techniques poussées. Plus particulièrement, la Médiathèque a fait le choix de recourir à la suite Elasticsearch / Kibana.
 
 ## Un processus en trois phases
-###1. Collecter, consolider et stocker les données d'usage###
+### 1. Collecter, consolider et stocker les données d'usage
 
 Dans un premier temps, les données d'usages sont collectées, consolidées et stockées dans une base de données unique.
 
@@ -32,7 +32,7 @@ Enfin, après consolidation, les données d'usages sont stockées dans une base 
 Par ailleurs, certaines données non-générées par le SI peuvent être directement saisies et intégrer à la base de données via des formulaires spécifiquement créés.
 
 
-###2. Analyser les données et construire des tableaux de bord###
+### 2. Analyser les données et construire des tableaux de bord
 
 La suite Elasticsearch / Kibana est utilisée pour l'analyse et la visualisation des données.
 
@@ -49,7 +49,7 @@ La suite Elasticsearch / Kibana est utilisée pour l'analyse et la visualisation
 ![Elaboration d'un tableau de bord](https://github.com/medrbx/kibini/blob/master/doc/kibana%20construire%20un%20tableau%20de%20bord.png)
 
 
-###3. Diffuser les tableaux de bord###
+### 3. Diffuser les tableaux de bord
 Afin de diffuser les tableaux de bord à l'ensemble du personnel de la Médiathèque, une petite application web a été mise en place. Elle permet de lever quelques difficultés :
 - bien que relativement intuitif, Kibana reste une application relativement complexe, qui nécessite un certain temps d'adaptation pour le débutant,
 - si Kibana rend facile la construction de tableaux de bord, il ne permet pas de les organiser (par exemple, en les rassemblant dans une arborescence),
