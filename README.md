@@ -38,6 +38,7 @@ La suite Elasticsearch / Kibana est utilisée pour l'analyse et la visualisation
 [Elasticsearch](https://www.elastic.co/fr/products/elasticsearch) est un moteur d'indexation textuel, basé sur Apache Lucene, qui permet également d'effectuer des regroupements et des filtrages (et donc des statistiques simples) sur d'importants jeux de données.
 
 [Kibana](https://www.elastic.co/fr/products/kibana) est un outil d'exploration et de visualisation de données indexées dans Elasticsearch. Il permet de construire de manière intuitive des tableaux ou des visualisuations graphiques, puis de les rassembler dans des tableaux de bord.
+![élaboration d'un tableau de bord](https://github.com/medrbx/kibini/blob/master/doc/kibana%20construire%20un%20tableau%20de%20bord.png)
 
 **3. Diffuser les tableaux de bord**
 
@@ -53,4 +54,4 @@ La suite Elasticsearch / Kibana est utilisée pour l'analyse et la visualisation
 
 ### Limites
 - faible appropriation de l’outil par les collègues (liée à une faible communication),
-- techniquement, tout n'est pas réalisable directement depuis Kibana (inidcateur de type taux de rotation, taux de pénétration en particuelier) : cela reste faisable via d'autres outils, mais demeure un peu chronophage en termes de mise en place.
+- techniquement, tout n'est pas réalisable directement depuis Kibana (indicateur de type taux de rotation, taux de pénétration en particulier) : cela reste faisable via d'autres outils, mais demeure un peu chronophage en termes de mise en place.
