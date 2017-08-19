@@ -4,76 +4,53 @@ adherents:
     inscrits:
       properties:
         action:
-          index: not_analyzed
-          type: string
+          type: keyword
         activite_emprunteur:
-          index: not_analyzed
-          type: string
+          type: keyword
         activite_emprunteur_bus:
-          index: not_analyzed
-          type: string
+          type: keyword
         activite_emprunteur_med:
-          index: not_analyzed
-          type: string
+          type: keyword
         activite_utilisateur_webkiosk:
-          index: not_analyzed
-          type: string
+          type: keyword
         adherent:
-          index: not_analyzed
-          type: string
+          type: keyword
         ages_age:
           type: integer
         ages_lib1:
-          index: not_analyzed
-          type: string
+          type: keyword
         ages_lib2:
-          index: not_analyzed
-          type: string
+          type: keyword
         ages_lib3:
-          index: not_analyzed
-          type: string
+          type: keyword
         borrowernumber:
-          index: not_analyzed
-          type: string
+          type: keyword
         communication:
-          index: not_analyzed
-          type: string
+          type: keyword
         communication_courriel:
-          index: not_analyzed
-          type: string
+          type: keyword
         communication_telephone_fixe:
-          index: not_analyzed
-          type: string
+          type: keyword
         communication_telephone_mobile:
-          index: not_analyzed
-          type: string
+          type: keyword
         date:
-          format: strict_date_optional_time||epoch_millis
           type: date
         geo_code_postal:
-          index: not_analyzed
-          type: string
+          type: keyword
         geo_pays:
-          index: not_analyzed
-          type: string
+          type: keyword
         geo_roubaix_iris:
-          index: not_analyzed
-          type: string
+          type: keyword
         geo_roubaix_nom_iris:
-          index: not_analyzed
-          type: string
+          type: keyword
         geo_roubaix_quartier:
-          index: not_analyzed
-          type: string
+          type: keyword
         geo_ville:
-          index: not_analyzed
-          type: string
+          type: keyword
         geo_ville15:
-          index: not_analyzed
-          type: string
+          type: keyword
         inscription_carte:
-          index: not_analyzed
-          type: string
+          type: keyword
         inscription_date_expiration:
           format: yyyy-MM-dd
           type: date
@@ -83,89 +60,106 @@ adherents:
         inscription_fidelite:
           type: integer
         inscription_personnalite:
-          index: not_analyzed
-          type: string
+          type: keyword
         inscription_site_inscription:
-          index: not_analyzed
-          type: string
+          type: keyword
         inscription_type_carte:
-          index: not_analyzed
-          type: string
+          type: keyword
         nb_venues_pret:
           type: integer
         sexe:
-          index: not_analyzed
-          type: string
+          type: keyword
 adherents2015:
   mappings:
     inscrits:
       properties:
         action:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         activite_emprunteur:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         activite_emprunteur_bus:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         activite_emprunteur_med:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         activite_utilisateur_webkiosk:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         ages_age:
           type: integer
         ages_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         ages_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         ages_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         borrowernumber:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         communication_courriel:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         communication_telephone_fixe:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         communication_telephone_mobile:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         date:
           format: strict_date_optional_time||epoch_millis
           type: date
         geo_code_postal:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_pays:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_roubaix_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_roubaix_nom_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_roubaix_quartier:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_ville:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_ville15:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         inscription_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         inscription_date_expiration:
@@ -177,15 +171,19 @@ adherents2015:
         inscription_fidelite:
           type: integer
         inscription_personnalite:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         inscription_site_inscription:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         inscription_type_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sexe:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
 adherents_synth:
@@ -193,30 +191,38 @@ adherents_synth:
     inscrits:
       properties:
         activite_emprunteur:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         activite_emprunteur_bus:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         ages_age:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         ages_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         ages_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         ages_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         date:
           format: strict_date_optional_time||epoch_millis
           type: date
         geo_ville:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         inscription_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         nb_inscrits:
@@ -230,15 +236,19 @@ adherents_tout:
         action:
           type: string
         activite_emprunteur:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         activite_emprunteur_bus:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         activite_emprunteur_med:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         activite_utilisateur_webkiosk:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent:
@@ -246,30 +256,38 @@ adherents_tout:
         ages_age:
           type: integer
         ages_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         ages_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         ages_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         borrowernumber:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         communication_courriel:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         communication_telephone_fixe:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         communication_telephone_mobile:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         date:
           format: yyyy-MM-dd
           type: date
         geo_code_postal:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_iris:
@@ -277,26 +295,33 @@ adherents_tout:
         geo_nom_iris:
           type: string
         geo_pays:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_quartier:
           type: string
         geo_roubaix_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_roubaix_nom_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_roubaix_quartier:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_ville:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         geo_ville15:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         inscription_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         inscription_date_expiration:
@@ -308,15 +333,19 @@ adherents_tout:
         inscription_fidelite:
           type: integer
         inscription_personnalite:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         inscription_site_inscription:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         inscription_type_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sexe:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
 catalogue:
@@ -326,21 +355,27 @@ catalogue:
         bib:
           properties:
             agence_cat:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             agence_cat_nor:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             ark_bnf:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             audience:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             contributor:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             creator:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             date:
@@ -348,30 +383,48 @@ catalogue:
             identifier:
               properties:
                 ean:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
                   type: string
                 isbn:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
                   type: string
                 issn:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
                   type: string
             language:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
+            perio_ccode:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
+              fields:
+                keyword:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
+                  ignore_above: 256
+                  index: not_analyzed
+                  type: string
+              type: string
             publisher:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             subject:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             subject_main:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             title:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             type:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
         biblionumber:
@@ -390,188 +443,38 @@ catalogue:
             bib:
               properties:
                 agence_cat:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
                   type: string
                 ark_rbx:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
                   type: string
                 audience:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
                   type: string
                 date:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
                   type: string
                 language:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
                   type: string
                 type:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
                   type: string
             vd:
               properties:
                 action:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
                   type: string
                 vendange:
+                  fielddata: !!perl/scalar:JSON::PP::Boolean 0
                   index: not_analyzed
-                  type: string
-catalogue2:
-  mappings:
-    biblio:
-      properties:
-        bib:
-          properties:
-            agence_cat:
-              type: string
-            agence_cat_nor:
-              type: string
-            ark_bnf:
-              type: string
-            audience:
-              type: string
-            contributor:
-              type: string
-            count_items:
-              type: string
-            creator:
-              type: string
-            date:
-              type: string
-            identifier:
-              properties:
-                ean:
-                  type: string
-                isbn:
-                  type: string
-                issn:
-                  type: string
-            items:
-              properties:
-                barcode:
-                  type: string
-                collection:
-                  properties:
-                    ccode:
-                      type: string
-                    lib1:
-                      type: string
-                    lib2:
-                      type: string
-                    lib3:
-                      type: string
-                    lib4:
-                      type: string
-                damaged:
-                  type: string
-                dateaccessioned:
-                  format: strict_date_optional_time||epoch_millis
-                  type: date
-                datelastseen:
-                  format: strict_date_optional_time||epoch_millis
-                  type: date
-                holdingbranch:
-                  type: string
-                homebranch:
-                  type: string
-                issues:
-                  properties:
-                    arret_bus:
-                      type: string
-                    borrower:
-                      properties:
-                        age:
-                          properties:
-                            age:
-                              type: string
-                            trinsee:
-                              type: string
-                            trmeda:
-                              type: string
-                            trmedb:
-                              type: string
-                            trmedc:
-                              type: string
-                        borrowernumber:
-                          type: string
-                        branch:
-                          type: string
-                        carte:
-                          type: string
-                        categorycode:
-                          type: string
-                        geo:
-                          properties:
-                            district:
-                              properties:
-                                irisInsee:
-                                  type: string
-                                irisNom:
-                                  type: string
-                                quartier:
-                                  type: string
-                            ville:
-                              type: string
-                    branch:
-                      type: string
-                    issue_id:
-                      type: string
-                    issuedate:
-                      type: string
-                    returndate:
-                      type: string
-                itemcallnumber:
-                  type: string
-                itemnumber:
-                  type: string
-                itype:
-                  type: string
-                location:
-                  type: string
-                lost:
-                  type: string
-                nb_issues:
-                  type: string
-                notforloan:
-                  type: string
-                price:
-                  type: string
-                withdrawn:
-                  type: string
-            language:
-              type: string
-            publisher:
-              type: string
-            subject:
-              type: string
-            subject_main:
-              type: string
-            title:
-              type: string
-            type:
-              type: string
-        biblionumber:
-          type: string
-        qa:
-          properties:
-            bib:
-              properties:
-                agence_cat:
-                  type: string
-                ark_rbx:
-                  type: string
-                audience:
-                  type: string
-                date:
-                  type: string
-                language:
-                  type: string
-                type:
-                  type: string
-            vd:
-              properties:
-                action:
-                  type: string
-                vendange:
                   type: string
 documents_synth:
   mappings:
@@ -582,6 +485,7 @@ documents_synth:
         nb_documents:
           type: integer
         support:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
 eliminations:
@@ -589,6 +493,7 @@ eliminations:
     exemplaires:
       properties:
         abime:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         annee_elimination:
@@ -598,21 +503,27 @@ eliminations:
         code_barre:
           type: string
         collection_ccode:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib4:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         cote:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         date_creation:
@@ -622,14 +533,17 @@ eliminations:
           format: yyyy-MM-dd
           type: date
         emprunt:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         itemnumber:
           type: string
         localisation:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         perdu:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         prix:
@@ -637,33 +551,43 @@ eliminations:
         prix_rempla:
           type: float
         retire_collection:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         site_detenteur:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         site_rattach:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_acces:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_collection:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_prets:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_prets_coll:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_public:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         statut:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         support:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         titre:
@@ -676,21 +600,27 @@ entrees:
           format: yyyy-MM-dd HH:mm:ss
           type: date
         entrees_date_annee:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         entrees_date_heure:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         entrees_date_jour:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         entrees_date_jour_semaine:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         entrees_date_mois:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         entrees_date_semaine:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         nb_entrees:
@@ -705,39 +635,51 @@ freq_etude:
           format: yyyy-MM-dd HH:mm:ss
           type: date
         lecteur_age:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_age_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_age_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_age_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_id:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_rbx_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_rbx_nom_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_rbx_quartier:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_sexe:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_type_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         lecteur_ville:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
 frequentation:
@@ -745,22 +687,27 @@ frequentation:
     tests:
       properties:
         espace:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         heure:
           type: integer
         jour:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         nb_personnes:
           type: integer
         periode:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         position:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         type_periode:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
 inscrits_synth_carte:
@@ -770,6 +717,7 @@ inscrits_synth_carte:
         annee:
           type: integer
         carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         nb_inscrits:
@@ -779,6 +727,7 @@ items:
     exemplaires:
       properties:
         abime:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         annee_publication:
@@ -788,21 +737,27 @@ items:
         code_barre:
           type: string
         collection_ccode:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib4:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         cote:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         date_creation:
@@ -812,17 +767,21 @@ items:
           format: yyyy-MM-dd
           type: date
         emprunt:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         itemnumber:
           type: integer
         localisation:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         perdu:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         pret12:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         prix:
@@ -830,323 +789,140 @@ items:
         prix_rempla:
           type: float
         retire_collection:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         site_detenteur:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         site_rattach:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_acces:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_collection:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_prets:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_prets_coll:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_public:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         statut:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         support:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         titre:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
-periodiques:
+notices_auth:
   mappings:
-    biblio:
+    auth:
       properties:
-        bib:
+        auth:
           properties:
-            agence_cat:
+            id_bnf:
+              fields:
+                keyword:
+                  ignore_above: 256
+                  type: keyword
+              type: text
               index: not_analyzed
-              type: string
-            agence_cat_nor:
+            origine:
+              fields:
+                keyword:
+                  ignore_above: 256
+                  type: keyword
+              type: text
               index: not_analyzed
-              type: string
-            ark_bnf:
-              index: not_analyzed
-              type: string
-            audience:
-              index: not_analyzed
-              type: string
-            contributor:
-              index: not_analyzed
-              type: string
-            count_items:
-              index: not_analyzed
-              type: string
-            creator:
-              index: not_analyzed
-              type: string
-            date:
-              index: not_analyzed
-              type: string
-            identifier:
-              properties:
-                isbn:
-                  index: not_analyzed
-                  type: string
-                issn:
-                  index: not_analyzed
-                  type: string
-            items:
-              type: nested
-              properties:
-                barcode:
-                  index: not_analyzed
-                  type: string
-                collection:
-                  properties:
-                    ccode:
-                      index: not_analyzed
-                      type: string
-                    lib1:
-                      index: not_analyzed
-                      type: string
-                    lib2:
-                      index: not_analyzed
-                      type: string
-                    lib3:
-                      index: not_analyzed
-                      type: string
-                    lib4:
-                      index: not_analyzed
-                      type: string
-                damaged:
-                  type: string
-                  index: not_analyzed
-                dateaccessioned:
-                  format: strict_date_optional_time||epoch_millis
-                  type: date
-                datelastborrowed:
-                  format: strict_date_optional_time||epoch_millis
-                  type: date
-                datelastseen:
-                  format: strict_date_optional_time||epoch_millis
-                  type: date
-                holdingbranch:
-                  type: string
-                  index: not_analyzed
-                homebranch:
-                  type: string
-                  index: not_analyzed
-                issues:
-                  properties:
-                    age:
-                      type: string
-                    arret_bus:
-                      type: string
-                      index: not_analyzed
-                    borrower:
-                      properties:
-                        age:
-                          properties:
-                            age:
-                              index: not_analyzed
-                              type: string
-                            trinsee:
-                              index: not_analyzed
-                              type: string
-                            trmeda:
-                              index: not_analyzed
-                              type: string
-                            trmedb:
-                              index: not_analyzed
-                              type: string
-                            trmedc:
-                              index: not_analyzed
-                              type: string
-                        borrowernumber:
-                          type: string
-                          index: not_analyzed
-                        branch:
-                          index: not_analyzed
-                          type: string
-                        carte:
-                          index: not_analyzed
-                          type: string
-                        categorycode:
-                          index: not_analyzed
-                          type: string
-                        geo:
-                          properties:
-                            district:
-                              properties:
-                                irisInsee:
-                                  index: not_analyzed
-                                  type: string
-                                irisNom:
-                                  index: not_analyzed
-                                  type: string
-                                quartier:
-                                  index: not_analyzed
-                                  type: string
-                            ville:
-                              index: not_analyzed
-                              type: string
-                    borrowernumber:
-                      type: string
-                      index: not_analyzed
-                    branch:
-                      index: not_analyzed
-                      type: string
-                    branchcode:
-                      type: string
-                      index: not_analyzed
-                    categorycode:
-                      type: string
-                      index: not_analyzed
-                    date_due:
-                      type: string
-                      index: not_analyzed
-                    fidelite:
-                      type: string
-                      index: not_analyzed
-                    iris:
-                      type: string
-                      index: not_analyzed
-                    issue_id:
-                      index: not_analyzed
-                      type: string
-                    issuedate:
-                      index: not_analyzed
-                      type: string
-                    itemnumber:
-                      type: string
-                      index: not_analyzed
-                    renewals:
-                      type: string
-                      index: not_analyzed
-                    returndate:
-                      index: not_analyzed
-                      type: string
-                    sexe:
-                      type: string
-                      index: not_analyzed
-                    timestamp:
-                      type: string
-                      index: not_analyzed
-                    ville:
-                      type: string
-                      index: not_analyzed
-                itdeleted:
-                  type: boolean
-                itemcallnumber:
-                  index: not_analyzed
-                  type: string
-                itemlost:
-                  type: string
-                  index: not_analyzed
-                itemnumber:
-                  index: not_analyzed
-                  type: string
-                location:
-                  type: string
-                  index: not_analyzed
-                notforloan:
-                  index: not_analyzed
-                  type: string
-                onloan:
-                  format: strict_date_optional_time||epoch_millis
-                  type: date
-                price:
-                  type: string
-                  index: not_analyzed
-                renewals:
-                  type: string
-                  index: not_analyzed
-                timestamp:
-                  type: string
-                  index: not_analyzed
-                withdrawn:
-                  type: string
-                  index: not_analyzed
-            language:
-              index: not_analyzed
-              type: string
-            perio_ccode:
-              index: not_analyzed
-              type: string
-            publisher:
-              index: not_analyzed
-              type: string
-            subject:
-              index: not_analyzed
-              type: string
-            subject_main:
-              index: not_analyzed
-              type: string
-            title:
-              index: not_analyzed
-              type: string
             type:
+              fields:
+                keyword:
+                  ignore_above: 256
+                  type: keyword
+              type: text
               index: not_analyzed
-              type: string
-        biblionumber:
-          type: string
-        qa:
-          properties:
-            bib:
-              properties:
-                agence_cat:
-                  index: not_analyzed
-                  type: string
-                ark_rbx:
-                  index: not_analyzed
-                  type: string
-                audience:
-                  index: not_analyzed
-                  type: string
-                date:
-                  index: not_analyzed
-                  type: string
-                language:
-                  index: not_analyzed
-                  type: string
-                type:
-                  index: not_analyzed
-                  type: string
-            vd:
-              properties:
-                action:
-                  index: not_analyzed
-                  type: string
-                vendange:
-                  index: not_analyzed
-                  type: string
+            vedette:
+              fields:
+                keyword:
+                  ignore_above: 256
+                  type: keyword
+              type: text
+              index: not_analyzed
+            vedette_courte:
+              fields:
+                keyword:
+                  ignore_above: 256
+                  type: keyword
+              type: text
+              index: not_analyzed
+        authnumber:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+          index: not_analyzed
 prets:
   mappings:
     issues:
       properties:
+        aggs:
+          properties:
+            sexe:
+              properties:
+                terms:
+                  properties:
+                    field:
+                      fielddata: !!perl/scalar:JSON::PP::Boolean 0
+                      fields:
+                        keyword:
+                          fielddata: !!perl/scalar:JSON::PP::Boolean 0
+                          ignore_above: 256
+                          index: not_analyzed
+                          type: string
+                      type: string
         doc_biblionumber:
           type: integer
         doc_collection_ccode:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_collection_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_collection_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_collection_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_collection_lib4:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_cote:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_date_acquisition:
@@ -1157,59 +933,77 @@ prets:
         doc_itemnumber:
           type: integer
         doc_localisation:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_site_rattachement:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_support:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_age:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_age_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_age_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_age_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_id:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_nb_annee_inscription:
           type: integer
         emprunteur_personnalite:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_rbx_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_rbx_nom_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_rbx_quartier:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_sexe:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_site_inscription:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_type_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_ville:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         pret_arret_bus:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         pret_date_pret:
@@ -1222,6 +1016,7 @@ prets:
         pret_date_pret_jour:
           type: integer
         pret_date_pret_jour_semaine:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         pret_date_pret_mois:
@@ -1238,6 +1033,7 @@ prets:
         pret_date_retour_jour:
           type: integer
         pret_date_retour_jour_semaine:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         pret_date_retour_mois:
@@ -1251,21 +1047,27 @@ prets:
         pret_retard:
           type: integer
         pret_site:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_acces:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_collection:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_prets:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_prets_coll:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_public:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
 prets2:
@@ -1275,44 +1077,57 @@ prets2:
         bibliodata:
           properties:
             contributor:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             creator:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             date:
               type: string
             identifier:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             language:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             publisher:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             subject:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             subject_chrono:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             subject_geo:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             subject_main:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             title:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             type:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             vd_action:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             vd_bnf:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             vd_date:
@@ -1320,21 +1135,27 @@ prets2:
         doc_biblionumber:
           type: integer
         doc_collection_ccode:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_collection_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_collection_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_collection_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_collection_lib4:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_cote:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_date_acquisition:
@@ -1345,59 +1166,77 @@ prets2:
         doc_itemnumber:
           type: integer
         doc_localisation:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_site_rattachement:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         doc_support:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_age:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_age_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_age_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_age_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_id:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_nb_annee_inscription:
           type: integer
         emprunteur_personnalite:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_rbx_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_rbx_nom_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_rbx_quartier:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_sexe:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_site_inscription:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_type_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         emprunteur_ville:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         pret_arret_bus:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         pret_date_pret:
@@ -1410,6 +1249,7 @@ prets2:
         pret_date_pret_jour:
           type: integer
         pret_date_pret_jour_semaine:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         pret_date_pret_mois:
@@ -1426,6 +1266,7 @@ prets2:
         pret_date_retour_jour:
           type: integer
         pret_date_retour_jour_semaine:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         pret_date_retour_mois:
@@ -1439,21 +1280,27 @@ prets2:
         pret_retard:
           type: integer
         pret_site:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_acces:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_collection:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_prets:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_prets_coll:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         sll_public:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
 reservations:
@@ -1465,18 +1312,23 @@ reservations:
         biblionumber:
           type: integer
         collection_ccode:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         collection_lib4:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         date_annulation:
@@ -1491,18 +1343,23 @@ reservations:
         document_mis_cote:
           type: string
         espace:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         etat:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         found:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         localisation:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         motif_annulation:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserve_id:
@@ -1511,23 +1368,29 @@ reservations:
           format: yyyy-MM-dd
           type: date
         reserveur_age:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_age_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_age_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_age_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_courriel:
           type: string
         reserveur_id:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_mobile:
@@ -1535,35 +1398,45 @@ reservations:
         reserveur_nb_annee_inscription:
           type: integer
         reserveur_personnalite:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_rbx_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_rbx_nom_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_rbx_quartier:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_sexe:
           type: string
         reserveur_site_inscription:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_type_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         reserveur_ville:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         site_rattach:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         site_retrait:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         support:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
 rfid:
@@ -1571,6 +1444,7 @@ rfid:
     prets:
       properties:
         borne:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         date:
@@ -1585,6 +1459,7 @@ rfid:
             jour:
               type: integer
             jour_semaine:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             mois:
@@ -1592,6 +1467,7 @@ rfid:
             numero_semaine:
               type: integer
         etage:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         nb_prets:
@@ -1599,6 +1475,7 @@ rfid:
     retours:
       properties:
         borne:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         date:
@@ -1613,6 +1490,7 @@ rfid:
             jour:
               type: integer
             jour_semaine:
+              fielddata: !!perl/scalar:JSON::PP::Boolean 0
               index: not_analyzed
               type: string
             mois:
@@ -1620,6 +1498,7 @@ rfid:
             numero_semaine:
               type: integer
         etage:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         nb_retours:
@@ -1633,9 +1512,11 @@ syntheses:
         nb_prets:
           type: integer
         public:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         support:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
 titres:
@@ -1659,6 +1540,7 @@ web:
         nb_sessions:
           type: integer
         site:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
     site:
@@ -1671,6 +1553,7 @@ web:
         nb_sessions:
           type: integer
         site:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
 webkiosk:
@@ -1678,55 +1561,71 @@ webkiosk:
     sessions:
       properties:
         adherent_age:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_age_lib1:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_age_lib2:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_age_lib3:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_id:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_nb_annee_inscription:
           type: integer
         adherent_personnalite:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_rbx_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_rbx_nom_iris:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_rbx_quartier:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_sexe:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_site_inscription:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_type_carte:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         adherent_ville:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_duree:
           type: integer
         session_espace:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_etage:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_groupe:
@@ -1735,41 +1634,53 @@ webkiosk:
           format: yyyy-MM-dd HH:mm:ss
           type: date
         session_heure_deb_annee:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_heure_deb_heure:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_heure_deb_jour:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_heure_deb_jour_semaine:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_heure_deb_mois:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_heure_deb_semaine:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_heure_fin:
           format: yyyy-MM-dd HH:mm:ss
           type: date
         session_heure_fin_annee:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_heure_fin_heure:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_heure_fin_jour:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_heure_fin_mois:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_heure_fin_semaine:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
         session_poste:
+          fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string

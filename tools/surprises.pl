@@ -104,6 +104,7 @@ sub GetSurprisesIssues {
     return \%issues ;
 }
 
+# Fonction qui permet d'obtenir la date de création de la notice pour un biblionumber donné
 sub GetBiblioCreationDate {
 	my ($dbh, $biblionumber) = @_ ;
 	my $req = "SELECT datecreated FROM koha_prod.biblio WHERE biblionumber = ?" ;
