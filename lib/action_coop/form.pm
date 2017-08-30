@@ -17,7 +17,7 @@ sub GetListActionsCooperation {
 SELECT
 *
 FROM statdb.stat_action_coop
-ORDER BY idstat_action_coop DESC
+ORDER BY id DESC
 SQL
     return GetAllArrayRef($req) ;
 }
