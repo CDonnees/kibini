@@ -13,18 +13,18 @@ use kibini::db ;
 use kibini::elasticsearch ;
 
 sub AddEsLastAction_culturelle {
-	my $es_node = GetEsNode() ;
+    my $es_node = GetEsNode() ;
     my %params = ( nodes => $es_node ) ;
     my $index = "action_culturelle" ;
     my $type = "actions" ;
-	my $max_id = GetEsMaxId($index, $type, 'action_id') ;
+    my $max_id = GetEsMaxId($index, $type, 'action_id') ;
 
     my $e = Search::Elasticsearch->new( %params ) ;
 
     my $dbh = GetDbh() ;
     my $req = <<SQL;
 SELECT
-	*
+    *
 FROM statdb.stat_action_culturelle
 WHERE id > ?
 SQL
@@ -38,12 +38,12 @@ SQL
         my %index = (
             index   => $index,
             type    => $type,
-			id 		=> $id,
+            id         => $id,
             body    => {
-				action_id => $id,
+                action_id => $id,
                 date => $date,
                 action => $action,
-				lieu => $lieu,
+                lieu => $lieu,
                 type_action => $type_action,
                 public => $public,
                 partenariat => $partenariat,
@@ -69,7 +69,7 @@ sub insert_action_culturelle {
     $sth->execute( $date, $action, $lieu, $type, $public, $partenariat, $participants ) ;
     $sth->finish();
     $dbh->disconnect();
-	AddEsLastAction_culturelle() ;
+    AddEsLastAction_culturelle() ;
 }
 
 sub list_actions {
