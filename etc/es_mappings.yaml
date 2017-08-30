@@ -1,4 +1,48 @@
 ---
+action_culturelle:
+  mappings:
+    actions:
+      properties:
+        action:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        action_id:
+          type: integer
+        date:
+          type: date
+        lieu:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        nb_participants:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        partenariat:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        public:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        type_action:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
 adherents:
   mappings:
     inscrits:
@@ -844,42 +888,42 @@ notices_auth:
                   ignore_above: 256
                   type: keyword
               type: text
-              index: not_analyzed
             origine:
               fields:
                 keyword:
                   ignore_above: 256
                   type: keyword
               type: text
-              index: not_analyzed
+            roubaisien:
+              fields:
+                keyword:
+                  ignore_above: 256
+                  type: keyword
+              type: text
             type:
               fields:
                 keyword:
                   ignore_above: 256
                   type: keyword
               type: text
-              index: not_analyzed
             vedette:
               fields:
                 keyword:
                   ignore_above: 256
                   type: keyword
               type: text
-              index: not_analyzed
             vedette_courte:
               fields:
                 keyword:
                   ignore_above: 256
                   type: keyword
               type: text
-              index: not_analyzed
         authnumber:
           fields:
             keyword:
               ignore_above: 256
               type: keyword
           type: text
-          index: not_analyzed
 prets:
   mappings:
     issues:

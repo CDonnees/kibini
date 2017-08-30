@@ -2,7 +2,7 @@ package kibini::elasticsearch ;
 
 use Exporter ;
 @ISA = qw( Exporter ) ;
-@EXPORT = qw( GetEsNode RegenerateIndex GetEsMappingConf ) ;
+@EXPORT = qw( GetEsNode RegenerateIndex GetEsMappingConf GetEsMaxId ) ;
 
 use strict ;
 use warnings ;
@@ -44,6 +44,30 @@ sub RegenerateIndex {
     my $result = $e->indices->create( %index_conf );
     
     return $result ;
+}
+
+sub GetEsMaxId {
+    my ( $index, $type, $field ) = @_ ;
+    my $nodes = GetEsNode() ;
+    my %params = ( nodes => $nodes ) ;
+
+    my $e = Search::Elasticsearch->new( %params ) ;
+
+    my $result =  $e->search(
+        index => $index,
+        type  => $type,
+        body    => {
+            aggs       => {
+                max_id => {
+                    max => {
+                        field => $field
+                    }
+                }
+            }
+        }
+    );
+
+    return $result->{aggregations}->{max_id}->{value} ; 
 }
 
 1;

@@ -11,6 +11,10 @@ use kibini::elasticsearch ;
 use kibini::log ;
 use kibini::time ;
 
+use action_culturelle ;
+
+use Data::Dumper ;
+
 my $log_message ;
 my $process = "es_action_culturelle.pl" ;
 # On log le début de l'opération
@@ -19,58 +23,16 @@ AddCrontabLog($log_message) ;
 
 # On récupère l'adresse d'Elasticsearch
 my $es_node = GetEsNode() ;
+#RegenerateIndex($es_node, 'action_culturelle') ;
 
-# my $es_maxId = GetEsMaxId() ;
-my $i = action_culturelle($es_node) ;
+my $i = AddEsLastAction_culturelle($es_node) ;
+
+print Dumper($i) ; 
 
 # On log la fin de l'opération
-$log_message = "$process : $i rows indexed" ;
-AddCrontabLog($log_message) ;
-$log_message = "$process : ending\n" ;
-AddCrontabLog($log_message) ;
+#$log_message = "$process : $i rows indexed" ;
+#AddCrontabLog($log_message) ;
+#$log_message = "$process : ending\n" ;
+#AddCrontabLog($log_message) ;
 
 
-sub action_culturelle {
-    my ($maxdatetime, $es_node) = @_ ;
-    my %params = ( nodes => $es_node ) ;
-    my $index = "action_culturelle" ;
-    my $type = "actions" ;
-
-    my $e = Search::Elasticsearch->new( %params ) ;
-
-    my $dbh = GetDbh() ;
-    my $req = <<SQL;
-SELECT
-	*
-FROM statdb.stat_action_culturelle
--- WHERE id > ?
-SQL
-
-    my $sth = $dbh->prepare($req);
-    $sth->execute();
-    $i = 0 ;
-    while (my @row = $sth->fetchrow_array) {
-        my ( $id, $date, $action, $lieu, $type_action, $public, $partenariat, $nb_participants ) = @row ;
-    
-        my %index = (
-            index   => $index,
-            type    => $type,
-			id 		=> $id,
-            body    => {
-                date => $date,
-                action => $action,
-				lieu => $lieu,
-                type_action => $type_action,
-                public => $public,
-                partenariat => $partenariat,
-                nb_participants => $nb_participants
-            }
-        ) ;
-
-        $e->index(%index) ;
-        $i++ ;
-    }
-    $sth->finish();
-    $dbh->disconnect();
-    return $i ;
-}

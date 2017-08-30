@@ -18,20 +18,20 @@ AddCrontabLog($log_message) ;
 
 
 my $date_veille = GetDateTime('yesterday') ;
-reserves_new($date_veille) ;
+#reserves_new($date_veille) ;
 reserves_maj($date_veille) ;
+
+my @new_reserve_id = new_reserve_id($date_veille) ;
+foreach my $new_reserve_id (@new_reserve_id) {
+    my ($branchcode, $biblionumber ) = reserves_infos($new_reserve_id) ;
+    my ($statutReservation, $localisation ) = statutReservation($branchcode, $biblionumber) ;
+    updateStatutLocReservation($new_reserve_id, $statutReservation, $localisation) ;
+    print "$new_reserve_id, $statutReservation, $localisation\n" ;
+}
 
 # On log la fin de l'opération
 $log_message = "$process : ending\n" ;
 AddCrontabLog($log_message) ;
-
-# my @new_reserve_id = new_reserve_id($date_veille) ;
-# foreach my $new_reserve_id (@new_reserve_id) {
-#     my ($branchcode, $biblionumber ) = reserves_infos($new_reserve_id) ;
-#     my ($statutReservation, $localisation ) = statutReservation($branchcode, $biblionumber) ;
-#     updateStatutLocReservation($new_reserve_id, $statutReservation, $localisation) ;
-#    print "$new_reserve_id, $statutReservation, $localisation\n" ;
-# }
 
 ##################################################################
 # On insère les réservations de la veille
