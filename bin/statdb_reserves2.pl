@@ -10,6 +10,8 @@ use kibini::db ;
 use kibini::log ;
 use kibini::time ;
 
+use Data::Dumper ;
+
 my $log_message ;
 my $process = "statdb_reserves.pl" ;
 # On log le début de l'opération
@@ -428,4 +430,17 @@ sub localisation {
         $localisation = "Magasins"
     } 
     return $localisation ;
+}
+
+# On récupère la date d'emprunt
+sub GetReserveIssueDate {
+	my $dbh = GetDbh() ;
+	my $req = "SELECT reserve_id, itemnumber, borrowernumber FROM statdb.stat_reserves2 WHERE found = 'F' AND issuedate IS NULL AND itemnumber IS NOT NULL" ;
+	my $sth = $dbh->prepare($req);
+    $sth->execute();
+	while (my $res = $sth->fetchrow_hashref ) {
+		print Dumper($res) ;
+	}
+	$sth->finish();
+    $dbh->disconnect() ;
 }

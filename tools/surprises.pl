@@ -19,7 +19,8 @@ while( my ($biblionumber, $d) = each(%$surprises) ) {
     my @dates = @$d ;
     if ( $biblionumber=~m/^\d+$/ ) {
         my $count = GetSurprisesIssues($e, $biblionumber, $dates[0], "6M", $dbh) ;
-        print "$count->{biblionumber},$count->{datecreated},$count->{before},$count->{after}\n" ;
+		$count->{surprise_datecreated} = $dates[0] ;
+        print "$count->{biblionumber},$count->{surprise_datecreated},$count->{biblio_datecreated},$count->{before},$count->{after}\n" ;
     }
 }
 
@@ -99,7 +100,7 @@ sub GetSurprisesIssues {
         $issues{$time} = $result->{'count'} ;
     }
 	
-	$issues{datecreated} = GetBiblioCreationDate($dbh, $biblionumber) ;
+	$issues{biblio_datecreated} = GetBiblioCreationDate($dbh, $biblionumber) ;
     
     return \%issues ;
 }
