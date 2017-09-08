@@ -70,7 +70,7 @@ SELECT
     r.annulation,
     r.document_mis_cote
 FROM statdb.stat_reserves r
-WHERE (DATE(r.timestamp) >= ? OR r.reservedate = ?)
+WHERE (DATE(r.timestamp) >= ? OR r.reservedate >= ?)
 SQL
 
     my $sth = $dbh->prepare($req);

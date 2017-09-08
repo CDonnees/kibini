@@ -2,7 +2,7 @@ package kibini::time ;
 
 use Exporter ;
 @ISA = qw(Exporter) ;
-@EXPORT = qw( GetDateTime GetSplitDateTime GetDuration GetEsMaxDateTime GetMinutesFromTime ) ;
+@EXPORT = qw( GetDateTime GetSplitDateTime GetSplitDate GetDuration GetEsMaxDateTime GetMinutesFromTime ) ;
 
 use strict ;
 use warnings ;
@@ -74,6 +74,40 @@ sub GetSplitDateTime {
     }
     
     return $year, $month, $week_number, $day, $dow, $hour ;
+}
+
+sub GetSplitDate {
+    my ($date) = @_ ;
+
+    my $dt = DateTime::Format::MySQL->parse_date($date) ;
+    
+    my $year =  $dt->year() ;
+    
+    my $month = $dt->month() ;
+    if ($month < 10 ) {
+        $month = "0".$month ;
+    }
+    
+    my $week_number = $dt->week_number() ;
+    if ($week_number < 10 ) {
+        $week_number = "0".$week_number ;
+    }
+    
+    my $day = $dt->day() ;
+    
+    my $dow = $dt->dow() ;
+    my %dowfr = (
+        1 => "1 Lundi",
+        2 => "2 Mardi",
+        3 => "3 Mercredi",
+        4 => "4 Jeudi",
+        5 => "5 Vendredi",
+        6 => "6 Samedi",
+        7 => "7 Dimanche"
+    ) ;
+    $dow = $dowfr{$dow} ;
+    
+    return $year, $month, $week_number, $day, $dow ;
 }
 
 

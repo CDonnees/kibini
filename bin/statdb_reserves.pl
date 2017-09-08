@@ -18,7 +18,7 @@ AddCrontabLog($log_message) ;
 
 
 my $date_veille = GetDateTime('yesterday') ;
-#reserves_new($date_veille) ;
+reserves_new($date_veille) ;
 reserves_maj($date_veille) ;
 
 my @new_reserve_id = new_reserve_id($date_veille) ;
@@ -70,7 +70,7 @@ SELECT
     CASE WHEN b.email LIKE '%@%' THEN 'oui' ELSE 'non' END
 FROM koha_prod.$table r
 JOIN koha_prod.borrowers b ON b.borrowernumber = r.borrowernumber
-WHERE r.reservedate = ? ;
+WHERE r.reservedate >= ? ;
 SQL
         $sth = $dbh->prepare($req);
         $sth->execute($date);

@@ -1,4 +1,54 @@
 ---
+action_coop:
+  mappings:
+    actions:
+      properties:
+        action_id:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        date:
+          type: date
+        lieu:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        nom:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        nom_structure:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        participants:
+          type: integer
+        referent_action:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        type_action:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        type_structure:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
 action_culturelle:
   mappings:
     actions:
@@ -20,11 +70,7 @@ action_culturelle:
               type: keyword
           type: text
         nb_participants:
-          fields:
-            keyword:
-              ignore_above: 256
-              type: keyword
-          type: text
+          type: integer
         partenariat:
           fields:
             keyword:
@@ -1600,6 +1646,50 @@ web:
           fielddata: !!perl/scalar:JSON::PP::Boolean 0
           index: not_analyzed
           type: string
+web2:
+  mappings:
+    site:
+      properties:
+        consultation_date:
+          type: date
+        consultation_date_annee:
+          type: long
+        consultation_date_jour:
+          type: long
+        consultation_date_jour_semaine:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        consultation_date_mois:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        consultation_date_semaine:
+          type: long
+        origine:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        pages_vues:
+          type: long
+        periode:
+          fields:
+            keyword:
+              ignore_above: 256
+              type: keyword
+          type: text
+        taux_conversion:
+          type: long
+        utilisateurs:
+          type: long
+        visites:
+          type: long
 webkiosk:
   mappings:
     sessions:

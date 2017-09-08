@@ -18,6 +18,7 @@ sub AddEsLastAction_culturelle {
     my $index = "action_culturelle" ;
     my $type = "actions" ;
     my $max_id = GetEsMaxId($index, $type, 'action_id') ;
+    $max_id = 0 if ( !defined $max_id ) ;    
 
     my $e = Search::Elasticsearch->new( %params ) ;
 
@@ -58,8 +59,6 @@ SQL
     $dbh->disconnect();
     return $i ;
 }
-
-
 
 sub insert_action_culturelle {
     my ( $date, $action, $lieu, $type, $public, $partenariat, $participants ) = @_ ;

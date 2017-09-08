@@ -23,7 +23,7 @@ AddCrontabLog($log_message) ;
 
 # On récupère l'adresse d'Elasticsearch
 my $es_node = GetEsNode() ;
-#RegenerateIndex($es_node, 'action_culturelle') ;
+RegenerateIndex($es_node, 'action_culturelle') ;
 
 my $i = AddEsLastAction_culturelle($es_node) ;
 
