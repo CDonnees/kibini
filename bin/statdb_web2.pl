@@ -20,7 +20,7 @@ AddCrontabLog($log_message) ;
 
 my $file = "/home/kibini/stat_web.csv" ;
 if ( defined $ARGV[0] ) {
-	$file = $ARGV[0] ;
+    $file = $ARGV[0] ;
 } 
 
 # Connexion à la base de données et ES
@@ -47,9 +47,9 @@ $csv->column_names (qw( date periode visites utilisateurs pages_vues taux_conver
 my $i = 0 ;
 while (my $row = $csv->getline_hr ($fd)) {
     if ( $row->{date} =~ m/^\d{4}-\d{2}-\d{2}$/ ) {
-		$sth->execute( $row->{date}, $row->{periode}, $row->{visites}, $row->{pages_vues}, $row->{utilisateurs}, $row->{taux_conversion}, $row->{origine} ) ;
-		($row->{year}, $row->{month}, $row->{week_number}, $row->{day}, $row->{dow}) = GetSplitDate($row->{date}) ;
-		my %index = (
+        $sth->execute( $row->{date}, $row->{periode}, $row->{visites}, $row->{pages_vues}, $row->{utilisateurs}, $row->{taux_conversion}, $row->{origine} ) ;
+        ($row->{year}, $row->{month}, $row->{week_number}, $row->{day}, $row->{dow}) = GetSplitDate($row->{date}) ;
+        my %index = (
             index   => $index,
             type    => $type,
             body    => {
@@ -59,17 +59,17 @@ while (my $row = $csv->getline_hr ($fd)) {
                 consultation_date_semaine => $row->{week_number},
                 consultation_date_jour => $row->{day},
                 consultation_date_jour_semaine => $row->{dow},
-				periode => $row->{periode},
-				visites => $row->{visites},
-				pages_vues => $row->{pages_vues},
-				utilisateurs => $row->{utilisateurs},
-				taux_conversion => $row->{taux_conversion},
-				origine => $row->{origine}
+                periode => $row->{periode},
+                visites => $row->{visites},
+                pages_vues => $row->{pages_vues},
+                utilisateurs => $row->{utilisateurs},
+                taux_conversion => $row->{taux_conversion},
+                origine => $row->{origine}
             }
         ) ;
 
-		$e->index(%index) ;	
-	}
+        $e->index(%index) ;    
+    }
 }
 close $fd ;
 
