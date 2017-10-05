@@ -2,7 +2,7 @@ package action_coop::form ;
 
 use Exporter ;
 @ISA = qw( Exporter ) ;
-@EXPORT = qw( GetListActionsCooperation AddActionCooperation ) ;
+@EXPORT = qw( GetListActionsCooperation AddActionCooperation AddEsLastAction_coop ) ;
 
 use strict ;
 use warnings ;

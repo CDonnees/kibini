@@ -44,12 +44,14 @@
                         <option selected="selected"></option>
                         <option value="Lecture">Lecture</option>
                         <option value="Atelier">Atelier</option>
+						<option value="Club lecture">Club lecture</option>
                         <option value="Jeux">Jeux</option>
                         <option value="Rencontre">Rencontre</option>
                         <option value="Danse">Danse</option>
                         <option value="Spectacle">Spectacle</option>
                         <option value="Théâtre">Théâtre</option>
                         <option value="Concert">Concert</option>
+						<option value="Projection">Projection</option>
                         <option value="Vente">Vente</option>
                         <option value="Journée festive">Journée festive</option>
 						<option value="Conférence">Conférence</option>

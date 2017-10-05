@@ -29,7 +29,7 @@ my $es_node = GetEsNode() ;
 my $e = Search::Elasticsearch->new( nodes => $es_node ) ;
 my $index = "web2" ;
 my $type = "site" ;
-#RegenerateIndex($es_node, $index) ;
+# RegenerateIndex($es_node, $index) ;
 
 # Requête à effectuer
 my $req = <<"SQL";
@@ -43,7 +43,7 @@ my $sth = $dbh->prepare($req);
 # Lire un fichier CSV et récupérer les lignes comme référence de hash
 my $csv = Text::CSV->new ({ binary => 1 });
 open(my $fd, "<:encoding(UTF-8)", $file) ;
-$csv->column_names (qw( date periode visites utilisateurs pages_vues taux_conversion origine ));
+$csv->column_names (qw( date periode visites pages_vues utilisateurs taux_conversion origine ));
 my $i = 0 ;
 while (my $row = $csv->getline_hr ($fd)) {
     if ( $row->{date} =~ m/^\d{4}-\d{2}-\d{2}$/ ) {

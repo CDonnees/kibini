@@ -29,7 +29,7 @@ $req = <<SQL;
 SELECT
     irisInsee,
     SUM(nb_hab) AS hab
-FROM statdb.iris_pop
+FROM statdb.iris_pop2013
 GROUP BY irisInsee
 SQL
 
