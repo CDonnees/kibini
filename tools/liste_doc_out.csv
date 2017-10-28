@@ -1,0 +1,536 @@
+Support,CB,Titre,Auteur,Localisation,Cote,Statut,"Année acquisition","Année publication","Nb prêts année","Nb réservations année","Nb prêts totaux"
+LI,C0003020847,"Linus Torvalds","Linus Torvalds,... et David Diamond",MED3A,"Doc./005.43 TOR",0,2005,2001,1,0,24
+VD,C0003897236,"Cryptologie et sécurité informatique",,MED3A,"DVD/004 STE",0,2005,2000,0,0,6
+LI,C0004213231,"La bible des trucs & astuces Excel","John Walkenbach",MED3A,"Doc./005.3 WAL",0,2006,2005,4,1,96
+LI,C0004492178,"Access 2007","Laurie Ulrich Fuller, Ken Cook, John Kaufeld",MED3A,"Doc./005.4 FUL",0,2007,2007,1,0,44
+LI,C0004492160,"PowerPoint 2007","Doug Lowe",MED3A,"Doc./005.4 LOW",0,2007,2007,1,0,41
+LI,C0004486143,"Alan Turing","David Leavitt,...",MED3A,"Doc./004.1 LEA",0,2007,2007,4,0,25
+LI,C0004486892,"PowerPoint 2007","Alexandre Boni et Nicolas Stemart",MED3A,"Doc./006.6 BON",0,2007,2007,1,0,38
+LI,C0004543636,"Access 2007",,MED3A,"Doc./005.36 ACC",0,2007,2007,5,0,44
+LI,C0004544488,"Access 2007","Élisabeth Ravey",MED3A,"Doc./005.36 RAV",0,2007,2007,2,0,33
+LI,C0004543335,"Apprendre le C [plus-plus]","Claude Delannoy",MED3A,"Doc./005.13 DEL",0,2007,2007,6,1,46
+LI,C0004544608,"Bien démarrer avec Excel 2007","Étienne Oehmichen",MED3A,"Doc./005.34 OEH",0,2007,2007,2,0,57
+LI,C0004544420,"Bien démarrer avec PowerPoint 2007","Marc Bergame",MED3A,"Doc./005.34 BER",0,2007,2007,1,0,25
+LI,C0004544543,"Bien démarrer avec Word 2007","Marc Bergame",MED3A,"Doc./005.34 BER",0,2007,2007,0,0,34
+LI,C0004559718,Blender,"Marie-France et Jean-Michel Soler",MED3A,"Doc./006 SOL",0,2007,2007,3,1,39
+LI,C0004362111,"Compétence Micro-Initiation.","David Bosman, Stéphanie Guillaume",MED3A,"Doc./006.6 COM",0,2007,2007,2,0,15
+LI,C0004543872,"Fonctions Excel 2007","Paul-Éric Minne",MED3A,"Doc./005.36 MIN",0,2007,2007,3,0,58
+LI,C0004648274,"Tout sur les réseaux et Internet","Jean-François Pillou",MED3A,"Doc./004.678 PIL",0,2007,2006,4,0,55
+LI,C0004680292,"Word 2007","Servane Heudiard",MED3A,"Doc./005.36 HEU",0,2008,2008,0,0,23
+LI,C0004680111,"Excel 2007","Jean-François Sehan",MED3A,"Doc./005.36 SEH",0,2008,2008,1,0,38
+LI,C0004696984,"Bien gérer mes photos avec l'ordinateur","Henri Lilen",MED3A,"Doc./006.3 LIL",0,2008,2008,1,0,24
+LI,C0004697087,"Le clavier et la souris","Servane Heudiard",MED3A,"Doc./004.16 HEU",0,2008,2008,3,0,20
+LI,C0004842991,"XML par la pratique","[Sébastien Lecomte, Thierry Boulanger]",MED3A,"Doc./005.1 LEC",0,2009,2008,2,0,18
+LI,C0004863280,"Excel 2007","Olivier Abou",MED3A,"Doc./005.7 ABO",0,2009,2008,3,0,39
+LI,C0004870863,"PHP & MySQL","Luke Welling, Laura Thomson",MED3A,"Doc./004.678 WEL",0,2009,2009,3,1,55
+LI,C0004868793,"Office 2007","[Thibaud Schwartz]",MED3A,"Doc./005.36 SCH",0,2009,2009,1,0,32
+LI,C0005072133,"Joomla pour les nuls","Steven Holzner, Nancy Conner",MED3A,"Doc./005.36 HOL",0,2009,2009,0,0,32
+LI,C0004925113,"Word, Excel et PowerPoint 2007","Dan Gookin, Greg Harvey et Doug Lowe",MED3A,"Doc./005.36 GOO",0,2009,2009,3,0,47
+PE,C0005421084,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2012,1993,0,0,8
+LI,C0005033969,OpenOffice,"Olivier Abou",MED3A,"Doc./005.52 ABO",0,2009,2009,3,0,34
+LI,C0004959332,"Gérer ses photos numériques","Daniel Hennemand",MED3A,"Doc./006.6 HEN",0,2009,2009,2,0,27
+LI,C0005306207,"Le livre de Java","Anne Tasso",MED3A,"Doc./005.13 TAS",0,2010,2009,5,0,42
+LI,C0005117137,"Développer des applications iPhone pour les nuls","Neal Goldstein",MED3A,"Doc./006 GOL",0,2010,2010,0,0,19
+LI,C0005295804,"Adobe Photoshop Elements 8","Michel Lévy",MED3A,"Doc./006.3 LEV",0,2010,2010,5,0,18
+LI,C0005296216,"Word 2010 pour les nuls","Dan Gookin",MED3A,"Doc./005.36 GOO",0,2010,2010,3,0,33
+LI,C0005112878,"Cartes à puce et PC","Patrick Gueulle",MED3A,"Doc./004.5 GUE",0,2010,2008,1,0,12
+LI,C0005003647,"Installer un réseau chez soi","[Patrick Antouly]",MED3A,"Doc./004.68 ANT",0,2010,2010,5,0,25
+LI,C0005297791,L'ordinateur,"[Henri Lilen]",MED3A,"Doc./004.1 LIL",0,2010,2010,4,0,30
+LI,C0005161835,"Outlook 2010","Bill Dyszel",MED3A,"Doc./005.5 DYS",0,2010,2010,0,0,35
+LI,C0005161738,"Tout pour bien utiliser Word 2010","Christine Eberhardt",MED3A,"Doc./005.36 EBE",0,2010,2010,1,0,18
+LI,C0005161788,"Joomla !","[Marc Studer]",MED3A,"Doc./005.5 STU",0,2010,2010,1,1,21
+LI,C0005161720,"OpenOffice.org 3.2","José Roda",MED3A,"Doc./005.52 ROD",0,2010,2010,0,0,21
+LI,C0005161712,"Travaux pratiques avec Gimp","Thibaut Hofer,...",MED3A,"Doc./006.6 HOF",0,2010,2009,4,0,38
+LI,C0005161801,Writer,,MED3A,"Doc./005.52 WRI",0,2010,2009,1,0,9
+LI,C0005161746,"OpenOffice.org 3","Élisabeth Ravey",MED3A,"Doc./005.52 RAV",0,2010,2009,2,0,21
+LI,C0005161877,Inkscape,"Nicolas Dufour",MED3A,"Doc./006.6 DUF",0,2010,2009,5,7,29
+LI,C0005161819,"Économie du logiciel libre","François Élie",MED3A,"Doc./005.5 ELI",0,2010,2009,0,0,7
+LI,C0005170606,"Office 2010 pour les nuls","Wallace Wang",MED3A,"Doc./005.5 WAN",0,2010,2010,2,0,41
+LI,C0005186877,"Découvrir le PC, Windows 7 & Internet","Dan Gookin, Andy Rathbone et John R. Levine",MED3A,"Doc./004.7 GOO",0,2011,2011,4,0,34
+LI,C0005186712,"Développer des jeux pour iPhone et iPad","Neal Goldstein, Jon Manning, Paris Butterfield-Addison",MED3A,"Doc./006 GOL",0,2011,2011,3,1,24
+LI,C0005186720,"PowerPoint 2010","Doug Lowe",MED3A,"Doc./006.6 LOW",0,2011,2010,2,0,17
+LI,C0005143120,Magento,"Mickaël Blanchard",MED3A,"Doc./006.7 BLA",0,2011,2010,3,8,39
+LI,C0005200095,"Réussir son blog professionnel","Thomas Parisot",MED3A,"Doc./004.678 PAR",0,2011,2010,4,1,15
+LI,C0005178963,"Calques et masques","d'Antoine Defarges",MED3A,"Doc./006.6 QUI",0,2011,2011,5,3,29
+LI,C0005178769,"17 exercices pour débuter en retouche photo avec Photoshop",,MED3A,"Doc./006.6 DIX",0,2011,2011,5,3,28
+LI,C0005178947,"Le guide pratique Office 2010",,MED3A,"Doc./005.5 GUI",0,2011,2011,2,0,35
+LI,C0005204065,"Microsoft office 2010",,MED3A,"Doc./005.5 OFF",0,2011,2011,5,0,38
+LI,C0005444961,"Encyclopédie de la webculture","Titiou Lecoq, Diane Lisarelli",MED3A,"Doc./004.678 LEC",0,2011,2011,3,0,16
+LI,C0005462491,"D'OpenOffice.org à LibreOffice 3.5","Sophie Gautier, Gilles Bignebat, Christian Hardy,... [et al]",MED3A,"Doc./005 OPE",0,2012,2012,1,0,18
+LI,C0005496808,"Reprenez le contrôle à l'aide de Linux","Mathieu Nebra",MED3A,"Doc./005 LIN",0,2012,2010,5,1,26
+LI,C0005602179,"Mes tout premiers pas avec mon Mac","Valéry Marchive",MED3A,"Doc./005 MAC",0,2012,2012,1,0,10
+LI,C0005602162,"Le livre de l'iPad 2","Yasmina Salmandjee-Lecomte, Sebastien Lecomte",MED3A,"Doc./005 IPA",0,2012,2011,1,1,18
+LI,C0005602148,"Facebook, Twitter, Google+ & Linkedln","Yasmina Salmandjee-Lecomte, Sébastien Lecomte",MED3A,"Doc./004.6 COM",0,2012,2012,6,0,29
+LI,C0005602101,"L'iPhone 4S","Yasmina Salmandjee-Lecomte, Sebastien Lecomte",MED3A,"Doc./004.6 IPH",0,2012,2012,1,0,15
+LI,C0005410712,"Excel 2010","Steve Johnson,...",MED3A,"Doc./005 EXC",0,2012,2012,4,1,25
+LI,C0005521982,"Adobe Muse","Christophe Aubry",MED3A,"Doc./005 ADO",0,2012,2012,1,2,8
+LI,C0005521951,"Apprenez à programmer en C","Mathieu Nebra",MED3A,"Doc./005 PRO",0,2012,2012,3,0,27
+LI,C0005521845,"Blogs faciles en quelques clics","Laurence Battais",MED3A,"Doc./004.6 INT",0,2012,2012,5,1,13
+LI,C0005521944,"Créez des applications pour iPhone, iPad et iPod Touch","Michel Martin",MED3A,"Doc./005 PRO",0,2012,2012,4,0,26
+LI,C0005521838,"Découvrir Internet & l'informatique","Antoine Rigaut",MED3A,"Doc./004.6 INT",0,2012,2012,2,0,17
+LI,C0005521791,"Drupal 7","David Mercer",MED3A,"Doc./005 DRU",0,2012,2011,2,0,11
+LI,C0005521814,"HTML 5","[Luc Van Lancker]",MED3A,"Doc./005 PRO",0,2012,2012,5,2,24
+LI,C0005521869,Internet,"Solange Ghernaouti-Hélie,... Arnaud Dufour,...",MED3A,"Doc./004 INT",0,2012,2012,0,0,3
+LI,C0005521821,"Lightroom 4 par la pratique","Gilles Theophile",MED3A,"Doc./005 LIG",0,2012,2012,2,0,12
+LI,C0005521876,"Mac OS X Lion","Jean-Sébastien Chérel",MED3A,"Doc./005 MAC",0,2012,2012,0,0,5
+LI,C0005521906,"Le nouvel iPad","tutoriels par Mathieu Lavant",MED3A,"Doc./004 IPA",0,2012,2012,5,5,23
+LI,C0005521883,"Publisher 2010","[Corinne Hervé]",MED3A,"Doc./005 PUB",0,2012,2011,0,0,10
+LI,C0005521913,"Les smartphones Android","Dan Gookin",MED3A,"Doc./005 AND",0,2012,2012,3,0,33
+LI,C0005521852,"Tablettes Android",,MED3A,"Doc./004 AND",0,2012,2012,2,0,22
+LI,C0005521968,"Tout sur Facebook pour les nuls","Yasmina Salmandjee Lecomte, Sébastien Lecomte",MED3A,"Doc./004.6 INT",0,2012,2012,3,0,34
+LI,C0005521975,"Writer 3.3",,MED3A,"Doc./005 WRI",0,2012,2011,0,0,7
+LI,C0005521166,L'ordinateur,"Henri Lilen",MED3A,"Doc./005 WIN",0,2012,2012,5,0,18
+LI,C0005450824,"Démarrer sur Mac","[auteurs, collectif]",MED3A,"Doc./004 MAC",0,2012,2012,2,0,15
+LI,C0005450801,"Développer son blog","[Jean-Jacques Albinet, Loic Barn, Lilian Bourgevin, et al.]",MED3A,"Doc./004.6 BLO",0,2012,2012,3,0,10
+LI,C0005450817,"Mac Office","[auteurs, Grégory Nguyen, Marc Fanelli-Isla, Stéphanie Chaptal, et al.]",MED3A,"Doc./005 MAC",0,2012,2012,0,0,10
+LI,C0005451616,"Les réseaux sociaux Facebook et Twitter","Carolyn Abram, Laura Fitton, Michael E. Gruen... [et al.]",MED3A,"Doc./004.6 RES",0,2012,2012,3,0,25
+LI,C0005451609,"Windows 8","Sylvain Caicoya, Jean-Georges Saury",MED3A,"Doc./005 WIN",0,2012,2012,2,0,29
+LI,C0005395491,"Photoshop Elements 11","Bernard Jolivalt",MED3A,"Doc./005 PHO",0,2013,2013,5,0,22
+LI,C0005395743,"Photoshop CS6 et le Raw","Volker Gilbert",MED3A,"Doc./005 PHO",0,2013,2013,6,2,18
+LI,C0005395712,"Menaces cybernétiques","Yves-Marie Peyry",MED3A,"Doc./004 ABC",0,2013,2013,5,0,10
+LI,C0005395729,"Menace sur nos libertés","Julian Assange, Jacob Appelbaum, Andy Müller-Maguhn et Jérémie Zimmermann",MED3A,"Doc./004 INT",0,2013,2013,1,0,14
+LI,C0005546855,"Internet sans danger","[publié par Axa prévention]",MED3A,"Doc./004 WEB",0,2013,2013,2,0,8
+LI,C0005395705,"Internet sans danger","[publié par Axa prévention]",MED3A,"Doc./004 WEB",0,2013,2013,5,0,8
+LI,C0005395682,"Word 2013 pour les nuls","Dan Gookin",MED3A,"Doc./005 WOR",0,2013,2013,3,0,15
+LI,C0005003998,"Réussir son installation domotique et multimédia","François-Xavier Jeuland",MED3A,"Doc./005 MUL",0,2013,2012,1,0,6
+LI,C0005546909,"Comment le web change le monde","Francis Pisani et Dominique Piotet",MED3A,"Doc./004 WEB",0,2013,2013,0,0,3
+LI,C0005546879,"Créer un site web pour les nuls","David A. Crowder",MED3A,"Doc./004.678 CRO",0,2013,2013,1,0,19
+LI,C0005546893,"Créez votre application Web avec Java EE","Médéric Munier",MED3A,"Doc./005 ABC",0,2013,2013,6,0,20
+LI,C0005546848,"Découvrir le Mac, OS X Mountain Lion & Internet pour les nuls","Edward C. Baig",MED3A,"Doc./005 SYS",0,2013,2012,0,0,7
+LI,C0005546862,Facebook,"Fabien Benoit",MED3A,"Doc./004 SOC",0,2013,2013,4,2,12
+LI,C0005546886,Mail,,MED3A,"Doc./005 INT",0,2013,2013,0,0,1
+LI,C0005546794,"Mes tout premiers pas avec ma tablette PC pour Windows 8","Servane Heudiard",MED3A,"Doc./004 ABC",0,2013,2013,0,0,7
+LI,C0005546824,"PC portables pour les nuls","Dan Gookin",MED3A,"Doc./004 ABC",0,2013,2013,3,0,14
+LI,C0005546817,"Le PC pour tous","Nicolas Boudier-Ducloy",MED3A,"Doc./004 ABC",0,2013,2012,1,0,13
+LI,C0005546801,"Réussir son référencement web","Olivier Andrieu",MED3A,"Doc./004 WEB",0,2013,2013,2,0,13
+LI,C0005397495,Facebook,"Jérôme Genevray",MED3A,"Doc./004 SOC",0,2013,2013,3,0,17
+LI,C0005429936,GIMP,,MED1A,"Doc./005 INT",0,2013,2013,4,0,22
+LI,C0005396887,"Mes tout premiers pas en informatique","Servane Heudiard",MED3A,"Doc./004 ABC",0,2013,2013,1,0,13
+LI,C0005396863,LibreOffice,"José Roda",MED3A,"Doc./005.5 OFF",0,2013,2013,15,0,31
+LI,C0005397433,JavaScript,"Nicolas Froidure",MED3A,"Doc./005.13 JAV",0,2013,2013,5,1,20
+LI,C0005397419,"Photoshop CC","Jérôme Lesage",MED3A,"Doc./005 PHO",0,2013,2013,6,1,20
+LI,C0005397426,"PowerPoint 2013","Marina Mathias",MED3A,"Doc./005 POW",0,2013,2013,1,0,7
+LI,C0005397441,"Savoir tout faire à l'ordinateur",,MED3A,"Doc./004 ABC",0,2013,2013,4,0,20
+LI,C0005419371,"Développer des jeux en HTML5 & JavaScript","Samuel Ronce",MED3A,"Doc./006.78 RON",0,2013,2012,7,0,18
+LI,C0005398981,"60 règles d'or pour réussir son site web","Jean-Marc Hardy, Jacqueline Leo Lesage",MED3A,"Doc./004 WEB",0,2013,2013,5,2,15
+LI,C0005398959,"Excel 2013 pour les nuls","Greg Harvey",MED3A,"Doc./005 BUR",0,2013,2013,5,1,25
+LI,C0005398966,"Office 2013","Élisabeth Ravey, Marina-Nicole Mathias",MED3A,"Doc./005 BUR",0,2013,2013,1,1,17
+LI,C0005398973,"PowerPoint 2013","Doug Lowe",MED3A,"Doc./005 BUR",0,2013,2013,3,0,11
+LI,C0005399001,"Premiers pas en informatique","Dan Gookin, John R. Levine, Carol Baroudi... [et al.]",MED3A,"Doc./005 SYS",0,2013,2013,5,0,17
+LI,C0005398997,"Windows 8.1",Maran,MED3A,"Doc./005 SYS",0,2013,2013,2,0,14
+LI,C0005647279,"La 3D libre avec Blender 2.6","Olivier Saraja, Henri Hebeisen, Boris Fauret",MED3A,"Doc./006.68 SAR",0,2014,2013,5,1,14
+LI,C0005647293,Blender,"Jérôme Lesage",MED3A,"Doc./006.68 LES",0,2014,2013,5,0,9
+LI,C0005647361,"SketchUp 2013","Jean-Luc Clauss",MED3A,"Doc./006.6 CLA",0,2014,2013,2,1,9
+LI,C0005804207,GIMP,,MED1A,"Doc./005 INT",0,2014,2013,4,0,22
+VD,C0006012052,"Une contre-histoire d'Internet","Sylvain Bergère, réal.",MED3A,"DVD/002 ENJ",0,2014,,0,0,
+LI,C0005666690,"Amazon, la boutique à tout vendre","Brad Stone",MED3A,"Doc./000 ABC",0,2014,2014,1,0,4
+LI,C0005666614,"OS X Mavericks","Bob LeVitus",MED3A,"Doc./006 MAC",0,2014,2014,0,0,2
+LI,C0005666447,Smart,"Frédéric Martel",MED3A,"Doc./002 ENJ",0,2014,2014,0,0,
+LI,C0005666454,"Ma vie privée et Internet","Alexandre Boni et Nicolas Stemart",MED3A,"Doc./002 ENJ",0,2014,2014,4,0,13
+PE,C0006001490,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2°Prêt 3e étage",0,2014,2008,0,0,12
+LI,C0005665341,Arduino,"[Association Floss manuals France]",MED3A,"Doc./000 PRO",0,2014,2013,4,2,8
+LI,C0005665389,"Les bases du hacking","Patrick Engebretson",MED3A,"Doc./002 ENJ",0,2014,2013,8,9,23
+LI,C0005665303,"Blender pour l'impression 3D","[Association Floss manuals France]",MED3A,"Doc./000 MAT",0,2014,2014,1,2,2
+LI,C0005665297,Cinelerra-CV,"[Association Floss manuals France]",MED3A,,0,2014,2013,0,0,1
+LI,C0005665280,"Créer un EPUB","[Association Floss manuals francophone]",MED3A,"Doc./005 TXT",0,2014,2014,2,1,2
+LI,C0005665402,"Ergonomie web","Amélie Boucher",MED3A,"Doc./002 WEB",0,2014,2013,0,0,
+LI,C0005665310,"Fablab, hackerspace","[Association Floss manuals France]",MED3A,"Doc./003 RES",0,2014,2014,2,2,3
+LI,C0005665259,"Initiation à Gimp","[Cédric Gémy]",MED1A,"Doc./772 PRA",0,2014,2012,0,0,4
+LI,C0005665211,"Open office","[auteur, José Roda]",MED3A,"Doc./005 BUR",0,2014,2013,5,1,12
+LI,C0005665273,Puredata,"[Association Floss manuals France]",MED3A,,0,2014,2013,0,0,
+LI,C0005665365,RepRap,"[Association Floss manuals France]",MED3A,"Doc./000 MAT",0,2014,2014,3,1,5
+LI,C0005665266,Scribus,"[Association Floss manuals France]",MED3A,"Doc./005 PRE",0,2014,2014,1,0,5
+LI,C0005665327,Sésamath,"[publié par l'Association Floss manuals France]",MED3A,,0,2014,2013,0,0,
+LI,C0005665242,"Mathématiques et informatique","[sous la direction de Gilles Cohen]",MED3A,"Doc./000 ABC",0,2014,2014,5,1,16
+LN,,"Guide d'autodéfense numérique","Ouvrage collectif",MED3A,"Doc./000.ABC GAN.1",2,2014,,0,0,
+LN,,"Guide d'autodéfense numérique","Ouvrage collectif",MED3A,"Doc./000.ABC GAN.2",2,2014,,0,0,
+LN,,Thunderbird,FlossManual,MED3A,,2,2014,,0,0,
+LN,,"Pour un web ouvert",FlossManual,MED3A,Doc./002.WEB,2,2014,,0,0,
+PE,C0005974610,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2014,1993,0,0,5
+LI,C0005664115,"Comment s'épanouir à l'ère numérique","Tom Chatfield",MED3A,,0,2014,2014,0,0,3
+LI,C0005664092,"Les rebelles numériques","Daniel Ichbiah, Jean-Martial Lefranc",MED3A,"Doc./000 ABC",0,2014,2014,1,0,7
+PE,C0005972548,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2014,2013,0,0,10
+LI,,"Fablab, hackerspace","[Association Floss manuals France]",MED3A,"Doc./003 RES",2,2014,2014,0,2,
+LI,C0005746958,"Anonymat sur Internet","Martin Untersinger",MED3A,"Doc./002 ENJ",0,2014,2014,6,0,11
+LI,C0005746835,"Le citoyen de verre","Wolfgang Sofsky",MED3A,"Doc./002 ENJ",0,2014,2011,2,0,2
+LI,C0005746651,"Configuration et dépannage de PC","Sophie Lange",MED3A,"Doc./001 DEP",0,2014,2014,8,1,19
+LI,C0005746866,"L'ère du contexte","Robert Scoble et Shel Israel",MED3A,"Doc./002 ENJ",0,2014,2014,1,0,2
+LI,C0005746705,"Fab lab","Fabien Eychenne",MED3A,"Doc./000 MAT",0,2014,2012,3,0,6
+LI,C0005746668,"Les fondements de l'informatique","Hugues Bersini, Marie-Paule et Robert Spinette-Rose... [et al.]",MED3A,"Doc./000 ABC",0,2014,2014,4,1,5
+LI,C0005746804,"Le guide de l'impression 3D pour artisans et designers","Stephen Hoskins",MED3A,"Doc./000 MAT",0,2014,2014,4,1,9
+LI,C0005746927,"Guide de survie aux réseaux sociaux","Paul A. Muaddib",MED3A,"Doc./002 SOC",0,2014,2014,1,0,4
+LI,C0005746798,"Impression 3D pas à pas","Samuel N. Bernier, Bertier Luyt & Tatiana Reinhard",MED3A,"Doc./000 MAT",0,2014,2014,5,2,16
+LI,C0005746842,"Informatique & numérique à l'usage des seniors","Michèle Germain",MED3A,"Doc./000 MAT",0,2014,2012,5,0,13
+LI,C0005746903,"L'informatique et Internet expliqués aux seniors","Jean Besson et Jean-Marie Lanquetin",MED3A,"Doc./000 MAT",0,2014,2014,5,1,15
+LI,C0005746934,"Internet, mes parents, mes profs et moi","Christophe Butstraen",MED3A,"Doc./002 WEB",0,2014,2014,1,0,4
+LI,C0005746750,Java,"Barry Burd",MED3A,"Doc./004 PRO",0,2014,2014,9,0,22
+LI,C0005746873,"JavaScript & Ajax","Andy Harris",MED3A,"Doc./004 PRO",0,2014,2014,4,1,12
+LI,C0005746880,"Je sais qui vous êtes","par Charles Cohle",MED3A,"Doc./002 ENJ",0,2014,2014,6,0,18
+LI,C0005746910,"Loi et internet","Fabrice Mattatia",MED3A,"Doc./002 ENJ",0,2014,2013,3,0,3
+LI,C0005746859,"Maîtres ou esclaves du numérique ?","Benoît Sillard",MED3A,"Doc./002 ENJ",0,2014,2011,1,0,3
+LI,C0005746774,"Manuel de journalisme web","Mark Briggs",MED3A,"Doc./002 SOC",0,2014,2014,4,0,7
+LI,C0005746941,"Les meilleures applications pour les enfants !","auteure, Laure Deschamps",MED3A,"Doc./002 WEB",0,2014,2014,0,0,7
+LI,C0005746712,"Les nouvelles superpuissances","Daniel Ichbiah",MED3A,,0,2014,2013,2,0,9
+LI,C0005746736,"Richard Stallman et la révolution du logiciel libre","Richard M. Stallman, Sam Williams",MED3A,,0,2014,2013,4,0,8
+LI,C0005746729,SQL,"Frédéric Brouard, Rudi Bruchez, Christian Soutou",MED3A,"Doc./004 PRO",0,2014,2012,5,1,11
+LI,C0005746682,SQL,"Ronald R. Plew, Ryan Stephens, Arie Jones",MED3A,"Doc./004 PRO",0,2014,2012,5,0,11
+LI,C0005746897,"Steve Jobs","David Brunat, Antoine Dubuquoy",MED3A,"Doc./000 ABC",0,2014,2014,1,1,5
+LI,C0005746699,Surveillance,"Franck Leroy",MED3A,"Doc./002 ENJ",0,2014,2014,0,0,3
+LI,C0005746743,"Les tablettes Android","Dan Gookin",MED3A,"Doc./000 MAT",0,2014,2014,2,0,9
+LI,C0005746767,"Les tablettes Samsung Galaxy","Dan Gookin",MED3A,"Doc./000 MAT",0,2014,2014,0,0,7
+LI,C0005746965,"Tout ce qu'il faut savoir pour protéger votre vie privée sur internet","Daniel-Jean David",MED3A,"Doc./002 ENJ",0,2014,2014,6,0,14
+LI,C0005746811,"Wild wild web. ",,MED3A,"Doc./002 WEB",0,2014,2014,0,0,4
+PE,C0005971558,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2014,2013,0,0,8
+LI,,Scribus,"[Association Floss manuals France]",MED3A,,2,2014,2014,0,0,
+LI,,"Initiation à Inkscape","[Elisa de Castro Guerra]",MED3A,,2,2014,2014,0,1,
+LI,,Puredata,"[Association Floss manuals France]",MED3A,,2,2014,2013,0,0,
+LI,,"Fontes libres","[Association Floss manuals France]",MED3A,,2,2014,2015,0,0,
+LI,,Cinelerra-CV,"[Association Floss manuals France]",MED3A,,2,2014,2013,0,0,
+LI,,RepRap,"[Association Floss manuals France]",MED3A,,2,2014,2014,0,1,
+LI,,"Blender pour l'impression 3D","[Association Floss manuals France]",MED3A,,2,2014,2014,0,2,
+PE,C0002074500,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage",0,2015,2009,3,0,12
+PE,C0002074712,Androïd,"dir. de publ. David Côme",MED1A,"P 20962 1°RDC 2°Prêt 3e étage",0,2015,2011,0,0,7
+PE,C0002074665,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED1A,"P 31478 Prêt adultes",0,2015,1999,5,0,18
+PE,C0005784103,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2015,1993,0,0,4
+PE,C0005745777,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,
+PE,C0005735235,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,3
+PE,C0005734511,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2°Prêt 3e étage",0,2015,2008,6,0,19
+PE,C0005966592,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2015,1998,3,0,4
+PE,C0005966561,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2015,1998,6,0,19
+PE,C0005966554,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2015,1998,8,0,20
+LI,C0005663170,"L'ordinateur avec Windows 8.1","Dan Gookin",MED3A,"Doc./006 WIN",0,2015,2015,1,0,8
+LI,C0005663156,"Internet et courriel","Servane Heudiard",MED3A,"Doc./002 WEB",0,2015,2015,3,0,6
+PE,C0005762651,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,2
+PE,C0005761395,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,
+PE,C0005761142,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED1A,"P 31478 Prêt adultes",0,2015,1999,4,0,14
+PE,C0005760978,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2015,1998,3,0,11
+PE,C0005763719,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2015,1998,10,0,10
+PE,C0005731770,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage",0,2015,2009,0,0,1
+PE,C0005731701,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2015,1998,6,0,15
+PE,C0005728022,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,
+PE,C0005726196,"Canard PC hardware","dir. de publ. Jérôme Darnaudet",MED3A,"P 31556 Prêt 3e étage",0,2015,2012,0,0,5
+PE,C0005726189,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED1A,"P 31478 Prêt adultes",0,2015,1999,0,0,5
+PE,C0005725199,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,1
+PE,C0005725175,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2015,1993,0,0,1
+PE,C0005725168,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2015,1993,0,0,1
+PE,C0005725182,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2015,1993,3,0,9
+PE,C0005963102,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2015,1998,0,0,5
+PE,C0005721313,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,5
+PE,C0005708642,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2015,1998,5,0,8
+PE,C0005707874,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2015,1993,0,0,6
+PE,C0005707201,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2015,1998,8,0,17
+PE,C0005842711,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED1A,"P 31478 Prêt adultes",0,2015,1999,4,0,10
+PE,C0005706709,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,7
+PE,C3200000007,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,5
+LI,C1300000437,"Drupal avancé","Christophe Villeneuve, Vanessa Kovalsky David",MED3A,"Doc./002 WEB",0,2015,2015,1,0,1
+LI,C1300000436,"Internet, mail et réseaux sociaux","Jean-François Sehan",MED3A,"Doc./002 WEB",0,2015,2015,7,0,9
+LI,C1300000435,"Programmer pour les nuls","Olivier Engler & Wallace Wang",MED3A,"Doc./004 PRO",0,2015,2015,2,0,9
+LI,C1300000434,"Apple Watch","Yasmina Salmandjee-Lecomte",MED3A,"Doc./000 MAT",0,2015,2015,0,0,
+LI,C1300000433,"Tout sur mon smartphone Android","Dan Gookin",MED3A,"Doc./000 MAT",0,2015,2015,6,0,13
+LI,C2100000766,"Débuter sur Mac","Mark L. Chambers",MED3A,"Doc./000 MAT",0,2015,2015,4,0,5
+LI,C2100000767,Facebook,"Carolyn Abram, Leah Pearlman",MED3A,"Doc./002 SOC",0,2015,2015,5,0,15
+LI,C2100000768,"Tout sur les réseaux et internet","Jean-François Pillou, Fabrice Lemainque",MED3A,"Doc./003 RES",0,2015,2015,3,1,6
+LI,C2100000793,"Internet poche","John R. Levine, Margaret Levine Young et Carol Baroudi",MED3A,"Doc./002 WEB",0,2015,2015,2,1,6
+LI,C1300000495,"Mes tout premiers pas avec mon ordinateur portable","Servane Heudiard",MED3A,"Doc./000 MAT",0,2015,2015,4,0,11
+PE,C3200000175,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2°Prêt 3e étage",0,2015,2008,7,0,14
+LI,C2100000867,"L'impression 3D avec SketchUp","Jean-Luc Clauss",MED3A,"Doc./000 MAT",0,2015,2014,3,2,8
+LI,C2100000868,"Compétence Mac, hors série : les guides pratiques. ","Christophe Schmitt",MED3A,"Doc./000 MAT",0,2015,2015,3,0,3
+LI,C2100000869,"Tout sur les tablettes Samsung Galaxy","Dan Gookin",MED3A,"Doc./000 MAT",0,2015,2015,2,0,6
+LI,C2100000870,Linux,"[Nicolas Pons]",MED3A,"Doc./006 LIN",0,2015,2015,3,0,7
+LI,C2100000871,"LibreOffice 4.4","[Myriam Gris]",MED3A,"Doc./005 BUR",0,2015,2015,3,0,6
+LI,C2100000872,"Les nouveaux outils bureautiques gratuits","Christophe Blazquez, Samir Zamoum",MED3A,"Doc./005 BUR",0,2015,2015,3,0,4
+LI,C2100000873,"La tablette numérique à l'usage des seniors","Michèle Germain",MED3A,"Doc./000 MAT",0,2015,2015,3,0,9
+LI,C1300000592,L'ordinateur,"Philip Escartin",MED3A,"Doc./000 MAT",0,2015,2015,3,0,10
+LI,C2100000897,Facebook,"Yasmina & Sébastien Lecomte",MED3A,"Doc./002 SOC",0,2015,2015,5,0,13
+LI,C2100000898,"Mes tout premiers pas avec mon Mac, iMac et MacBook","Bernard Jolivalt",MED3A,"Doc./000 MAT",0,2015,2015,2,0,3
+LI,C2100000900,"FabLabs, etc.","Camille Bosqué, Ophélia Noor, Laurent Ricard",MED3A,"Doc./003 RES",0,2015,2014,3,1,7
+LI,C2100000955,Python,"Vincent Maille",MED3A,"Doc./004 PRO",0,2015,2015,1,0,11
+LI,C2100000954,"HTML5, CSS3 & JQuery","Michel Martin",MED3A,"Doc./002 WEB",0,2015,2014,5,1,7
+LI,C2100001042,"Apprendre à programmer en Python","Frédéric Laroche",MED3A,"Doc./004 PRO",0,2015,2015,5,2,19
+PE,C3200000342,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2015,2013,5,0,12
+LI,C2100001136,"Tablettes Android, y a pas plus simple","Servane Heudiard",MED3A,"Doc./000 MAT",0,2015,2015,1,1,6
+LI,C2100001135,"Créez votre premier site web","[Christophe Aubry]",MED3A,"Doc./002 WEB",0,2015,2015,2,1,5
+PE,C3200000639,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,3
+PE,C3200000570,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2015,1998,6,0,13
+PE,C3200000091,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2015,1998,2,0,8
+PE,C0005728121,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2015,1998,7,0,15
+PE,C2100002521,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2°Prêt 3e étage",0,2015,2008,6,0,12
+PE,C3200000953,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2015,2013,0,0,1
+PE,C2100002852,"Canard PC hardware","dir. de publ. Jérôme Darnaudet",MED3A,"P 31556 Prêt 3e étage",0,2015,2012,2,0,8
+PE,C3200001009,Androïd,"dir. de publ. David Côme",MED1A,"P 20962 1°RDC 2°Prêt 3e étage",0,2016,2011,7,0,14
+PE,C3200001075,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,3,0,6
+PE,C3200001071,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED1A,"P 31478 Prêt adultes",0,2016,1999,2,0,8
+PE,C3200004411,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2016,1993,4,0,6
+PE,C2100003212,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage",0,2016,2009,5,0,7
+PE,C3200001322,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2016,1998,6,0,11
+PE,c3200001375,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2°Prêt 3e étage",0,2016,2008,0,0,3
+PE,C3200001489,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,7,0,11
+LI,C2100003794,"Les innovateurs","Walter Isaacson",MED3A,"Doc./000 ABC",0,2016,2015,3,2,4
+LI,C2100003791,"Programmer avec JavaScript en s'amusant mégapoche pour les Nuls",,MED3A,"Doc./004 PRO",0,2016,2015,7,2,11
+LI,C2100003790,"L'univers secret de la cryptographie",,MED3A,"Doc./002 ENJ",0,2016,2015,2,1,4
+LI,C2100003786,Linux,"Richard Blum",MED3A,"Doc./006 LIN",0,2016,2015,4,1,9
+LI,C2100003784,"Ces objets connectés qui vont changer votre vie","Jérôme Colombain, Yasmina Lecomte & François Sorel",MED3A,"Doc./000 ABC",0,2016,2015,2,0,3
+LI,C2100003783,"Apprenez à programmer en C","Mathieu Nebra",MED3A,"Doc./004 PRO",0,2016,2015,4,1,8
+LI,C2100003777,"Apprenez à programmer en Java","Cyrille Herby",MED3A,"Doc./004 PRO",0,2016,2015,4,0,10
+PE,C3200001635,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2016,2013,2,0,6
+LI,C3200001015,"Guide d'autodéfense numérique","ouvrage collectif",MED3A,"Doc./002 GUI",0,2016,2014,4,0,6
+PE,C3200001871,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2°Prêt 3e étage",0,2016,2008,7,0,12
+PE,C3200001864,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED1A,"P 31478 Prêt adultes",0,2016,1999,5,0,11
+PE,C3200001863,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,2,0,5
+PE,C0005817375,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2016,1993,3,0,6
+PE,C3200001882,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,4,0,5
+PE,C3200001959,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage",0,2016,2009,7,0,17
+PE,C3200002015,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2016,2013,4,0,9
+PE,C3200002055,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,2,0,7
+PE,C3200002032,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2016,1998,4,0,11
+PE,C3200002086,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2016,1998,7,0,11
+LI,C2100004524,"Windows 10","Jean-François Sehan",MED3A,"Doc./006 WIN",0,2016,2015,10,16,16
+PE,C3200002218,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,3,0,7
+PE,C3200002247,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,2,0,6
+PE,C3200002239,"Canard PC hardware","dir. de publ. Jérôme Darnaudet",MED3A,"P 31556 Prêt 3e étage",0,2016,2012,3,0,7
+PE,C3200002337,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt 3e étage",0,2016,2013,0,0,
+PE,C3200002377,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,4,0,9
+PE,C3200002563,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED1A,"P 31478 Prêt adultes",0,2016,1999,0,0,6
+PE,C3200002584,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2°Prêt 3e étage",0,2016,2008,7,0,11
+PE,C3200002580,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,3,0,5
+PE,C3200002706,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage ",0,2016,2009,7,0,10
+PE,C3200002689,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,5,0,9
+PE,C3200002727,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2016,2013,9,0,13
+PE,C3200002725,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2016,1993,0,0,1
+PE,C2200001390,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2016,1998,7,0,11
+PE,C3200002921,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,4,0,7
+PE,C3200002954,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2° Prêt 3e étage",0,2016,2008,6,0,11
+PE,C3200002982,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,2,0,4
+PE,C3200003002,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,3,0,8
+PE,C3200003013,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2016,2013,0,0,2
+PE,C3200003030,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2016,1998,3,0,5
+LI,C2100006514,"Créez des jeux de A à Z avec Unity","par Anthony Cardinale",MED3A,"Doc./004 PRO",0,2016,2015,5,0,8
+LI,C2100006516,"Tout sur mon MacBook Pro, Air & Retina pour les nuls","Mark L. Chambers",MED3A,"Doc./000 MAT",0,2016,2015,1,0,2
+PE,C2200002126,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,4,0,6
+PE,C3200003263,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage ",0,2016,2009,7,0,10
+PE,C3200003288,"Canard PC hardware","dir. de publ. Jérôme Darnaudet",MED3A,"P 31556 Prêt 3e étage",0,2016,2012,0,0,3
+PE,C3200003301,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2016,2013,6,0,9
+PE,C3200004727,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2016,1993,4,0,5
+PE,C3200003353,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,0,0,
+PE,C3200003341,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,3,0,4
+PE,C3200003365,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED1A,"P 31478 Prêt adultes",0,2016,1999,2,0,7
+PE,C3200003504,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2016,1998,0,0,1
+PE,C3200003487,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2° Prêt 3e étage",0,2016,2008,6,0,8
+PE,C3200003602,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2016,2013,7,0,9
+PE,C3200003666,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,0,0,1
+LI,C2100008221,"Le guide de Lua et ses applications","écrit sous la direction de Sylvain Fabre",MED3A,"Doc./004 LUA",0,2016,2016,1,1,2
+LI,C2100008220,"Le guide de Lua et ses applications","écrit sous la direction de Sylvain Fabre",MED3A,"Doc./004 LUA",0,2016,2016,1,0,2
+LI,C2100008219,"Réussir son référencement web","Olivier Andrieu",MED3A,"Doc./003 REF",0,2016,2016,7,15,10
+PE,C3200003876,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2016,2013,2,0,3
+PE,C3200003934,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage ",0,2016,2009,8,0,8
+PE,C3200004005,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,4,0,4
+PE,C2200003026,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,4,0,5
+PE,C3200004775,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2016,1993,4,0,4
+PE,C3200004045,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED3A,"P 31478 1°Prêt 3e étage",0,2016,1999,4,0,6
+PE,C2100008372,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,2,0,2
+PE,C3200004129,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2° Prêt 3e étage",0,2016,2008,8,0,8
+PE,C3200004226,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2016,2013,7,0,8
+PE,C3200004251,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2016,1998,4,0,4
+LI,C0005665235,LibreOffice,,MED3A,"Doc./005 BUR",0,2016,2013,2,1,3
+PE,C3200004337,"Canard PC hardware","dir. de publ. Jérôme Darnaudet",MED3A,"P 31556 Prêt 3e étage",0,2016,2012,3,0,5
+PE,C3200004383,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,3,0,3
+PE,C3200004376,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,2,0,2
+PE,C2100008411,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2° Prêt 3e étage",0,2016,2008,7,0,7
+PE,C2200004351,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2016,1998,6,0,6
+PE,C2200004536,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,7,0,8
+PE,C3200004546,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2016,2013,0,0,
+PE,C3200004705,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,6,0,6
+PE,C3200004771,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2016,1993,7,0,7
+PE,C3200004800,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage ",0,2016,2009,7,0,7
+PE,C3200004790,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED3A,"P 31478 1°Prêt 3e étage",0,2016,1999,9,0,9
+PE,C1300003167,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,7,0,7
+PE,C1300003156,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2016,1998,7,0,7
+LI,C2100008970,"Internet rend-il bête ?","Nicholas Carr",MED3A,"Doc./002 ENJ",0,2016,2011,2,1,2
+PE,C3200005113,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2° Prêt 3e étage",0,2016,2008,6,0,6
+PE,C3200005128,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,5,0,5
+PE,C3200005234,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2016,2003,3,0,3
+PE,C3200004804,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,4,0,4
+PE,C3200005186,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2016,1998,6,0,6
+PE,C2400000048,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2016,2013,3,0,3
+PE,C3200005423,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2016,2003,2,0,2
+PE,C3200005510,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED3A,"P 31478 1°Prêt 3e étage",0,2016,1999,6,0,6
+PE,C3200005529,"Canard PC hardware","dir. de publ. Jérôme Darnaudet",MED3A,"P 31556 Prêt 3e étage",0,2016,2012,5,0,5
+LI,C2400000185,"IPad édition iOS 10 pour les nuls",,MED3A,"Doc./000 MAT",0,2017,2016,1,1,1
+LI,C2400000208,"Bases de données","Jean-Luc Hainaut",MED3A,"Doc./004 PRO",0,2017,2015,5,3,5
+LI,C2400000219,"MacOS Sierra pour les nuls",,MED3A,"Doc./006 MAC",0,2017,2016,0,0,
+LI,C2400000218,"Gérer mon univers Apple","Paul Durand Degranges",MED3A,"Doc./006 MAC",0,2017,2016,1,0,1
+LI,C2400000216,"La boîte à outils des réseaux sociaux","Cyril Bladier",MED3A,"Doc./002 SOC",0,2017,2016,3,2,3
+LI,C2400000200,AngularJS,"[Sébastien Ollivier, Pierre-Alexandre Gury]",MED3A,"Doc./004 PRO",0,2017,2015,2,0,2
+LI,C2400000190,"Intelligence artificielle","Tristan Cazenave,...",MED3A,"Doc./000 ABC",0,2017,2011,4,0,4
+LI,C2400000205,"Le grand livre d'Arduino","Erik Bartmann",MED3A,"Doc./000 MAT",0,2017,2014,3,0,3
+LI,C2400000204,UNIX,"[Michel Dutreix]",MED3A,"Doc./006 LIN",0,2017,2015,4,1,4
+LI,C2400000220,Node.js,"[Julien Fontanet, Olivier Lambert]",MED3A,"Doc./004 PRO",0,2017,2015,3,2,3
+LI,C2400000191,"Les bases de données NoSQL et le big data","Rudi Bruchez",MED3A,"Doc./004 PRO",0,2017,2015,5,5,5
+LI,C2400000189,"PowerPoint 2016","[Myriam Gris]",MED3A,"Doc./005 PRE",0,2017,2016,0,0,
+LI,C2400000215,"Raspberry Pi A+, B+ et 2","Christian Tavernier",MED3A,"Doc./000 MAT",0,2017,2015,6,1,6
+LI,C2400000214,"Tablettes Android","[Servane Heudiard]",MED3A,"Doc./000 MAT",0,2017,2016,1,0,1
+LI,C2400000196,Cryptographie,"Pierre Vigoureux",MED3A,"Doc./002 ENJ",0,2017,2016,6,1,6
+LI,C2400000197,"Facebook pour les nuls","Carolyn Abram, Leah Pearlman",MED3A,"Doc./002 SOC",0,2017,2016,0,0,
+LI,C2400000186,"Office 2016","Wallace Wang",MED3A,"Doc./005 BUR",0,2017,2016,2,0,3
+LI,C2400000187,"L'âge du faire","Michel Lallement",MED3A,"Doc./000 ABC",0,2017,2015,5,2,5
+LI,C2400000188,"Créer son site Web",,MED3A,"Doc./002 WEB",0,2017,2016,2,4,2
+LI,C2400000203,"Android 5","[Nazim Benbourahala]",MED3A,"Doc./006 MOB",0,2017,2015,4,0,4
+LI,C2400000202,"Les réseaux sociaux","Yasmina Salmandjee-Lecomte",MED3A,"Doc./002 SOC",0,2017,2016,1,0,1
+LI,,"Les drones","Rodolphe Jobard",MED3A,,-2,2017,2016,0,1,
+LI,C2400000192,"À l'aventure avec Arduino","Becky Stewart",MED3A,"Doc./000 MAT",0,2017,2015,2,0,2
+LI,C2400000193,"L'intelligence artificielle en images","Henry Brighton & Howard Selina",MED3A,"Doc./000 ABC",0,2017,2015,1,0,1
+LI,C2400000194,"La nouvelle servitude volontaire",,MED3A,"Doc./000A BC",0,2017,2016,3,2,3
+LI,C2400000195,"Lettres à Alan Turing","réunies et présentées par Jean-Marc Lévy-Leblond",MED3A,"Doc./000 ABC",0,2017,2016,1,0,1
+LI,C2400000207,"Word 2016 pour Mac ",,MED3A,"Doc./005 TXT",0,2017,2016,0,0,
+LI,C2400000206,"JQuery - Le framework javascript pour des sites dynamiques et interactifs ",,MED3A,"Doc./004 PRO",0,2017,2016,1,0,1
+LI,C2400000213,"Facebook ",,MED3A,"Doc./002 SOC",0,2017,2016,2,0,2
+LI,C2400000209,"Projets Arduino","Brock Craft",MED3A,"Doc./000 MAT",0,2017,2016,3,1,3
+LI,C2400000210,Processing,"Jean-Michel Géridan, Jean-Noël Lafargue",MED3A,"Doc./004 PRO",0,2017,2016,3,2,3
+LI,C2400000211,"Raspberry Pi et l'ESP 8266 pour la domotique","Marc-Olivier Schwartz,...",MED3A,"Doc./000 MAT",0,2017,2016,3,3,3
+LI,C2400000212,"Sociologie du numérique","Dominique Boullier",MED3A,"Doc./000 ABC",0,2017,2016,2,0,2
+LI,C2400000078,"WordPress 4.5","[Christophe Aubry]",MED3A,"Doc./002 WEB",0,2017,2016,3,4,3
+LI,C2400000080,"Mes tout premiers pas avec Windows 10","Servane Heudiard",MED3A,"Doc./006 WIN",0,2017,2016,2,0,2
+LI,C2400000076,"Du C au C++","[Frédéric Drouillon]",MED3A,"Doc./004 PRO",0,2017,2014,2,0,2
+LI,C2400000070,"Drupal 8","Christophe Aubry",MED3A,"Doc./002 WEB",0,2017,2015,0,0,
+LI,C2400000069,"LibreOffice Calc 5",,MED3A,"Doc./005 CAL",0,2017,2016,2,0,2
+LI,C2400000068,Linux,"[Nicolas Pons]",MED3A,"Doc./006 LIN",0,2017,2016,3,2,3
+LI,C2400000067,"Word 2016","Dan Gookin",MED3A,"Doc./005 TXT",0,2017,2016,1,0,2
+LI,C2400000066,"La tête dans la toile","Xavier de La Porte",MED3A,"Doc./002 ENJ",0,2017,2016,0,0,
+LI,C2400000065,"LibreOffice Writer 5",,MED3A,"Doc./005 TXT",0,2017,2016,1,0,1
+LI,C2400000064,"Java 8","[Thierry Groussard]",MED3A,"Doc./004 PRO",0,2017,2014,3,0,3
+LI,C2400000075,"Macros et langage VBA","Frédéric Le Guen",MED3A,"Doc./005 CAL",0,2017,2015,4,0,5
+LI,C2400000073,"Mouvement, lumière et son avec Arduino et Raspberry Pi","Simon Monk",MED3A,"Doc./000 MAT",0,2017,2016,5,3,5
+LI,C2400000072,"Apprendre la programmation par le jeu","Vincent Maille",MED3A,"Doc./004 PRO",0,2017,2015,6,5,6
+LI,C2400000071,"Réseaux informatiques","[José Dordoigne]",MED3A,"Doc./003 RES",0,2017,2015,3,1,3
+LI,C2400000053,"Lire et penser en milieux numériques","N. Katherine Hayles",MED3A,"Doc./000 ABC",0,2017,2016,1,0,1
+LI,C2400000054,Surveillance://,,MED3A,"Doc./000 ABC",0,2017,2016,3,2,3
+LI,C2400000055,"La silicolonisation du monde","Éric Sadin",MED3A,"Doc./000 ABC",0,2017,2016,3,1,3
+LI,C2400000056,"Excel 2016","Greg Harvey",MED3A,"Doc./005 CAL",0,2017,2016,5,0,6
+LI,C2400000057,"Guide WordPress","Patrick Lenormand",MED3A,"Doc./002 WEB",0,2017,2016,6,11,6
+LI,C2400000058,"Le livre de Windows 10 et internet","Jean-François Sehan",MED3A,"Doc./006 WIN",0,2017,2016,4,2,4
+LI,C2400000352,"Réaliser des graphiques avec Excel : 30 modèles percutants pour présenter des synthèses, analyser des résultats et construire des simulations visuelles","Frédéric  Rosard, auteur du texte ; Jean-Marc  Lagoda     , auteur du texte",MED3A,"Doc./005 CAL",0,2017,2016,1,0,1
+LI,C2400000060,"Programmation efficace","Christoph Dürr, Jill-Jênn Vie",MED3A,"Doc./004 PRO",0,2017,2016,2,2,3
+LI,C2400000229,"Apprendre à programmer avec Python 3","Gérard Swinnen",MED3A,"Doc./004 PRO",0,2017,2012,5,3,5
+LI,C2400000062,Linux,"[Philippe Pinchon]",MED3A,"Doc./006 LIN",0,2017,2016,2,1,2
+LI,C2400000157,"Les fondamentaux du langage Perl 5","[Philippe Banquet]",MED3A,"Doc./004 PRO",0,2017,2013,1,0,1
+LI,C2400000322,Arduino,"[Nicolas Goilav, Geoffrey Loi]",MED3A,"Doc./000 MAT",0,2017,2015,2,0,2
+LI,C2400000162,"A la découverte de Mac OS X 10.12",,MED3A,"Doc./006 MAC",0,2017,2016,1,0,1
+LI,C2400000156,"Le big data","Pierre Delort",MED3A,"Doc./000 ABC",0,2017,2015,1,0,2
+LI,C2400000155,"Les fabriques de soi ?","Gustavo Gomez-Mejia",MED3A,"Doc./002 ENJ",0,2017,2016,2,0,2
+LI,C2400000163,"Tout sur la sécurité informatique","Jean-François Pillou, Jean-Philippe Bay",MED3A,"Doc./003 RES",0,2017,2016,4,1,4
+LI,C2400000165,"Premiers pas vers le digital",,MED3A,"Doc./002 WEB",0,2017,2016,2,0,2
+LI,C2400000166,"Informatique & numérique à l'usage des seniors et autres débutants","Michèle Germain",MED3A,"Doc./002 MAT",0,2017,2016,2,1,2
+LI,C2400000160,"Réparez vous-même votre Apple","Adam Banks, ""MacUser"", iFixit",MED3A,"Doc./006 MAC",0,2017,2015,1,1,1
+LI,C2400000174,"Architecture des machines et des systèmes informatiques","Alain Cazes,... Joëlle Delacroix,...",MED3A,"Doc./000 MAT",0,2017,2015,2,2,2
+LI,C2400000175,"Tuto Arduino uno","Bert Van Dam",MED3A,"Doc./000 MAT",0,2017,2016,4,1,4
+LI,C2400000177,"Réseaux, libertés et contrôle","Benjamin Loveluck",MED3A,"Doc./002 ENJ",0,2017,2015,0,0,
+LI,C2400000167,"L'adolescent face à Facebook : ",,MED3A,"Doc./002 SOC",0,2017,2016,0,0,
+LI,C2400000168,Ajax,"[Luc Van Lancker]",MED3A,"Doc./004 PRO",0,2017,2015,2,1,2
+LI,C2400000169,"Découvrez le langage Swift","Rudy de Visscher",MED3A,"Doc./004 PRO",0,2017,2016,0,0,
+LI,C2400000170,"Démarrez avec Arduino","Massimo Banzi et Michael Shiloh",MED3A,"Doc./000 MAT",0,2017,2015,3,0,3
+LI,C2400000171,"Analyse de données avec R","François Husson, Sébastien Lê et Jérôme Pagès",MED3A,"Doc./004 PRO",0,2017,2016,4,2,4
+LI,C2400000172,"Big data et machine learning","Pirmin Lemberger, Marc Batty, Médéric Morel... [et al.]",MED3A,"Doc./004 PRO",0,2017,2016,4,1,4
+LI,C2400000178,"Les smartphones Android","Dan Gookin",MED3A,"Doc./006 MOB",0,2017,2016,0,0,
+LI,C2400000183,"La boîte à outils Arduino","Michael Margolis",MED3A,"Doc./000 MAT",0,2017,2015,4,1,4
+LI,C2400000173,"Configuration et dépannage de pc",,MED3A,"Doc./001 DEP",0,2017,2016,4,1,4
+LI,C2400000184,"Open data","Jean-Philippe Gouigoux",MED3A,"Doc./002 ENJ",0,2017,2016,3,0,3
+LI,C2400000079,"Programmer en Java","Claude Delannoy",MED3A,"Doc./004 PRO",0,2017,2016,3,2,3
+LI,C2400000082,SCRUM,"Claude Aubry,...",MED3A,"Doc./004 PRO",0,2017,2015,4,1,4
+LI,C2400000081,"Word, Excel, PowerPoint & Outlook 2016","Dan Gookin, Greg Harvey & Wallace Wang",MED3A,"Doc./005 BUR",0,2017,2016,3,0,3
+LI,C2400000179,"Big Data, penser l'homme et le monde autrement",,MED3A,"Doc./000 ABC",0,2017,2016,3,1,3
+LI,C2400000085,"À la découverte de Windows 10","Mathieu Lavant",MED3A,"Doc./006 WIN",0,2017,2016,8,6,8
+LI,C2400000084,"PHP 7","[Olivier Heurtel]",MED3A,"Doc./004 PRO",0,2017,2016,2,2,3
+LI,C2400000182,"Utiliser le clavier et la souris","Daniel Rougé",MED3A,"Doc./000 MAT",0,2017,2015,3,0,3
+LI,C2400000086,"Programmer en langage C","Claude Delannoy",MED3A,"Doc./004 PRO",0,2017,2016,4,2,5
+LI,C2400000181,"Le guide des youtubers","Sébastien Moricard & Alain T. Puyssegur",MED3A,"Doc./002 WEB",0,2017,2016,3,3,3
+LI,C2400000077,"Raspberry Pi 3 ou Pi Zero - Exploitez tout le potentiel de votre nano-ordinateur ",,MED3A,"Doc./000 MAT",0,2017,2016,3,2,3
+LI,C2400000074,"Javascript pour les nuls ",,MED3A,"Doc./004 PRO",0,2017,2016,3,2,3
+LI,C2400000164,"Android - Guide de développement d'applications java pour smartphones et tablettes ",,MED3A,"Doc./004 PRO",0,2017,2016,4,1,4
+LI,C2400000176,"Sécurité sur Internet ",,MED3A,"Doc./002 ENJ",0,2017,2016,3,0,3
+LI,C2400000180,"L'Ordinateur avec Windows 10 pour les nuls ",,MED3A,"Doc./006 WIN",0,2017,2016,3,0,3
+PE,C3200005613,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,3,0,3
+PE,C3200005642,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage ",0,2017,2009,3,0,3
+PE,C3200005725,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,4,0,4
+PE,C3200005721,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2017,1993,3,0,3
+PE,C3200005762,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,3,0,3
+PE,C3200005775,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2° Prêt 3e étage",0,2017,2008,3,0,3
+PE,C3200005886,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,0,0,
+PE,C3200005929,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,2,0,2
+PE,c3200005945,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2017,2013,0,0,
+PE,C3200006013,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,3,0,3
+PE,C3200006040,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,2,0,2
+PE,C3200006078,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2017,1998,4,0,4
+PE,C3200006126,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2017,1998,6,0,7
+PE,C3200006100,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2017,1998,4,0,4
+PE,C3200006209,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2017,1998,2,0,2
+PE,C3200006198,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED3A,"P 31478 1°Prêt 3e étage",0,2017,1999,2,0,2
+PE,C3200006196,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage ",0,2017,2009,4,0,4
+PE,C3200006290,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,1,0,1
+PE,C2200005509,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2017,1993,3,0,3
+PE,C2200005477,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,5,0,5
+PE,C3200006342,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2017,1998,6,0,6
+PE,C3200006337,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2017,2013,4,0,4
+PE,C3200006423,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,0,0,
+PE,C3200006440,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2° Prêt 3e étage",0,2017,2008,2,0,2
+PE,C3200006468,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,3,0,3
+PE,C3200006556,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2017,1998,3,0,3
+PE,C3200006569,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2017,1998,5,0,5
+PE,C3200006589,"Canard PC hardware","dir. de publ. Jérôme Darnaudet",MED3A,"P 31556 Prêt 3e étage",0,2017,2012,4,0,4
+PE,C3200006700,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,6,0,6
+PE,C3200006689,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2017,2013,4,0,4
+PE,C2200005680,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,0,0,
+PE,C3200006813,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,2,0,2
+PE,C2200005708,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,5,0,5
+PE,C2200005732,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage ",0,2017,2009,4,0,4
+PE,C2200005726,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED3A,"P 31478 1°Prêt 3e étage",0,2017,1999,4,0,4
+PE,C3200006945,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2017,1998,1,0,1
+PE,C3200007001,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,0,0,
+PE,C3200007018,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2017,1993,1,0,1
+PE,C3200007022,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2017,2013,5,0,5
+PE,C3200007096,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,4,0,4
+LI,C2400000327,"Les métiers des jeux vidéo et de l'image","Jean-Michel Oullion",MED3A,"Doc./031 SCI",0,2017,2016,0,0,
+LI,C2400000333,"Les métiers du web et du digital","Jean-Michel Oullion",MED3A,"Doc./031 SCI",0,2017,2016,0,0,
+LI,C2400000328,"Les métiers de la création et du design","Virginie Plaut",MED3A,"Doc./031 SCI",0,2017,2017,1,0,1
+PE,C3200007131,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,3,0,3
+PE,C3200007126,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2017,1998,3,0,3
+PE,C3200007245,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2° Prêt 3e étage",0,2017,2008,3,0,3
+PE,C2200005961,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,3,0,3
+PE,C3200007364,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,2,0,2
+PE,C3200007354,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2017,2013,5,0,5
+PE,C2200006025,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,4,0,4
+PE,C2200006053,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2017,1998,1,0,1
+PE,C3200007451,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,1,0,1
+PE,C3200007464,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,1,0,1
+PE,C3200007658,"Canard PC hardware","dir. de publ. Jérôme Darnaudet",MED3A,"P 31556 Prêt 3e étage",0,2017,2012,4,0,4
+PE,C3200008662,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2017,2013,4,0,4
+PE,C3200007670,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage ",0,2017,2009,0,0,
+PE,C3200007687,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED3A,"P 31478 1°Prêt 3e étage",0,2017,1999,1,0,1
+PE,C3200007706,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,1,0,1
+PE,C3200007704,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,4,0,4
+PE,C3200007703,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2017,1998,0,0,
+PE,C3200007728,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",0,2017,1993,3,0,3
+PE,C3200007902,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2017,1998,2,0,2
+PE,C3200007883,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2017,1998,3,0,4
+PE,C3200007957,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,0,0,
+PE,C3200007962,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2° Prêt 3e étage",0,2017,2008,2,0,2
+PE,C3200007993,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2017,2013,2,0,2
+PE,C3200008022,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,2,0,2
+PE,C3200008280,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2017,2013,2,0,2
+PE,C3200008292,"Compétence Mac","dir. de publ. Mikkel Franck",MED3A,"P 31519 1°RDC 2°Prêt 3e étage ",2,2017,2009,0,0,
+PE,c3200008361,Freelog,"dir. de publ. Hafida Hamdani",MED3A,"P 31413 1°RDC 2°Prêt 3e étage",2,2017,1993,0,0,
+PE,c3200008401,"Linux pratique. Essentiel","dir. de publ. Arnaud Metzler",MED3A,"P 31478 1°Prêt 3e étage",0,2017,1999,2,0,2
+PE,c3200008387,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,1,0,1
+PE,c3200008395,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",0,2017,1998,0,0,
+PE,c3200008452,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,0,0,
+PE,C3200008547,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2017,1998,0,0,
+PE,C3200008585,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",0,2017,2003,1,0,1
+PE,C3200008606,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,1,0,1
+PE,C3200008723,"Web design","réd. en chef Stéphanie Guillaume",MED3A,"P 31542 1°RDC 2° Prêt 3e étage",2,2017,2008,0,0,
+PE,C3200008805,"Canard PC hardware","dir. de publ. Jérôme Darnaudet",MED3A,"P 31556 Prêt 3e étage",0,2017,2012,1,0,1
+PE,C3200008853,"Canard PC","dir. de publ. Jérôme Darnaudet",MED1A,"P 31477 1°RDC 2°Prêt 1er étage",2,2017,2003,0,0,
+PE,C3200008852,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31539 1°RDC 2°Prêt 3e étage",2,2017,1998,0,0,
+PE,C3200008814,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",0,2017,2013,1,0,1
+PE,C3200007645,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",0,2017,2013,1,0,1
+PE,C3200008910,"Linux magazine","dir. de publ. Arnaud Metzler",MED3A,"P 31552 Prêt 3e étage",0,2017,1998,0,0,
+PE,C2200006566,01net,"dir. de publ. Alain Weill",MED3A,"P 31020 1°RDC 2°Prêt 3e étage",2,2017,2013,0,0,
+PE,C3200009030,"Windows & internet pratique","réd. en chef Emmanuel Alexandre",MED3A,"P 31076 1°RDC 2°Prêt au 3e étage",2,2017,2013,0,0,

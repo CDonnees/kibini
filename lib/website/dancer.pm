@@ -125,7 +125,7 @@ get '/grand-plage/web/portail' => sub {
                 label2 => 'Portail',
                 label3 => "L'usage du portail",
                 dashboard => {
-                    src => 'http://129.1.0.237:5601/app/kibana#/dashboard/cef5b330-9786-11e7-88ff-a79737dea4ec?embed=true&_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-30d%2Cmode%3Aquick%2Cto%3Anow))',
+                    src => 'http://129.1.0.237:5601/app/kibana#/dashboard/cef5b330-9786-11e7-88ff-a79737dea4ec?embed=true&_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3Anow-1y%2Cmode%3Aquick%2Cto%3Anow))',
             height => '1300px'
         }
     };

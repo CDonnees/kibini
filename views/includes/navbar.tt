@@ -20,7 +20,7 @@
 				<li role="separator" class="divider"></li>
 				<li><a href="/form/action_coop">Action de coopération</a></li>
 				<li role="separator" class="divider"></li>
-				<li><a href="http://129.1.0.237:1969/">Récupération de notices</a></li>					
+				<li><a href="http://129.1.0.237:1977/">Récupération de notices</a></li>					
               </ul>
             </li>
             <li><a href="https://github.com/medrbx/kibini/wiki">?</a></li>
